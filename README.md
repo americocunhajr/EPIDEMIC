@@ -9,10 +9,7 @@ Full user guides for EPIDEMIC packages are provided in the doc directory along w
 
 Michel Tosin (UERJ)
 
-Americo Cunha (UERJ)
-
-www.americocunha.org
-
+Americo Cunha (UERJ) - www.americocunha.org
 
 ## Citing EPIDEMIC:
 
