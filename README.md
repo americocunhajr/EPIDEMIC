@@ -1,4 +1,4 @@
-# EPIDEMIC - EPIDEMiology EducatIonal Code
+# EPIDEMIC - Epidemiology Educational Code
 
 ![EPIDEMIC Logo](EPIDEMIC_logo.png)
 
