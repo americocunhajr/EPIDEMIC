@@ -16,17 +16,31 @@ xxx.m -
 
 Full user guides for EPIDEMIC packages are provided in the doc directory along with documentation for example programs.
 
-## Authors:
+## Team:
+
+Americo Cunha (UERJ) - www.americocunha.org
+
+Diego Matos (UERJ)
+
+Eber Dantas (UFRJ)
+
+Julio Basilio (UERJ)
+
+Leonardo de la Roca (UERJ)
+
+Marcos Vinicius Issa (UERJ)
 
 Michel Tosin (UERJ)
 
-Americo Cunha (UERJ) - www.americocunha.org
+Roberto Luo (UERJ)
+
+
 
 ## Citing EPIDEMIC:
 
 We ask users to cite the following manual in any publications reporting work done with **EPIDEMIC**:
 
-Michel Tosin, Americo Cunha Jr, et al. XXXX
+Americo Cunha Jr, et al. XXXX
 
 ## License
 
