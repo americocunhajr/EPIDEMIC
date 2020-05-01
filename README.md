@@ -1,7 +1,5 @@
 # EPIDEMIC - Epidemiology Educational Code
 
-![EPIDEMIC Logo](EPIDEMIC_logo.png)
-
 **EPIDEMIC** is an easy to run educational Matlab code used for simulation of epidemiological systems.
 
 The **EPIDEMIC** code consists of the following modules:
