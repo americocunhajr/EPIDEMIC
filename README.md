@@ -14,23 +14,14 @@ Full user guides for EPIDEMIC packages are provided in the doc directory along w
 
 ## Team:
 
-Americo Cunha (UERJ) - www.americocunha.org
-
-Diego Matos (UERJ)
-
-Eber Dantas (UFRJ)
-
-Julio Basilio (UERJ)
-
-Leonardo de la Roca (UERJ)
-
-Marcos Vinicius Issa (UERJ)
-
-Michel Tosin (UERJ)
-
-Roberto Luo (UERJ)
-
-
+- Americo Cunha (UERJ) - www.americocunha.org
+- Diego Matos (UERJ)
+- Eber Dantas (UFRJ)
+- Julio Basilio (UERJ)
+- Leonardo de la Roca (UERJ)
+- Marcos Vinicius Issa (UERJ)
+- Michel Tosin (UERJ)
+- Roberto Luo (UERJ)
 
 ## Citing EPIDEMIC:
 
