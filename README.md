@@ -19,13 +19,22 @@ Full user guides for EPIDEMIC packages are provided in the doc directory along w
 
 ## Team:
 
+- Adriano Cortês
+- Amanda Cunha Guyt
 - Americo Cunha
+- Bruna Pavlack
 - Diego Matos
 - Eber Dantas
+- João Pedro Norenberg
 - Julio Basilio
+- Karla Figueiredo
 - Leonardo de la Roca
+- Lisandro Lovisolo
+- Lucas Chaves
 - Marcos Vinicius Issa
+- Malú Grave
 - Michel Tosin
+- Rodrigo Burgos
 - Roberto Luo
 
 ## Citing EPIDEMIC:
