@@ -1,7 +1,7 @@
 <img src="logo/EPIDEMIC_Logo.png" width="50%">
 
 **EPIDEMIC** is an easy to run educational Matlab code for epidemiological analysis, which offers functionalities for modeling an epidemic, monitoring its progress and forecasting the underling numbers of interest. The package consists of three modules: 
-- **Modeling:** use compoartimenal dynamic models to emulate the behavior of a homogeneous population during an epidemic;
+- **Modeling:** use compartmental dynamic models to emulate the behavior of a homogeneous population during an epidemic;
 - **Trends:** use several types of trend graphs to analyze the dynamic behavior and the rate of progress of an epidemic;
 - **Forecast:** use statistical regressors to make short-term predictions based on epidemic data.
 
