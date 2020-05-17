@@ -44,4 +44,4 @@ Americo Cunha Jr, et al. XXXX
 
 ## License
 
-**EPIDEMIC** is released under the MIT license. See the LICENSE and NOTICE files for details. All new contributions must be made under the MIT license.
+**EPIDEMIC** is released under the MIT license. See the LICENSE file for details. All new contributions must be made under the MIT license.
