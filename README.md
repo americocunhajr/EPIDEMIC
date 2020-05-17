@@ -14,7 +14,7 @@ This package includes the following file:
 
 ## Support
 
-Full user guides for EPIDEMIC packages are provided in the doc directory along with documentation for example programs.
+Full user guides for **EPIDEMIC** packages are provided in the doc directory along with documentation for example programs.
 
 ## Team:
 
