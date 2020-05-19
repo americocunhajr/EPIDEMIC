@@ -35,6 +35,7 @@ Full user guides for **EPIDEMIC** packages are provided in the doc directory alo
 - Michel Tosin
 - Rodrigo Burgos
 - Roberto Luo
+- Roberto Velho
 
 ## Citing EPIDEMIC:
 
