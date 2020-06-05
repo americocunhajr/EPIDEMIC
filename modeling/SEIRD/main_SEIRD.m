@@ -153,7 +153,7 @@ C = y(:,6);      % cumulative infected (number of individuals)
 % custom colors
 yellow = [255 204  0]/256;
 
-% plot all populalations of SEIRD model
+% plot all compartments of SEIRD model
 figure(1)
 hold on
 figS = plot(time,S,'DisplayName','Suceptibles' ,'Color','b');
