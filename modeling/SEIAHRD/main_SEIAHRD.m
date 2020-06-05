@@ -205,7 +205,7 @@ yellow = [255 204  0]/256;
 orange = [256 128  0]/256;
 brown  = [101  33 33]/256;
 
-% plot all populalations of SEIAHRD model
+% plot all compartments of SEIAHRD model
 figure(1)
 hold on
 figS = plot(time,S,'DisplayName','Suceptibles' ,'Color','b');
