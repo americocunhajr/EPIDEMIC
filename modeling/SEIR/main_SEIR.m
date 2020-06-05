@@ -144,7 +144,7 @@ C = y(:,5);  % cumulative infected (number of individuals)
 % custom color
 yellow = [255 204  0]/256;
 
-% plot all populalations of SEIR model
+% plot all compartments of SEIR model
 figure(1)
 hold on
 figS = plot(time,S,'DisplayName','Suceptibles' ,'Color','b');
