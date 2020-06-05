@@ -126,7 +126,7 @@ C = y(:,4);  % cumulative infected (number of individuals)
 % post-processing
 % -----------------------------------------------------------
 
-% plot all populalations of SIR model
+% plot all compartments of SIR model
 figure(1)
 hold on
 figS = plot(time,S,'DisplayName','Suceptibles' ,'Color','b');
