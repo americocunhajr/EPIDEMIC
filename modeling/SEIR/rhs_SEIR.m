@@ -9,7 +9,7 @@
 %
 %  S = susceptibles        (number of individuals)
 %  E = exposed             (number of individuals)
-%  I = infected            (number of individuals)
+%  I = infectious          (number of individuals)
 %  R = recovered           (number of individuals)
 %  C = cumulative infected (number of individuals)
 %
@@ -42,7 +42,7 @@ gamma = param(4);  % recovery rate     (days^-1)
 % 
 % dSdt - rate of susceptible         (number of individuals/days)
 % dEdt - rate of exposed             (number of individuals/days)
-% dIdt - rate of infected            (number of individuals/days)
+% dIdt - rate of infectious          (number of individuals/days)
 % dRdt - rate of recovered           (number of individuals/days)
 % dCdt - rate of cumulative infected (number of individuals/days)
 
