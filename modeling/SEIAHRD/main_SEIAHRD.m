@@ -7,19 +7,19 @@
 %
 %   S = susceptibles
 %   E = exposed
-%   I = infectious
-%   A = asymptomatic
+%   I = symptomatic infectious
+%   A = asymptomatic infectious
 %   H = hospitalized
 %   R = recovered
 %   D = deaths
 %
 % Infection spreads via direct contact between
-% a susceptible and contagious individual.
+% a susceptible and infectious individual.
 % Delay is modeled as an exposed group: there is an
 % latent period until an infected becomes able to transmit.
-% Among the contagious, most individuals are asymptomatic; only
-% a small fraction (dubbed infectious) display symptoms after incubation.
-% Disease-related deaths are considered when contagious.
+% Among the infectious, most individuals are asymptomatic; only
+% a small fraction display symptoms after incubation.
+% Disease-related deaths are considered when infectious.
 % A control procedure is considered: a fraction of the infectious,
 % is hospitalized, thus reducing their infectivity and fatality chance.
 %
@@ -42,7 +42,7 @@
 % programmers: Eber Dantas
 %              Americo Cunha
 %
-% last update: May 19, 2020
+% last update: Jun 16, 2020
 % -----------------------------------------------------------
 
 clc
@@ -73,7 +73,7 @@ alpha = 1/Talpha;
 
 % symptomatic fraction (adimensional)
 %
-% -- Models fraction of contagious that display symptoms. 
+% -- Models fraction of infectious that display symptoms. 
 % -- Values: [0,1).
 fE = 0.4;
 
@@ -101,13 +101,13 @@ kappaH = 0.5;
 % -- The number of susceptible will be the remaining population.
 % -- For an invasion scenario, set initial infected to 1.
 
-D0 = 0;                 % initial deaths       (number of individuals)
-R0 = 0;                 % initial recovered    (number of individuals)
-H0 = 0;                 % initial hospitalized (number of individuals)
-A0 = 0;                 % initial asymptomatic (number of individuals)
-I0 = 0;                 % initial infectious   (number of individuals)
-E0 = 1;                 % initial exposed      (number of individuals)
-S0 = N0-E0-I0-A0-H0-R0; % initial susceptible  (number of individuals)
+D0 = 0;                 % initial deaths                  (number of individuals)
+R0 = 0;                 % initial recovered               (number of individuals)
+H0 = 0;                 % initial hospitalized            (number of individuals)
+A0 = 0;                 % initial asymptomatic infectious (number of individuals)
+I0 = 0;                 % initial symptomatic infectious  (number of individuals)
+E0 = 1;                 % initial exposed                 (number of individuals)
+S0 = N0-E0-I0-A0-H0-R0; % initial susceptible             (number of individuals)
 
 % initial cumulative infected (number of individuals)
 C0 = E0;
@@ -178,7 +178,7 @@ IC = [S0 E0 I0 A0 H0 R0 D0 C0];
 % time interval of analysis
    t0 = 1;                  % initial time (days)
    t1 = 365;                % final time   (days)
-   dt = 1;                  % time steps   (days)
+   dt = 0.1;                % time steps   (days)
 tspan = t0:dt:t1;           % interval of analysis
 Ndt   = length(tspan);      % number of time steps
 
@@ -186,19 +186,29 @@ Ndt   = length(tspan);      % number of time steps
 [time, y] = ode45(@(t,y)rhs_SEIAHRD(t,y,param),tspan,IC);
 
 % time series
-S = y(:,1);  % susceptible         (number of individuals)
-E = y(:,2);  % exposed             (number of individuals)
-I = y(:,3);  % infected            (number of individuals)
-A = y(:,4);  % asymptomatic        (number of individuals)
-H = y(:,5);  % hospitalized        (number of individuals)
-R = y(:,6);  % recovered           (number of individuals)
-D = y(:,7);  % deaths              (number of individuals)
-C = y(:,8);  % cumulative infected (number of individuals)
+S = y(:,1);  % susceptible             (number of individuals)
+E = y(:,2);  % exposed                 (number of individuals)
+I = y(:,3);  % symptomatic infectious  (number of individuals)
+A = y(:,4);  % asymptomatic infectious (number of individuals)
+H = y(:,5);  % hospitalized            (number of individuals)
+R = y(:,6);  % recovered               (number of individuals)
+D = y(:,7);  % deaths                  (number of individuals)
+C = y(:,8);  % cumulative infected     (number of individuals)
 % -----------------------------------------------------------
 
 
 % post-rocessing
 % -----------------------------------------------------------
+
+% NewCases (per day) computation
+tu = 1;                     % time unit
+%
+% -- tu/dt must be an integer
+NewCases = zeros(floor((Ndt-1)/(tu/dt)),1);
+for n = 1:length(NewCases)
+    NewCases(n) = C((n)*tu/dt +1) - C((n-1)*tu/dt +1);
+end
+
 
 % custom colors
 yellow = [255 204  0]/256;
@@ -208,31 +218,50 @@ brown  = [101  33 33]/256;
 % plot all compartments of SEIAHRD model
 figure(1)
 hold on
-figS = plot(time,S,'DisplayName','Suceptibles' ,'Color','b');
-figE = plot(time,E,'DisplayName','Exposed'     ,'Color',yellow);
-figI = plot(time,I,'DisplayName','Infected'    ,'Color','r');
-figA = plot(time,A,'DisplayName','Infected'    ,'Color',orange);
-figH = plot(time,R,'DisplayName','Hospitalized','Color',brown);
-figR = plot(time,R,'DisplayName','Recovered'   ,'Color','g');
-figD = plot(time,D,'DisplayName','Deaths'      ,'Color','k');
-figC = plot(time,C,'DisplayName','Cum. Inf.'   ,'Color','m');
+fig1(1) = plot(time,S);
+fig1(2) = plot(time,E);
+fig1(3) = plot(time,I);
+fig1(4) = plot(time,A);
+fig1(5) = plot(time,R);
+fig1(6) = plot(time,R);
+fig1(7) = plot(time,D);
+fig1(8) = plot(time,C);
 hold off
 
-% plot labels
- title('SEIAHRD dynamic model');
-xlabel('time (days)'          );
-ylabel('number of individuals');
+    % plot labels
+     title('SEIAHRD dynamic model'  );
+    xlabel('time (days)'          );
+    ylabel('number of individuals');
 
-% legend
-leg = [figS; figE; figI; figA; figH; figR; figD; figC];
-leg = legend(leg,'Location','Best');
+    % set plot settings
+    set(gca,'FontSize',18);
+    set(fig1,{'Color'},{'b';yellow;'r';orange;brown;'g';'k';'m'});
+    set(fig1,{'LineWidth'},{2;2;2;2;2;2;2;2});
+    
+    % legend
+    leg = {'Suceptibles'; 'Exposed'; 'Symp. Infectious';...
+                    'Asymp. Infectious'; 'Hospitalized';...
+                     'Recovered';'Death'; 'Cum. Infected'};
+    legend(fig1,leg,'Location','Best','FontSize',10);
 
-% set plot settings
-set(0,'DefaultAxesFontSize',18)
-set(0,'DefaultLineLineWidth',2);
-set(leg,'FontSize',10);
+    % axis limits
+    xlim([t0 t1]);
+    ylim([0 N0]);
 
-% axis limits
-xlim([t0 t1]);
-ylim([0 N0]);
+
+% plot NewCases (per day) of SEIAHRD model
+figure(2)
+fig2 = scatter([1:length(NewCases)]+1,NewCases);
+
+    % plot labels
+     title('NewCases per day (SEIAHRD)' );
+    xlabel('time (days)'                );
+    ylabel('number of individuals'      );
+
+    % set plot settings
+    set(gca,'FontSize',18);
+    set(fig2,{'MarkerFaceColor','MarkerEdgeColor'},{'y','r'});
+
+    % axis limits
+    xlim([t0 length(NewCases)]+1);
 % -----------------------------------------------------------
