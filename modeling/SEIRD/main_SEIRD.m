@@ -199,7 +199,7 @@ figure(2)
 fig2 = scatter([1:length(NewCases)]+1,NewCases);
 
     % plot labels
-     title('NewCases per day (SEIRD)'    );
+     title('NewCases per day (SEIRD)'  );
     xlabel('time (days)'               );
     ylabel('number of individuals'     );
 
