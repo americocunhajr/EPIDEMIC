@@ -9,7 +9,7 @@
 %
 %  S = susceptibles        (number of individuals)
 %  E = exposed             (number of individuals)
-%  I = infected            (number of individuals)
+%  I = infectious          (number of individuals)
 %  R = recovered           (number of individuals)
 %  D = deaths              (number of individuals)
 %  C = cumulative infected (number of individuals)
@@ -46,7 +46,7 @@ delta = param(5);  % death rate                (days^-1)
 % 
 % dSdt - rate of susceptible         (number of individuals/days)
 % dEdt - rate of exposed             (number of individuals/days)
-% dIdt - rate of infected            (number of individuals/days)
+% dIdt - rate of infectious          (number of individuals/days)
 % dRdt - rate of recovered           (number of individuals/days)
 % dDdt - rate of deaths              (number of individuals/days)
 % dCdt - rate of cumulative infected (number of individuals/days)
