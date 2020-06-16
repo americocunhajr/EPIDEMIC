@@ -183,7 +183,7 @@ hold off
     ylim([0 N]);
 
 
-% plot NewCases (per day) of SIR model
+% plot NewCases (per day) of SEIR model
 figure(2)
 fig2 = scatter([1:length(NewCases)]+1,NewCases);
 
