@@ -194,12 +194,12 @@ hold off
     ylim([0 N0]);
 
 
-% plot NewCases (per day) of SIR model
+% plot NewCases (per day) of SEIRD model
 figure(2)
 fig2 = scatter([1:length(NewCases)]+1,NewCases);
 
     % plot labels
-     title('NewCases per day (SIR)'    );
+     title('NewCases per day (SEIRD)'    );
     xlabel('time (days)'               );
     ylabel('number of individuals'     );
 
