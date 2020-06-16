@@ -33,7 +33,7 @@
 % programmers: Eber Dantas
 %              Americo Cunha
 %
-% last update: May 19, 2020
+% last update: Jun 16, 2020
 % -----------------------------------------------------------
 
 clc
