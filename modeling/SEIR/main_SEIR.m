@@ -188,7 +188,7 @@ figure(2)
 fig2 = scatter([1:length(NewCases)]+1,NewCases);
 
     % plot labels
-     title('New Cases per day (SEIR)'    );
+     title('New Cases per day (SEIR)'  );
     xlabel('time (days)'               );
     ylabel('number of individuals'     );
 
