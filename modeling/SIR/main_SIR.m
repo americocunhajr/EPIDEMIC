@@ -26,7 +26,7 @@
 % programmers: Eber Dantas
 %              Americo Cunha
 %
-% last update: May 19, 2020
+% last update: Jun 16, 2020
 % -----------------------------------------------------------
 
 clc
@@ -108,7 +108,7 @@ IC = [S0 I0 R0 C0];
 % time interval of analysis
    t0 = 1;                  % initial time (days)
    t1 = 365;                % final time   (days)
-   dt = 1;                  % time steps   (days)
+   dt = 0.1;                % time steps   (days)
 tspan = t0:dt:t1;           % interval of analysis
 Ndt   = length(tspan);      % number of time steps
 
@@ -126,30 +126,57 @@ C = y(:,4);  % cumulative infected (number of individuals)
 % post-processing
 % -----------------------------------------------------------
 
+% NewCases (per day) computation
+tu = 1;                     % time unit
+%
+% -- tu/dt must be an integer
+NewCases = zeros(floor((Ndt-1)/(tu/dt)),1);
+for n = 1:length(NewCases)
+    NewCases(n) = C((n)*tu/dt +1) - C((n-1)*tu/dt +1);
+end
+
+
 % plot all compartments of SIR model
 figure(1)
 hold on
-figS = plot(time,S,'DisplayName','Suceptibles' ,'Color','b');
-figI = plot(time,I,'DisplayName','Infected'    ,'Color','r');
-figR = plot(time,R,'DisplayName','Recovered'   ,'Color','g');
-figC = plot(time,C,'DisplayName','Cum. Inf.'   ,'Color','m');
+fig1(1) = plot(time,S);
+fig1(2) = plot(time,I);
+fig1(3) = plot(time,R);
+fig1(4) = plot(time,C);
 hold off
 
-% plot labels
- title('SIR dynamic model'    );
-xlabel('time (days)'          );
-ylabel('number of individuals');
+    % plot labels
+     title('SIR dynamic model'    );
+    xlabel('time (days)'          );
+    ylabel('number of individuals');
 
-% legend
-leg = [figS; figI; figR; figC];
-leg = legend(leg,'Location','Best');
+    % set plot settings
+    set(gca,'FontSize',18);
+    set(fig1,{'Color'},{'b';'r';'g';'m'});
+    set(fig1,{'LineWidth'},{2;2;2;2});
+    
+    % legend
+    leg = {'Suceptibles'; 'Infected'; 'Recovered'; 'Cum. Infected'};
+    legend(fig1,leg,'Location','Best','FontSize',10);
 
-% set plot settings
-set(0,'DefaultAxesFontSize',18)
-set(0,'DefaultLineLineWidth',2);
-set(leg,'FontSize',10);
+    % axis limits
+    xlim([t0 t1]);
+    ylim([0 N]);
 
-% axis limits
-xlim([t0 t1]);
-ylim([0 N]);
+
+% plot NewCases (per day) of SIR model
+figure(2)
+fig2 = scatter([1:length(NewCases)]+1,NewCases);
+
+    % plot labels
+     title('New Cases per day (SIR)'    );
+    xlabel('time (days)'               );
+    ylabel('number of individuals'     );
+
+    % set plot settings
+    set(gca,'FontSize',18);
+    set(fig2,{'MarkerFaceColor','MarkerEdgeColor'},{'y','r'});
+
+    % axis limits
+    xlim([t0 length(NewCases)]+1);
 % -----------------------------------------------------------
