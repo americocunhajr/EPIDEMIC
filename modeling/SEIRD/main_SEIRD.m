@@ -73,7 +73,7 @@ delta = 1/15;
 
 D0 = 0;            % initial deaths      (number of individuals)
 R0 = 0;            % initial recovered   (number of individuals)
-I0 = 1;            % initial infected    (number of individuals)
+I0 = 1;            % initial infectious  (number of individuals)
 E0 = 0;            % initial exposed     (number of individuals)
 S0 = N0-E0-I0-R0;  % initial susceptible (number of individuals)
 
@@ -130,7 +130,7 @@ IC = [S0 E0 I0 R0 D0 C0];
 % time interval of analysis
    t0 = 1;                  % initial time (days)
    t1 = 365;                % final time   (days)
-   dt = 1;                  % time steps   (days)
+   dt = 0.1;                % time steps   (days)
 tspan = t0:dt:t1;           % interval of analysis
 Ndt   = length(tspan);      % number of time steps
 
@@ -140,7 +140,7 @@ Ndt   = length(tspan);      % number of time steps
 % time series
 S = y(:,1);      % susceptibles        (number of individuals)
 E = y(:,2);      % exposed             (number of individuals)
-I = y(:,3);      % infected            (number of individuals)
+I = y(:,3);      % infectious          (number of individuals)
 R = y(:,4);      % recovered           (number of individuals)
 D = y(:,5);      % deaths              (number of individuals)
 C = y(:,6);      % cumulative infected (number of individuals)
@@ -150,35 +150,63 @@ C = y(:,6);      % cumulative infected (number of individuals)
 % post-processing
 % -----------------------------------------------------------
 
+% NewCases (per day) computation
+tu = 1;                     % time unit
+%
+% -- tu/dt must be an integer
+NewCases = zeros(floor((Ndt-1)/(tu/dt)),1);
+for n = 1:length(NewCases)
+    NewCases(n) = C((n)*tu/dt +1) - C((n-1)*tu/dt +1);
+end
+
+
 % custom colors
 yellow = [255 204  0]/256;
 
 % plot all compartments of SEIRD model
 figure(1)
 hold on
-figS = plot(time,S,'DisplayName','Suceptibles' ,'Color','b');
-figE = plot(time,E,'DisplayName','Exposed'     ,'Color',yellow);
-figI = plot(time,I,'DisplayName','Infected'    ,'Color','r');
-figR = plot(time,R,'DisplayName','Recovered'   ,'Color','g');
-figD = plot(time,D,'DisplayName','Deaths'      ,'Color','k');
-figC = plot(time,C,'DisplayName','Cum. Inf.'   ,'Color','m');
+fig1(1) = plot(time,S);
+fig1(2) = plot(time,E);
+fig1(3) = plot(time,I);
+fig1(4) = plot(time,R);
+fig1(5) = plot(time,D);
+fig1(6) = plot(time,C);
 hold off
 
-% plot labels
- title('SEIRD dynamic model'  );
-xlabel('time (days)'          );
-ylabel('number of individuals');
+    % plot labels
+     title('SEIRD dynamic model'  );
+    xlabel('time (days)'          );
+    ylabel('number of individuals');
 
-% legend
-leg = [figS; figE; figI; figR; figD; figC];
-leg = legend(leg,'Location','Best');
+    % set plot settings
+    set(gca,'FontSize',18);
+    set(fig1,{'Color'},{'b';yellow;'r';'g';'k';'m'});
+    set(fig1,{'LineWidth'},{2;2;2;2;2;2});
+    
+    % legend
+    leg = {'Suceptibles'; 'Exposed'; 'Infectious'; 'Recovered';...
+                                        'Death'; 'Cum. Infected'};
+    legend(fig1,leg,'Location','Best','FontSize',10);
 
-% set plot settings
-set(0,'DefaultAxesFontSize',18)
-set(0,'DefaultLineLineWidth',2);
-set(leg,'FontSize',10);
+    % axis limits
+    xlim([t0 t1]);
+    ylim([0 N0]);
 
-% axis limits
-xlim([t0 t1]);
-ylim([0 N0]);
+
+% plot NewCases (per day) of SIR model
+figure(2)
+fig2 = scatter([1:length(NewCases)]+1,NewCases);
+
+    % plot labels
+     title('NewCases per day (SIR)'    );
+    xlabel('time (days)'               );
+    ylabel('number of individuals'     );
+
+    % set plot settings
+    set(gca,'FontSize',18);
+    set(fig2,{'MarkerFaceColor','MarkerEdgeColor'},{'y','r'});
+
+    % axis limits
+    xlim([t0 length(NewCases)]+1);
 % -----------------------------------------------------------
