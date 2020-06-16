@@ -7,14 +7,14 @@
 %
 % The dynamic state coordinates are:
 %
-%  S = susceptibles        (number of individuals)
-%  E = exposed             (number of individuals)
-%  I = infected            (number of individuals)
-%  A = asymptomatic        (number of individuals)
-%  H = hospitalized        (number of individuals)
-%  R = recovered           (number of individuals)
-%  D = deaths              (number of individuals)
-%  C = cumulative infected (number of individuals)
+%  S = susceptibles            (number of individuals)
+%  E = exposed                 (number of individuals)
+%  I = symptomatic infectious  (number of individuals)
+%  A = asymptomatic infectious (number of individuals)
+%  H = hospitalized            (number of individuals)
+%  R = recovered               (number of individuals)
+%  D = deaths                  (number of individuals)
+%  C = cumulative infected     (number of individuals)
 %
 % The epidemic model parameters are:
 %
@@ -31,7 +31,7 @@
 % programmers: Eber Dantas
 %              Americo Cunha
 %
-% last update: May 19, 2020
+% last update: Jun 16, 2020
 % -----------------------------------------------------------------
 
 % -----------------------------------------------------------------
@@ -54,14 +54,14 @@ kappaH   = param(9);  % hospitalization recovery-factor (adimensional)
 %   dydt = [dSdt dEdt dIdt dRdt dDdt dCdt] is the evolution law
 %      N = current population at time t
 % 
-% dSdt - rate of susceptible         (number of individuals/days)
-% dEdt - rate of exposed             (number of individuals/days)
-% dIdt - rate of infected            (number of individuals/days)
-% dAdt - rate of asymptomatic        (number of individuals/days)
-% dHdt - rate of hospitalized        (number of individuals/days)
-% dRdt - rate of recovered           (number of individuals/days)
-% dDdt - rate of deaths              (number of individuals/days)
-% dCdt - rate of cumulative infected (number of individuals/days)
+% dSdt - rate of susceptible             (number of individuals/days)
+% dEdt - rate of exposed                 (number of individuals/days)
+% dIdt - rate of symptomatic infectious  (number of individuals/days)
+% dAdt - rate of asymptomatic infectious (number of individuals/days)
+% dHdt - rate of hospitalized            (number of individuals/days)
+% dRdt - rate of recovered               (number of individuals/days)
+% dDdt - rate of deaths                  (number of individuals/days)
+% dCdt - rate of cumulative infected     (number of individuals/days)
 
 [S E I A H R D C] = deal(y(1),y(2),y(3),y(4),y(5),y(6),y(7),y(8));
 
