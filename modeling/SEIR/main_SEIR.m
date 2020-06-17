@@ -71,7 +71,7 @@ I0 = 1;           % initial infectious  (number of individuals)
 E0 = 0;           % initial exposed     (number of individuals)
 S0 = N-E0-I0-R0;  % initial susceptible (number of individuals)
 
-% initial cumulative infected (number of individuals)
+% initial cumulative infectious (number of individuals)
 C0 = I0;
 % -----------------------------------------------------------
 
@@ -130,11 +130,11 @@ Ndt   = length(tspan);      % number of time steps
 [time, y] = ode45(@(t,y)rhs_SEIR(t,y,param),tspan,IC);
 
 % time series
-S = y(:,1);  % susceptibles        (number of individuals)
-E = y(:,2);  % exposed             (number of individuals)
-I = y(:,3);  % infectious          (number of individuals)
-R = y(:,4);  % recovered           (number of individuals)
-C = y(:,5);  % cumulative infected (number of individuals)
+S = y(:,1);  % susceptibles          (number of individuals)
+E = y(:,2);  % exposed               (number of individuals)
+I = y(:,3);  % infectious            (number of individuals)
+R = y(:,4);  % recovered             (number of individuals)
+C = y(:,5);  % cumulative infectious (number of individuals)
 % -----------------------------------------------------------
 
 
@@ -175,7 +175,7 @@ hold off
     set(fig1,{'LineWidth'},{2;2;2;2;2});
 
     % legend
-    leg = {'Suceptibles'; 'Exposed'; 'Infectious'; 'Recovered'; 'Cum. Infected'};
+    leg = {'Suceptibles'; 'Exposed'; 'Infectious'; 'Recovered'; 'Cum. Infectious'};
     legend(fig1,leg,'Location','Best','FontSize',10);
     
     % axis limits
