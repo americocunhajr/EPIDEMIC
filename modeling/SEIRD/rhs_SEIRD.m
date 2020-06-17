@@ -7,12 +7,12 @@
 %
 % The dynamic state coordinates are:
 %
-%  S = susceptibles        (number of individuals)
-%  E = exposed             (number of individuals)
-%  I = infectious          (number of individuals)
-%  R = recovered           (number of individuals)
-%  D = deaths              (number of individuals)
-%  C = cumulative infected (number of individuals)
+%  S = susceptibles          (number of individuals)
+%  E = exposed               (number of individuals)
+%  I = infectious            (number of individuals)
+%  R = recovered             (number of individuals)
+%  D = deaths                (number of individuals)
+%  C = cumulative infectious (number of individuals)
 %
 % The epidemic model parameters are:
 %
@@ -44,12 +44,12 @@ delta = param(5);  % death rate                (days^-1)
 %   dydt = [dSdt dEdt dIdt dRdt dNdt dCdt] is the evolution law
 %      N = current population at time t
 % 
-% dSdt - rate of susceptible         (number of individuals/days)
-% dEdt - rate of exposed             (number of individuals/days)
-% dIdt - rate of infectious          (number of individuals/days)
-% dRdt - rate of recovered           (number of individuals/days)
-% dDdt - rate of deaths              (number of individuals/days)
-% dCdt - rate of cumulative infected (number of individuals/days)
+% dSdt - rate of susceptible           (number of individuals/days)
+% dEdt - rate of exposed               (number of individuals/days)
+% dIdt - rate of infectious            (number of individuals/days)
+% dRdt - rate of recovered             (number of individuals/days)
+% dDdt - rate of deaths                (number of individuals/days)
+% dCdt - rate of cumulative infectious (number of individuals/days)
 
 [S E I R D C] = deal(y(1),y(2),y(3),y(4),y(5),y(6));
 
