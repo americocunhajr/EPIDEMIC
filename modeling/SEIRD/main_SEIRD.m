@@ -77,7 +77,7 @@ I0 = 1;            % initial infectious  (number of individuals)
 E0 = 0;            % initial exposed     (number of individuals)
 S0 = N0-E0-I0-R0;  % initial susceptible (number of individuals)
 
-% initial cumulative infected (number of individuals)
+% initial cumulative infectious (number of individuals)
 C0 = I0;
 % -----------------------------------------------------------
 
@@ -138,12 +138,12 @@ Ndt   = length(tspan);      % number of time steps
 [time, y] = ode45(@(t,y)rhs_SEIRD(t,y,param),tspan,IC);
 
 % time series
-S = y(:,1);      % susceptibles        (number of individuals)
-E = y(:,2);      % exposed             (number of individuals)
-I = y(:,3);      % infectious          (number of individuals)
-R = y(:,4);      % recovered           (number of individuals)
-D = y(:,5);      % deaths              (number of individuals)
-C = y(:,6);      % cumulative infected (number of individuals)
+S = y(:,1);      % susceptibles          (number of individuals)
+E = y(:,2);      % exposed               (number of individuals)
+I = y(:,3);      % infectious            (number of individuals)
+R = y(:,4);      % recovered             (number of individuals)
+D = y(:,5);      % deaths                (number of individuals)
+C = y(:,6);      % cumulative infectious (number of individuals)
 % -----------------------------------------------------------
 
 
@@ -186,7 +186,7 @@ hold off
     
     % legend
     leg = {'Suceptibles'; 'Exposed'; 'Infectious'; 'Recovered';...
-                                        'Death'; 'Cum. Infected'};
+                                        'Death'; 'Cum. Infectious'};
     legend(fig1,leg,'Location','Best','FontSize',10);
 
     % axis limits
@@ -199,7 +199,7 @@ figure(2)
 fig2 = scatter([1:length(NewCases)]+1,NewCases);
 
     % plot labels
-     title('NewCases per day (SEIRD)'  );
+     title('NewCases per day (SEIRD)'    );
     xlabel('time (days)'               );
     ylabel('number of individuals'     );
 
