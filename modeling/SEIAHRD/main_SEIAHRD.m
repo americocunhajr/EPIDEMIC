@@ -109,7 +109,7 @@ I0 = 0;                 % initial symptomatic infectious  (number of individuals
 E0 = 1;                 % initial exposed                 (number of individuals)
 S0 = N0-E0-I0-A0-H0-R0; % initial susceptible             (number of individuals)
 
-% initial cumulative infected (number of individuals)
+% initial cumulative infectious (number of individuals)
 C0 = E0;
 % -----------------------------------------------------------
 
@@ -193,7 +193,7 @@ A = y(:,4);  % asymptomatic infectious (number of individuals)
 H = y(:,5);  % hospitalized            (number of individuals)
 R = y(:,6);  % recovered               (number of individuals)
 D = y(:,7);  % deaths                  (number of individuals)
-C = y(:,8);  % cumulative infected     (number of individuals)
+C = y(:,8);  % cumulative infectious   (number of individuals)
 % -----------------------------------------------------------
 
 
@@ -241,7 +241,7 @@ hold off
     % legend
     leg = {'Suceptibles'; 'Exposed'; 'Symp. Infectious';...
                     'Asymp. Infectious'; 'Hospitalized';...
-                     'Recovered';'Death'; 'Cum. Infected'};
+                     'Recovered';'Death'; 'Cum. Infectious'};
     legend(fig1,leg,'Location','Best','FontSize',10);
 
     % axis limits
