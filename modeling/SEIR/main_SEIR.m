@@ -31,7 +31,7 @@
 % programmers: Eber Dantas
 %              Americo Cunha
 %
-% last update: Jun 16, 2020
+% last update: Jun 19, 2020
 % -----------------------------------------------------------
 
 clc
@@ -142,9 +142,10 @@ C = y(:,5);  % cumulative infectious (number of individuals)
 % -----------------------------------------------------------
 
 % NewCases (per day) computation
-tu = 1;                     % time unit
+tu = 1;                     % time unit (days)
 %
 % -- tu/dt must be an integer
+% -- for tu = 7 (weeks), use t0 = 7
 NewCases = zeros(floor((Ndt-1)/(tu/dt)),1);
 for n = 1:length(NewCases)
     NewCases(n) = C((n)*tu/dt +1) - C((n-1)*tu/dt +1);
