@@ -9,15 +9,19 @@
 This package includes the following file:
 
 **MODELING:**
+
 SIR
 - main_SIR.m
 - rhs_SIR.m 
+
 SEIR
 - main_SEIR.m
 - rhs_SEIR.m 
+
 SEIRD
 - main_SEIRD.m
 - rhs_SEIRD.m 
+
 SEIAHRD
 - main_SEIAHRD.m
 - rhs_SEIAHRD.m 
