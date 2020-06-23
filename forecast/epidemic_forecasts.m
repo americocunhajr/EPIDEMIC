@@ -240,22 +240,29 @@ ylabel('Total cases','FontSize',14)
 hold on
 
 % Plot command forecasts points
+
 % Reliability Interval
 pp   = fill([days5f fliplr(days5f)], [10.^lowerCI_cases5f fliplr(10.^upperCI_cases5f)], [0.8 0.8 0.8],'LineStyle','none');
 
 % Forecasts points
-scat = scatter(ones(1,70)*days5f(1,1),0:(10.^(upperCI_cases5f(1,5))+5000)/69:10.^(upperCI_cases5f(1,5))+5000,10,'filled','k');
-scat.MarkerFaceAlpha = 0.2; 
 plot(days5f,10.^(cases5f),'k','LineWidth',2);
 hold on
 b    = scatter(days5f,10.^(cases5f),'filled','k');
 hold on
-
-% Dotted line between notifications and forecasts
 aaa  = scatter(1,1,1,[1 1 1]);
 bbb  = scatter(1,1,1,[1 1 1]);
 ccc  = scatter(1,1,1,[1 1 1]);
-txxt = text(days5f(1,1)-1.5,0.2*10.^(cases5f(1,5)),LINE_DATE,'FontSize',14,'Color',[0.6 0.6 0.6])
+
+% Dotted line between notifications and forecasts
+scat = scatter(ones(1,70)*days5f(1,1),...
+               0:...
+               (10.^(upperCI_cases5f(1,5)) + 5000)/69:...
+               10.^(upperCI_cases5f(1,5)) + 5000,...
+               10,'filled','k');
+scat.MarkerFaceAlpha = 0.2; 
+
+txxt = text(days5f(1,1)-1.5,0.2*10.^(cases5f(1,5)),...
+            LINE_DATE,'FontSize',14,'Color',[0.6 0.6 0.6])
 set(txxt,'Rotation',90);
 
 % Legend configuration
@@ -275,7 +282,7 @@ set(gcf, 'Position',  [100, 100, 1000, 700])
 
 % Saving the chart
 %-------------------------------------------------------------------------
-print(figure(1) ,['forecast-cases','.png',],'-dpng','-r300');
+% print(figure(1) ,['forecast-cases','.png',],'-dpng','-r300');
 %-------------------------------------------------------------------------
 
 %========================================================================
@@ -418,22 +425,29 @@ ylabel('Total deaths','FontSize',14)
 hold on
 
 % Plot command forecasts points
+
 % Reliability Interval
 pp   = fill([days5f fliplr(days5f)], [10.^lowerCI_deaths5f fliplr(10.^upperCI_deaths5f)], [0.8 0.8 0.8],'LineStyle','none');
 
 % Forecasts points
-scat = scatter(ones(1,70)*days5f(1,1),0:(10.^(upperCI_deaths5f(1,5))+500)/69:10.^(upperCI_deaths5f(1,5))+500,10,'filled','k');
-scat.MarkerFaceAlpha = 0.2; 
 plot(days5f,10.^(deaths5f),'k','LineWidth',2);
 hold on
 b    = scatter(days5f,10.^(deaths5f),'filled','k');
 hold on
-
-% Dotted line between notifications and forecasts
 aaa  = scatter(1,1,1,[1 1 1]);
 bbb  = scatter(1,1,1,[1 1 1]);
 ccc  = scatter(1,1,1,[1 1 1]);
-txxt = text(days5f(1,1)-1.5,0.2*10.^(deaths5f(1,5)),LINE_DATE,'FontSize',14,'Color',[0.6 0.6 0.6])
+
+% Dotted line between notifications and forecasts
+scat = scatter(ones(1,70)*days5f(1,1),...
+               0:...
+               (10.^(upperCI_deaths5f(1,5)) + 500)/69:...
+               10.^(upperCI_deaths5f(1,5)) + 500,...
+               10,'filled','k');
+scat.MarkerFaceAlpha = 0.2; 
+
+txxt = text(days5f(1,1)-1.5,0.2*10.^(deaths5f(1,5)),...
+            LINE_DATE,'FontSize',14,'Color',[0.6 0.6 0.6])
 set(txxt,'Rotation',90);
 
 % Legend configuration
@@ -453,7 +467,7 @@ set(gcf, 'Position',  [100, 100, 1000, 700])
 
 % Saving the chart
 %-------------------------------------------------------------------------
-print(figure(2) ,['forecast-deaths','.png',],'-dpng','-r300');
+% print(figure(2) ,['forecast-deaths','.png',],'-dpng','-r300');
 %-------------------------------------------------------------------------
 
 %========================================================================
