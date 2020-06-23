@@ -272,6 +272,8 @@ lgd = legend([c b aaa bbb ccc pp],'Notifications','Forecasts: ',...
     [d5,': between ',num2str(round(10.^(lowerCI_cases5f(1,5)))),' and ', num2str(round(10.^(upperCI_cases5f(1,5)))),' ','cases'],...
     '95% probability','Location','northwest','Orientation','vertical');
 lgd.FontSize = 14;
+
+% Scale configuration
 grid
 ylim([0 10.^(upperCI_cases5f(1,5))+4000])
 set(gca,'ytick',[floor(0:(10.^(upperCI_cases5f(1,5))+4000)/8:10.^(upperCI_cases5f(1,5))+4000)],'yticklabel',floor(0:(10.^(upperCI_cases5f(1,5))+4000)/8:10.^(upperCI_cases5f(1,5))+4000));
@@ -457,6 +459,8 @@ lgd = legend([c b aaa bbb ccc pp],'Notifications','Forecasts: ',...
     [d5,': between ',num2str(round(10.^(lowerCI_deaths5f(1,5)))),' and ', num2str(round(10.^(upperCI_deaths5f(1,5)))),' ','deaths'],...
     '95% probability','Location','northwest','Orientation','vertical');
 lgd.FontSize = 14;
+
+% Scale configuration
 grid
 ylim([0 10.^(upperCI_deaths5f(1,5))+300])
 set(gca,'ytick',[floor(0:(10.^(upperCI_deaths5f(1,5))+300)/8:10.^(upperCI_deaths5f(1,5))+300)],'yticklabel',floor(0:(10.^(upperCI_deaths5f(1,5))+300)/8:10.^(upperCI_deaths5f(1,5))+300));
