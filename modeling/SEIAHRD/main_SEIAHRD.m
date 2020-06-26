@@ -62,7 +62,7 @@ beta = 1/2;
 % hospitalization infectivity-factor (adimensional)
 %
 % -- Models contact diminishment. 
-% -- Values: [0,1).
+% -- Values: 0<epsilonH<1.
 epsilonH = 0.5;
 
 % latent period (days)
@@ -74,7 +74,7 @@ alpha = 1/Talpha;
 % symptomatic fraction (adimensional)
 %
 % -- Models fraction of infectious that display symptoms. 
-% -- Values: [0,1).
+% -- Values: 0<fE<1.
 fE = 0.4;
 
 % recovery period (days)
@@ -92,7 +92,7 @@ delta = 1/15;
 % Hospitalization recovery-factor (adimensional)
 %
 % -- Models fatality chance diminishment.  
-% -- Values: [0,1).
+% -- Values: 0<kappaH<1.
 kappaH = 0.5;
 
 % initial conditions
@@ -223,7 +223,7 @@ fig1(1) = plot(time,S);
 fig1(2) = plot(time,E);
 fig1(3) = plot(time,I);
 fig1(4) = plot(time,A);
-fig1(5) = plot(time,R);
+fig1(5) = plot(time,H);
 fig1(6) = plot(time,R);
 fig1(7) = plot(time,D);
 fig1(8) = plot(time,C);
