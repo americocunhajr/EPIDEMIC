@@ -204,7 +204,8 @@ C = y(:,8);  % cumulative infectious   (number of individuals)
 tu = 1;                     % time unit (days)
 %
 % -- tu/dt must be an integer
-% -- for tu = 7 (weeks), use t0 = 7
+% -- tu = 1 defines a 'per day' computation
+% -- For a 'per week' computation, use tu = 7 and t0 = 7
 NewCases = zeros(floor((Ndt-1)/(tu/dt)),1);
 for n = 1:length(NewCases)
     NewCases(n) = C((n)*tu/dt +1) - C((n-1)*tu/dt +1);
