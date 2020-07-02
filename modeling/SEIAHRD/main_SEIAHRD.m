@@ -11,7 +11,7 @@
 %   A = asymptomatic infectious
 %   H = hospitalized
 %   R = recovered
-%   D = deaths
+%   D = deceased
 %
 % Infection spreads via direct contact between
 % a susceptible and infectious individual.
@@ -42,7 +42,7 @@
 % programmers: Eber Dantas
 %              Americo Cunha
 %
-% last update: Jun 19, 2020
+% last update: Jun 16, 2020
 % -----------------------------------------------------------
 
 clc
@@ -62,7 +62,7 @@ beta = 1/2;
 % hospitalization infectivity-factor (adimensional)
 %
 % -- Models contact diminishment. 
-% -- Values: 0<epsilonH<1.
+% -- Values:  0<epsilonH<1.
 epsilonH = 0.5;
 
 % latent period (days)
@@ -101,7 +101,7 @@ kappaH = 0.5;
 % -- The number of susceptible will be the remaining population.
 % -- For an invasion scenario, set initial infected to 1.
 
-D0 = 0;                 % initial deaths                  (number of individuals)
+D0 = 0;                 % initial deceased                  (number of individuals)
 R0 = 0;                 % initial recovered               (number of individuals)
 H0 = 0;                 % initial hospitalized            (number of individuals)
 A0 = 0;                 % initial asymptomatic infectious (number of individuals)
@@ -192,7 +192,7 @@ I = y(:,3);  % symptomatic infectious  (number of individuals)
 A = y(:,4);  % asymptomatic infectious (number of individuals)
 H = y(:,5);  % hospitalized            (number of individuals)
 R = y(:,6);  % recovered               (number of individuals)
-D = y(:,7);  % deaths                  (number of individuals)
+D = y(:,7);  % deceased                (number of individuals)
 C = y(:,8);  % cumulative infectious   (number of individuals)
 % -----------------------------------------------------------
 
@@ -243,7 +243,7 @@ hold off
     % legend
     leg = {'Suceptibles'; 'Exposed'; 'Symp. Infectious';...
                     'Asymp. Infectious'; 'Hospitalized';...
-                     'Recovered';'Death'; 'Cum. Infectious'};
+                     'Recovered';'Deceased'; 'Cum. Infectious'};
     legend(fig1,leg,'Location','Best','FontSize',10);
 
     % axis limits
