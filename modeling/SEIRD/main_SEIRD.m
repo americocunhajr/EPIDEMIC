@@ -86,7 +86,7 @@ C0 = I0;
 % -----------------------------------------------------------
 
 % computing the basic reproduction number R_nought
-R_nought = beta/gamma;
+R_nought = beta/(gamma+delta);
 
 disp(' ')
 disp('================================================')
