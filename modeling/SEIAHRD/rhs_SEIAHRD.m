@@ -13,7 +13,7 @@
 %  A = asymptomatic infectious (number of individuals)
 %  H = hospitalized            (number of individuals)
 %  R = recovered               (number of individuals)
-%  D = deaths                  (number of individuals)
+%  D = deceased                (number of individuals)
 %  C = cumulative infectious   (number of individuals)
 %
 % The epidemic model parameters are:
