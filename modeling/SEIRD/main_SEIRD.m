@@ -9,7 +9,7 @@
 %   E = exposed
 %   I = infectious
 %   R = recovered
-%   D = deaths
+%   D = deceased
 %
 % Infection spreads via direct contact between
 % a susceptible and infectious individual.
@@ -71,7 +71,7 @@ delta = 1/15;
 % -- The number of susceptible will be the remaining population.
 % -- For an invasion scenario, set initial infected to 1.
 
-D0 = 0;            % initial deaths      (number of individuals)
+D0 = 0;            % initial deceased    (number of individuals)
 R0 = 0;            % initial recovered   (number of individuals)
 I0 = 1;            % initial infectious  (number of individuals)
 E0 = 0;            % initial exposed     (number of individuals)
@@ -142,7 +142,7 @@ S = y(:,1);      % susceptibles          (number of individuals)
 E = y(:,2);      % exposed               (number of individuals)
 I = y(:,3);      % infectious            (number of individuals)
 R = y(:,4);      % recovered             (number of individuals)
-D = y(:,5);      % deaths                (number of individuals)
+D = y(:,5);      % deceased              (number of individuals)
 C = y(:,6);      % cumulative infectious (number of individuals)
 % -----------------------------------------------------------
 
@@ -188,7 +188,7 @@ hold off
     
     % legend
     leg = {'Suceptibles'; 'Exposed'; 'Infectious'; 'Recovered';...
-                                        'Death'; 'Cum. Infectious'};
+                                        'Deceased'; 'Cum. Infectious'};
     legend(fig1,leg,'Location','Best','FontSize',10);
 
     % axis limits
