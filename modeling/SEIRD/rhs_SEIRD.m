@@ -11,7 +11,7 @@
 %  E = exposed               (number of individuals)
 %  I = infectious            (number of individuals)
 %  R = recovered             (number of individuals)
-%  D = deaths                (number of individuals)
+%  D = deceased              (number of individuals)
 %  C = cumulative infectious (number of individuals)
 %
 % The epidemic model parameters are:
@@ -48,7 +48,7 @@ delta = param(5);  % death rate                (days^-1)
 % dEdt - rate of exposed               (number of individuals/days)
 % dIdt - rate of infectious            (number of individuals/days)
 % dRdt - rate of recovered             (number of individuals/days)
-% dDdt - rate of deaths                (number of individuals/days)
+% dDdt - rate of deceased              (number of individuals/days)
 % dCdt - rate of cumulative infectious (number of individuals/days)
 
 [S E I R D C] = deal(y(1),y(2),y(3),y(4),y(5),y(6));
