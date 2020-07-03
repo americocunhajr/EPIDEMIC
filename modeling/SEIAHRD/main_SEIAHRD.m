@@ -118,7 +118,7 @@ C0 = E0;
 % -----------------------------------------------------------
 
 % computing the basic reproduction number R_nought
-R_nought = beta/gamma;
+R_nought = beta/(gamma+delta);
 
 % computing the control reproduction number R_control
 DI = gamma + rho + delta;       % mean duration in compartment I
