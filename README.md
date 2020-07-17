@@ -42,7 +42,7 @@ Full user guides for **EPIDEMIC** packages are provided in the doc directory alo
 
 ## Team:
 
-**Professors/Researchers:**
+**Faculty/Researchers:**
 - Adriano Cortês
 - Americo Cunha
 - Karla Figueiredo
