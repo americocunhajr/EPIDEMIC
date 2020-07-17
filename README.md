@@ -5,24 +5,16 @@
 - **Trends:** which uses several types of trend graphs to analyze the dynamic behavior of an epidemic as well as its underlyng rate of progress;
 - **Forecast:** which uses data-driven statistical regressors to make short-term predictions about certain quantities of interest underlying the epidemic.
 
-
-This package includes the following file:
+This package includes the following files:
 
 **MODELING:**
 
-SIR
 - main_SIR.m
 - rhs_SIR.m 
-
-SEIR
 - main_SEIR.m
 - rhs_SEIR.m 
-
-SEIRD
 - main_SEIRD.m
 - rhs_SEIRD.m 
-
-SEIAHRD
 - main_SEIAHRD.m
 - rhs_SEIAHRD.m 
 
@@ -33,9 +25,21 @@ SEIAHRD
 - epidemic_forecast.m
 
 
+## Availability
+
+The current stable version of **EPIDEMIC** and the documentation can be found on the website:
+www.EpidemicCode.org
+
+
 ## Support
 
 Full user guides for **EPIDEMIC** packages are provided in the doc directory along with documentation for example programs.
+
+
+## Matlab/Octave compatibility
+
+**EPIDEMIC** was developed to be 100% compatible with the Matlab and Octave platforms. 
+
 
 ## Team:
 
@@ -58,11 +62,12 @@ Full user guides for **EPIDEMIC** packages are provided in the doc directory alo
 - Roberto Luo
 - Roberto Velho
 
+
 ## Citing EPIDEMIC:
 
 We ask users to cite the following manual in any publications reporting work done with **EPIDEMIC**:
+- Americo Cunha Jr, et al. EPIDEMIC - Epidemiology Educational Code, 2020 www.epidemiccode.org
 
-Americo Cunha Jr, et al. XXXX
 
 ## License
 
