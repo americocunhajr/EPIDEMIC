@@ -46,6 +46,7 @@ Full user guides for **EPIDEMIC** packages are provided in the doc directory alo
 - Adriano Cortês
 - Americo Cunha
 - Karla Figueiredo
+- Lisandro Lovisolo
 - Malú Grave
 - Rodrigo Burgos
 - Roberto Velho
@@ -57,15 +58,14 @@ Full user guides for **EPIDEMIC** packages are provided in the doc directory alo
 - João Pedro Norenberg
 - Julio Basilio
 - Leonardo de la Roca
-- Lisandro Lovisolo
 - Lucas Chaves
 - Marcos Vinicius Issa
 - Michel Tosin
+- Roberto Luo
 
 **Design:**
 - Amanda Cunha Guyt
-- Roberto Luo
-
+- Luthiana Soares
 
 
 ## Citing EPIDEMIC:
