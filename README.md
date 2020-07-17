@@ -68,7 +68,7 @@ Full user guides for **EPIDEMIC** packages are provided in the doc directory alo
 - Luthiana Soares
 
 
-## Citing EPIDEMIC:
+## Citing
 
 We ask users to cite the following manual in any publications reporting work done with **EPIDEMIC**:
 - A. Cunha Jr, et al. EPIDEMIC - Epidemiology Educational Code, 2020 www.EpidemicCode.org
