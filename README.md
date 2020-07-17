@@ -25,9 +25,8 @@ This package includes the following files:
 - epidemic_forecast.m
 
 
-## Availability
+The current stable version of **EPIDEMIC** is available on the website:
 
-The current stable version of **EPIDEMIC** and the documentation can be found on the website:
 www.EpidemicCode.org
 
 
