@@ -30,14 +30,17 @@ The current stable version of **EPIDEMIC** is available on the website:
 www.EpidemicCode.org
 
 
+## Software History
+
+
 ## Support
 
 Full user guides for **EPIDEMIC** packages are provided in the doc directory along with documentation for example programs.
 
 
-## Matlab/Octave compatibility
+## Octave/Matlab compatibility
 
-**EPIDEMIC** was developed to be 100% compatible with the Matlab and Octave platforms. 
+**EPIDEMIC** was developed to be 100% compatible with the Octave and Matlab platforms.
 
 
 ## Team:
@@ -68,7 +71,7 @@ Full user guides for **EPIDEMIC** packages are provided in the doc directory alo
 - Luthiana Soares
 
 
-## Citing
+## Citing EPIDEMIC
 
 We ask users to cite the following manual in any publications reporting work done with **EPIDEMIC**:
 - A. Cunha Jr, et al. EPIDEMIC - Epidemiology Educational Code, 2020 www.EpidemicCode.org
