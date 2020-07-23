@@ -113,7 +113,7 @@ disp( '    (days^-1)            '                   )
 disp(['  * death rate         = ',num2str(delta)]   )
 disp( '    (days^-1)            '                   )
 disp(['  * R_nought           = ',num2str(R_nought)])
-disp( '    (adimensional)       '                   )
+disp( '    (dimensionless)       '                  )
 disp(' --------------------------------------'      )
 % -----------------------------------------------------------
 
