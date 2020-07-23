@@ -91,7 +91,7 @@ disp( '    (days^-1)           '                    )
 disp(['  * recovery rate     = ',num2str(gamma)]    )
 disp( '    (days^-1)           '                    )
 disp(['  * R_nought          = ',num2str(R_nought)] )
-disp( '    (adimensional)      '                    )
+disp( '    (dimensionless)     '                    )
 disp(' --------------------------------------'      )
 % -----------------------------------------------------------
 
