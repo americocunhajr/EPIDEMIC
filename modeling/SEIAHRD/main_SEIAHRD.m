@@ -27,13 +27,13 @@
 %
 %   N0       = initial population size            (number of individuals)
 %   beta     = transmission rate                  (days^-1)
-%   epsilonH = hospitalization infectivity-factor (adimensional)
+%   epsilonH = hospitalization infectivity-factor (dimensionless)
 %   alpha    = latent rate                        (days^-1)
-%   fE       = symptomatic fraction               (adimensional)
+%   fE       = symptomatic fraction               (dimensionless)
 %   gamma    = recovery rate                      (days^-1)
 %   rho      = hospitalization rate               (days^-1)
 %   delta    = death rate                         (days^-1)
-%   kappaH   = hospitalization recovery-factor    (adimensional)
+%   kappaH   = hospitalization recovery-factor    (dimensionless)
 %
 % This codes uses rhs_SEIAHRD.m to define the ODE system
 % and outputs the plots, R_nought value and R_control value. 
@@ -59,7 +59,7 @@ N0 = 1000;
 % transmission rate (days^-1)
 beta = 1/2;
 
-% hospitalization infectivity-factor (adimensional)
+% hospitalization infectivity-factor (dimensionless)
 %
 % -- Models contact diminishment. 
 % -- Values:  0<epsilonH<1.
@@ -71,7 +71,7 @@ Talpha = 10;
 % latent rate (days^-1)
 alpha = 1/Talpha;
 
-% symptomatic fraction (adimensional)
+% symptomatic fraction (dimensionless)
 %
 % -- Models fraction of infectious that display symptoms. 
 % -- Values: 0<fE<1.
@@ -89,7 +89,7 @@ rho = 1/7;
 % death rate (days^-1)
 delta = 1/15;
 
-% Hospitalization recovery-factor (adimensional)
+% Hospitalization recovery-factor (dimensionless)
 %
 % -- Models fatality chance diminishment.  
 % -- Values: 0<kappaH<1.
@@ -145,11 +145,11 @@ disp( '    (individuals)              '                    )
 disp(['  * transmission rate        = ',num2str(beta)]     )
 disp( '    (days^-1)                  '                    )
 disp(['  * hosp. infectivity        = ',num2str(epsilonH)] )
-disp( '    (adimensional)             '                    )
+disp( '    (dimensionless)            '                    )
 disp(['  * latent rate              = ',num2str(alpha)]    )
 disp( '    (days^-1)                  '                    )
 disp(['  * symptomatic farction     = ',num2str(fE)]       )
-disp( '    (adimensional)             '                    )
+disp( '    (dimensionless)            '                    )
 disp(['  * recovery rate            = ',num2str(gamma)]    )
 disp( '    (days^-1)                  '                    )
 disp(['  * hospitalization rate     = ',num2str(rho)]      )
@@ -157,11 +157,11 @@ disp( '    (days^-1)                  '                    )
 disp(['  * death rate               = ',num2str(delta)]    )
 disp( '    (days^-1)                  '                    )
 disp(['  * hospitalization recovery = ',num2str(kappaH)]   )
-disp( '    (adimensional)             '                    )
+disp( '    (dimensionless)            '                    )
 disp(['  * R_nought                 = ',num2str(R_nought)] )
-disp( '    (adimensional)             '                    )
+disp( '    (dimensionless)            '                    )
 disp(['  * R_control                = ',num2str(R_control)])
-disp( '    (adimensional)             '                    )
+disp( '    (dimensionless)            '                    )
 disp(' --------------------------------------'             )
 % -----------------------------------------------------------
 
