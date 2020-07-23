@@ -20,13 +20,13 @@
 %
 %   N0       = initial population size            (number of individuals)
 %   beta     = transmission rate                  (days^-1)
-%   epsilonH = hospitalization infectivity-factor (adimensional)
+%   epsilonH = hospitalization infectivity-factor (dimensionless)
 %   alpha    = latent rate                        (days^-1)
-%   fE       = symptomatic fraction               (adimensional)
+%   fE       = symptomatic fraction               (dimensionless)
 %   gamma    = recovery rate                      (days^-1)
 %   rho      = hospitalization rate               (days^-1)
 %   delta    = death rate                         (days^-1)
-%   kappaH   = hospitalization recovery-factor    (adimensional)
+%   kappaH   = hospitalization recovery-factor    (dimensionless)
 % -----------------------------------------------------------------
 % programmers: Eber Dantas
 %              Americo Cunha
@@ -40,13 +40,13 @@ function dydt = rhs_SEIAHRD(t,y,param)
 % model parameters: param = [N0 epsilonH alpha fE gamma rho delta kappaH zeta]
 N0       = param(1);  % initial population size   (number of individuals)
 beta     = param(2);  % transmission rate (days^-1)
-epsilonH = param(3);  % hospitalization infectivity-factor (adimensional)
+epsilonH = param(3);  % hospitalization infectivity-factor (dimensionless)
 alpha    = param(4);  % latent rate (days^-1)
-fE       = param(5);  % symptomatic fraction (adimensional)
+fE       = param(5);  % symptomatic fraction (dimensionless)
 gamma    = param(6);  % recovery rate (days^-1)
 rho      = param(7);  % hospitalization rate (days^-1)
 delta    = param(8);  % death rate (days^-1)
-kappaH   = param(9);  % hospitalization recovery-factor (adimensional)
+kappaH   = param(9);  % hospitalization recovery-factor (dimensionless)
 
 % SEIAHRD dynamic model:
 % 
