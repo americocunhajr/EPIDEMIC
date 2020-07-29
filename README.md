@@ -46,13 +46,10 @@ Full user guides for **EPIDEMIC** packages are provided in the doc directory alo
 ## Team:
 
 **Faculty/Researchers:**
-- Adriano Cortês
 - Americo Cunha
-- Karla Figueiredo
 - Lisandro Lovisolo
 - Malú Grave
 - Rodrigo Burgos
-- Roberto Velho
 
 **Students:**
 - Bruna Pavlack
@@ -68,7 +65,6 @@ Full user guides for **EPIDEMIC** packages are provided in the doc directory alo
 
 **Design:**
 - Amanda Cunha Guyt
-- Luthiana Soares
 
 
 ## Citing EPIDEMIC
