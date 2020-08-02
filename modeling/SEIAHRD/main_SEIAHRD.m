@@ -244,7 +244,7 @@ hold off
     leg = {'Suceptibles'; 'Exposed'; 'Symp. Infectious';...
                     'Asymp. Infectious'; 'Hospitalized';...
                      'Recovered';'Deceased'; 'Cum. Infectious'};
-    legend(fig1,leg,'Location','Best','FontSize',10);
+    legend(fig1,leg,'FontSize',10,'location','northeast');
 
     % axis limits
     xlim([t0 t1]);
