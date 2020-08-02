@@ -26,7 +26,7 @@
 %   gamma    = recovery rate                      (days^-1)
 %   rho      = hospitalization rate               (days^-1)
 %   delta    = death rate                         (days^-1)
-%   kappaH   = hospitalization recovery-factor    (dimensionless)
+%   kappaH   = hospitalization mortality-factor   (dimensionless)
 % -----------------------------------------------------------------
 % programmers: Eber Dantas
 %              Americo Cunha
@@ -46,7 +46,7 @@ fE       = param(5);  % symptomatic fraction (dimensionless)
 gamma    = param(6);  % recovery rate (days^-1)
 rho      = param(7);  % hospitalization rate (days^-1)
 delta    = param(8);  % death rate (days^-1)
-kappaH   = param(9);  % hospitalization recovery-factor (dimensionless)
+kappaH   = param(9);  % hospitalization mortality-factor (dimensionless)
 
 % SEIAHRD dynamic model:
 % 
