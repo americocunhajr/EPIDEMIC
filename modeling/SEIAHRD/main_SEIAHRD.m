@@ -89,9 +89,9 @@ rho = 1/7;
 % death rate (days^-1)
 delta = 1/15;
 
-% Hospitalization recovery-factor (dimensionless)
+% Hospitalization mortality-factor (dimensionless)
 %
-% -- Models fatality chance diminishment.  
+% -- Models mortality diminishment.  
 % -- Values: 0<kappaH<1.
 kappaH = 0.5;
 
