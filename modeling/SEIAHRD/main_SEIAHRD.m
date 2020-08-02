@@ -33,7 +33,7 @@
 %   gamma    = recovery rate                      (days^-1)
 %   rho      = hospitalization rate               (days^-1)
 %   delta    = death rate                         (days^-1)
-%   kappaH   = hospitalization recovery-factor    (dimensionless)
+%   kappaH   = hospitalization mortality-factor   (dimensionless)
 %
 % This codes uses rhs_SEIAHRD.m to define the ODE system
 % and outputs the plots, R_nought value and R_control value. 
