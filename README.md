@@ -32,6 +32,7 @@ https://github.com/americocunhajr/EPIDEMIC
 ## Support
 
 A tutorial style user guide for **EPIDEMIC** is available:
+
 [EPIDEMIC_Tutorial.pdf](https://github.com/americocunhajr/EPIDEMIC/blob/master/docs/EPIDEMIC_Tutorial.pdf)
 
 
