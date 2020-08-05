@@ -31,8 +31,8 @@ https://github.com/americocunhajr/EPIDEMIC
 
 ## Support
 
-A tutorial style user guide for **EPIDEMIC** is provided in the doc directory:
-[EPIDEMIC_Tutorial.pdf](../blob/master/docs/EPIDEMIC_Tutorial.pdf)
+A tutorial style user guide for **EPIDEMIC** is available:
+[EPIDEMIC_Tutorial.pdf](https://github.com/americocunhajr/EPIDEMIC/blob/master/docs/EPIDEMIC_Tutorial.pdf)
 
 
 
