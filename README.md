@@ -29,7 +29,7 @@ The current stable version of **EPIDEMIC** is available on GitHub:
 
 https://github.com/americocunhajr/EPIDEMIC
 
-## Support
+## Tutorial
 
 A tutorial style user guide for **EPIDEMIC** is available:
 
