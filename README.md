@@ -63,6 +63,7 @@ A tutorial style user guide for **EPIDEMIC** is available:
 
 **Design:**
 - Amanda Cunha Guyt
+- Luthiana Soares
 
 
 ## Citing EPIDEMIC
