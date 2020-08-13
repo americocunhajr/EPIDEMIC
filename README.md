@@ -5,6 +5,11 @@
 - **Trends:** which uses several types of trend graphs to analyze the dynamic behavior of an epidemic as well as its underlyng rate of progress;
 - **Forecasts:** which uses data-driven statistical regressors to make short-term predictions about certain quantities of interest underlying the epidemic.
 
+The current stable version of **EPIDEMIC** is available on GitHub:
+
+https://github.com/americocunhajr/EPIDEMIC
+
+
 This package includes the following files:
 
 **MODELING:**
@@ -23,11 +28,6 @@ This package includes the following files:
 
 **FORECASTS:**
 - epidemic_forecast.m
-
-
-The current stable version of **EPIDEMIC** is available on GitHub:
-
-https://github.com/americocunhajr/EPIDEMIC
 
 ## Tutorial
 
