@@ -243,5 +243,5 @@ important tool for the development of research.
 
 ---
 bibliography:
-- references.bib
+- paper.bib
 ---
