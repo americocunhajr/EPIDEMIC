@@ -72,7 +72,7 @@ We ask users to cite the following manual in any publications reporting work don
 - A. Cunha Jr, et al. EPIDEMIC - Epidemiology Educational Code, 2020 www.EpidemicCode.org
 
 ```
-@misc{Charles2013,
+@misc{EPIDEMIC2020,
    author       = {A. {Cunha~Jr et al.}},
    title        = {{EPIDEMIC} - {E}pidemiology {E}ducational {C}ode},
    year         = {2020},
