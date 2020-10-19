@@ -71,6 +71,17 @@ A tutorial style user guide for **EPIDEMIC** is available:
 We ask users to cite the following manual in any publications reporting work done with **EPIDEMIC**:
 - A. Cunha Jr, et al. EPIDEMIC - Epidemiology Educational Code, 2020 www.EpidemicCode.org
 
+```
+@misc{Charles2013,
+   author       = {A. {Cunha~Jr et al.}},
+   title        = {{EPIDEMIC} - {E}pidemiology {E}ducational {C}ode},
+   year         = {2020},
+   publisher    = {GitHub},
+   journal      = {GitHub repository},
+   howpublished = {\url{www.EpidemicCode.org}},
+}
+```
+
 ## License
 
 **EPIDEMIC** is released under the MIT license. See the LICENSE file for details. All new contributions must be made under the MIT license.
