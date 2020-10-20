@@ -86,7 +86,11 @@ We ask users to cite the following manual in any publications reporting work don
 
 **EPIDEMIC** is released under the MIT license. See the LICENSE file for details. All new contributions must be made under the MIT license.
 
-## Funding
+## Suporte financeiro
 
 <img src="logo/faperj.jpg" width="20%"> &nbsp; &nbsp; <img src="logo/cnpq.png" width="20%"> &nbsp; &nbsp; <img src="logo/capes.png" width="10%">
+
+## Suporte institucional
+
+<img src="logos/uerj_logo_cor.jpg" width="13%"> &nbsp; &nbsp; <img src="logos/ufrj_logo_cor.png" width="10%"> &nbsp; &nbsp; <img src="logos/ufu_logo_cor.png" width="12%"> &nbsp; &nbsp; <img src="logos/ifms_logo_cor.png" width="15%"> &nbsp; &nbsp; <img src="logos/unesp_logo_cor.png" width="20%">
 
