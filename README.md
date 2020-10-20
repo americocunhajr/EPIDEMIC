@@ -85,3 +85,8 @@ We ask users to cite the following manual in any publications reporting work don
 ## License
 
 **EPIDEMIC** is released under the MIT license. See the LICENSE file for details. All new contributions must be made under the MIT license.
+
+## Funding
+
+<img src="logo/faperj.png" width="20%"> &nbsp; &nbsp; <img src="logo/cnpq.png" width="20%"> &nbsp; &nbsp; <img src="logo/capes.png" width="10%">
+
