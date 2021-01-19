@@ -76,7 +76,7 @@ We ask users to cite the following manual in any publications reporting work don
 ```
 @misc{EPIDEMIC2020,
    author       = {A. {Cunha~Jr et al.}},
-   title        = {{EPIDEMIC} - {E}pidemiology {E}ducational {C}ode},
+   title        = { {EPIDEMIC} - {E}pidemiology {E}ducational {C}ode},
    year         = {2020},
    publisher    = {GitHub},
    journal      = {GitHub repository},
