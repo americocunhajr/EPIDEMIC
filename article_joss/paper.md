@@ -95,7 +95,7 @@ consists of three modules: modeling, trends, and forecasts.
 [^1]: www.EpidemicCode.org
 
 <figure>
-<embed src="EPIDEMIC_Logo_R01.pdf" id="modules" /><figcaption aria-hidden="true">Illustration of the EPIDEMIC code logo.</figcaption>
+<embed src="EPIDEMIC/article_joss/EPIDEMIC_Logo_R01.pdf" id="modules" /><figcaption aria-hidden="true">Illustration of the EPIDEMIC code logo.</figcaption>
 </figure>
 
 ## Modeling
@@ -152,15 +152,15 @@ these routines. To facilitate its use, EPIDEMIC has a tutorial with
 examples and explanations about the code.
 
 l\|c\|l  Module &     File &
-                                 Description\
-& & Main file. Defines the parameters and calculates the\
-& & reproduction numbers and plots the results of the time series.\
-& rhs_X.m & Defines the ODE system used by the main file.\
-& epidemic_trends.m & Main file to generate graphs on the numbers of
-cases and\
-& & deaths by epidemic in the countries of interest.\
-& & Main file to generate the forecast graphs of accumulated\
-& & cases and accumulated deaths from an epidemic.\
+                                 Description  
+& & Main file. Defines the parameters and calculates the  
+& & reproduction numbers and plots the results of the time series.  
+& rhs\_X.m & Defines the ODE system used by the main file.  
+& epidemic\_trends.m & Main file to generate graphs on the numbers of
+cases and  
+& & deaths by epidemic in the countries of interest.  
+& & Main file to generate the forecast graphs of accumulated  
+& & cases and accumulated deaths from an epidemic.  
 
 This educational code proves to be an important didactic tool for
 epidemiological analysis, as it is available in a transparent,
