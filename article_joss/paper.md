@@ -94,9 +94,7 @@ consists of three modules: modeling, trends, and forecasts.
 
 [^1]: www.EpidemicCode.org
 
-<figure>
-<embed src="EPIDEMIC/article_joss/EPIDEMIC_Logo_R01.pdf" id="modules" /><figcaption aria-hidden="true">Illustration of the EPIDEMIC code logo.</figcaption>
-</figure>
+![Illustration of the EPIDEMIC code logo.\label{modules}](EPIDEMIC_Logo_R01.pdf){width=40%}
 
 ## Modeling
 
