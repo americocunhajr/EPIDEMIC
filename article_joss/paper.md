@@ -12,14 +12,44 @@ authors:
     affiliation: 1
   - name: Eber Dantas
     affiliation: 2
+  - name: Malú Grave
+    affiliation: 2
+  - name: Lisandro Lovisolo
+    affiliation: 1
+  - name: Rodrigo Burgos
+    affiliation: 1   
+  - name: Bruna Silveira Pavlack
+    affiliation: "3,4" 
+  - name: Julio Basilio
+    affiliation: 1 
+  - name: Michel Tosin
+    affiliation: 1 
+  - name: Lucas Chaves
+    affiliation: 5
+  - name: João P. Norenberg
+    affiliation: 4 
+  - name: Roberto Luo
+    affiliation: 1
+  - name: Leonardo de la Roca
+    affiliation: 1 
+  - name: Marcos Issa
+    affiliation: 1 
+  - name: Diego Matos
+    affiliation: 1 
 affiliations:
  - name: State University of Rio de Janeiro
    index: 1
  - name: Federal University of Rio de Janeiro
    index: 2
+ - name: Federal Institute of Mato Grosso do Sul
+   index: 3
+ - name: Paulista State University
+   index: 4
+ - name: Federal University of Uberlândia
+   index: 5
 date: 19 January 2021
 bibliography: paper.bib
-
+---
 
 # Computational Epidemiology
 
