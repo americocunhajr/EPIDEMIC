@@ -47,7 +47,7 @@ affiliations:
    index: 4
  - name: Federal University of Uberlândia
    index: 5
-date: 19 January 2021
+date: January 19th, 2021
 bibliography: paper.bib
 ---
 
@@ -170,6 +170,7 @@ EPIDEMIC routines, the \"test\" folder brings together a set of
 these routines. To facilitate its use, EPIDEMIC has a tutorial with
 examples and explanations about the code.
 
+---
 l\|c\|l  Module & File & Description\
 & & Main file. Defines the parameters and calculates the\
 & & reproduction numbers and plots the results of the time series.\
@@ -179,6 +180,7 @@ cases and\
 & & deaths by epidemic in the countries of interest.\
 & & Main file to generate the forecast graphs of accumulated\
 & & cases and accumulated deaths from an epidemic.\
+---
 
 This educational code proves to be an important didactic tool for
 epidemiological analysis, as it is available in a transparent,
