@@ -1,34 +1,56 @@
 ---
 title: 'EPIDEMIC: Epidemiology Educational Code'
 tags:
-  - epidemiology
-  - compartmental models
-  - educational code
-  - XXXXXX 
-  - XXXXXX
+  - Epidemiology
+  - Educational code
+  - Compartmental models
+  - Octave
+  - Graphical analysis
 authors:
-  - name: Adrian M. Price-Whelan^[Custom footnotes for e.g. denoting who the corresponding author is can be included like this.]
-    orcid: 0000-0003-0872-7098
-    affiliation: "1, 2" # (Multiple affiliations must be quoted)
-  - name: Author Without ORCID
+  - name: Americo Barbosa da Cunha Junior^[Corresponding author.]
+    orcid: xxxxxxxxx
+    affiliation: 1
+  - name: Eber Dantas
     affiliation: 2
-  - name: Author with no affiliation
-    affiliation: 3
+  - name: Malú Grave
+    affiliation: 2
+  - name: Lisandro Lovisolo
+    affiliation: 1
+  - name: Rodrigo Burgos
+    affiliation: 1   
+  - name: Bruna Silveira Pavlack
+    affiliation: "3,4" 
+  - name: Julio Basilio
+    affiliation: 1 
+  - name: Michel Tosin
+    affiliation: 1 
+  - name: Lucas Chaves
+    affiliation: 5
+  - name: João P. Norenberg
+    affiliation: 4 
+  - name: Roberto Luo
+    affiliation: 1
+  - name: Leonardo de la Roca
+    affiliation: 1 
+  - name: Marcos Issa
+    affiliation: 1 
+  - name: Diego Matos
+    affiliation: 1 
 affiliations:
- - name: Lyman Spitzer, Jr. Fellow, Princeton University
+ - name: State University of Rio de Janeiro
    index: 1
- - name: Institution Name
+ - name: Federal University of Rio de Janeiro
    index: 2
- - name: Independent Researcher
+ - name: Federal Institute of Mato Grosso do Sul
    index: 3
-date: 30 August 2020
+ - name: Paulista State University
+   index: 4
+ - name: Federal University of Uberlândia
+   index: 5
+   
+date: 19 January 2021
 bibliography: paper.bib
 
-# Optional fields if submitting to a AAS journal too, see this blog post:
-# https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
-aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
-aas-journal: Astrophysical Journal <- The name of the AAS journal.
----
 
 # Computational Epidemiology
 
