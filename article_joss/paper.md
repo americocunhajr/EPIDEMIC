@@ -170,6 +170,11 @@ EPIDEMIC routines, the \"test\" folder brings together a set of
 these routines. To facilitate its use, EPIDEMIC has a tutorial with
 examples and explanations about the code.
 
+---
+title: 'EPIDEMIC: Epidemiology Educational Code'
+---
+
+
 l\|c\|l  Module & File & Description\
 & & Main file. Defines the parameters and calculates the\
 & & reproduction numbers and plots the results of the time series.\
