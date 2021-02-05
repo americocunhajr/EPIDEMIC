@@ -170,23 +170,6 @@ EPIDEMIC routines, the \"test\" folder brings together a set of
 these routines. To facilitate its use, EPIDEMIC has a tutorial with
 examples and explanations about the code.
 
----
-title: 'EPIDEMIC: Epidemiology Educational Code'
-tags:
-  - Epidemiology
-  - Educational code
-  - Compartmental models
-  - Octave
-  - Graphical analysis
-  
-authors:
-  - name: Americo Barbosa da Cunha Junior^[Corresponding author.]
-    orcid: xxxxxxxxx
-    affiliation: 1
-  - name: Eber Dantas
-    affiliation: 2
----
-
 
 l\|c\|l  Module & File & Description\
 & & Main file. Defines the parameters and calculates the\
