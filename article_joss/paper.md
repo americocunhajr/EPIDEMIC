@@ -121,7 +121,7 @@ consists of three modules: modeling, trends, and forecasts.
 
 In the modeling module, compartmental models, described by differential
 equations, are used to simulate population dynamics during an epidemic.
-The compartmental models available are SIR, SEIR, SEIRD, SIRQ, and
+The compartmental models available are SIR, SEIR, SEIRD, SIRG, and
 SEIAHRD.
 
 It is possible with EPIDEMIC to plot the curves of the aforementioned
@@ -164,7 +164,7 @@ points were taken into account:
 For the epidemic implementation, the package includes the files that are
 described in Table [\[files\]][1]. In each file inside the modeling
 module, the \"X\" in the name represents the compartmental model (SIR,
-SEIR, SEIRD, SIRQ and SEIAHRD). To check the restrictions on the use of
+SEIR, SEIRD, SIRG and SEIAHRD). To check the restrictions on the use of
 EPIDEMIC routines, the \"test\" folder brings together a set of
 \"verification scripts\" to individually cover each possible error in
 these routines. To facilitate its use, EPIDEMIC has a tutorial with
