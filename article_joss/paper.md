@@ -106,16 +106,12 @@ overview of the limitations of each model available in the code. The
 EPIDEMIC code is a didactic and intuitive pedagogical tool for audiences
 interested in mathematical epidemiology. The EPIDEMIC is developed on
 the free software platform GNU Octave [@Eaton:2002] and is available on
-a website[^1], where one can find a GitHub repository link that directs
+a website([www.EpidemicCode.org]), where one can find a GitHub repository link that directs
 to the suite source code. The EPIDEMIC code is also compatible with
 MATLAB proprietary software. The fact that EPIDEMIC is an open package,
 allows the user to better understand the mathematical structure of the
 model and is accessible to a large audience. The EPIDEMIC code structure
 consists of three modules: modeling, trends, and forecasts.
-
-[^1]: [www.EpidemicCode.org]
-
-  [www.EpidemicCode.org]: www.EpidemicCode.org
 
 ![Illustration of the EPIDEMIC code logo.](EPIDEMIC_Logo_R01.pdf)
 
