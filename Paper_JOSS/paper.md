@@ -8,7 +8,7 @@ tags:
   - Graphical analysis
 authors:
   - name: Americo Barbosa da Cunha Junior^[Corresponding author.]
-    orcid: xxxxxxxxx
+    orcid: 0000-0002-8342-0363
     affiliation: 1
   - name: Eber Dantas
     affiliation: 2
