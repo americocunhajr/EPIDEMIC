@@ -113,7 +113,9 @@ allows the user to better understand the mathematical structure of the
 model and is accessible to a large audience. The EPIDEMIC code structure
 consists of three modules: modeling, trends, and forecasts.
 
-[^1]: www.EpidemicCode.org
+[^1]: [www.EpidemicCode.org]
+
+  [www.EpidemicCode.org]: www.EpidemicCode.org
 
 ![Illustration of the EPIDEMIC code logo.](EPIDEMIC_Logo_R01.pdf)
 
