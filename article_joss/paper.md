@@ -172,6 +172,12 @@ examples and explanations about the code.
 
 ---
 title: 'EPIDEMIC: Epidemiology Educational Code'
+tags:
+  - Epidemiology
+  - Educational code
+  - Compartmental models
+  - Octave
+  - Graphical analysis
 ---
 
 
