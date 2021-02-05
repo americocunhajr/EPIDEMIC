@@ -106,7 +106,7 @@ overview of the limitations of each model available in the code. The
 EPIDEMIC code is a didactic and intuitive pedagogical tool for audiences
 interested in mathematical epidemiology. The EPIDEMIC is developed on
 the free software platform GNU Octave [@Eaton:2002] and is available on
-a website([www.EpidemicCode.org]), where one can find a GitHub repository link that directs
+a website ([www.EpidemicCode.org]), where one can find a GitHub repository link that directs
 to the suite source code. The EPIDEMIC code is also compatible with
 MATLAB proprietary software. The fact that EPIDEMIC is an open package,
 allows the user to better understand the mathematical structure of the
