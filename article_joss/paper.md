@@ -178,7 +178,7 @@ tags:
   - Compartmental models
   - Octave
   - Graphical analysis
-  authors:
+authors:
   - name: Americo Barbosa da Cunha Junior^[Corresponding author.]
     orcid: xxxxxxxxx
     affiliation: 1
