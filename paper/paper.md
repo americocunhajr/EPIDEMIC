@@ -35,6 +35,10 @@ affiliations:
    index: 2
  - name: Independent Researcher
    index: 3
+ - name: Independent Researcher
+   index: 3
+ - name: Independent Researcher
+   index: 3
 date: 13 August 2017
 bibliography: paper.bib
 ---
