@@ -31,34 +31,34 @@ authors:
   - name: Michel Tosin 
     orcid: 0000-0002-0112-553X
     affiliation: 1
-    - name: Lucas Chaves
+  - name: Lucas Chaves
     orcid: 0000-0003-4567-2006
     affiliation: 5
-    - name: Diego Matos
+  - name: Diego Matos
     orcid: 0000-0002-6711-8500
     affiliation: 1
-    - name: Marcos Issa
+  - name: Marcos Issa
     orcid: 0000-0002-2811-4929
     affiliation: 1
-    - name: Lisandro Lovisolo
+  - name: Lisandro Lovisolo
     orcid: 0000-0002-7404-9371
     affiliation: 1
-    - name: Rodrigo Burgos
+  - name: Rodrigo Burgos
     orcid: 0000-0003-0326-395X
     affiliation: 1
-    - name: Roberto Luo
+  - name: Roberto Luo
     orcid: 0000-0002-3822-4945
     affiliation: 1  
 affiliations:
- - name: State University of Rio de Janeiro
+  - name: State University of Rio de Janeiro
    index: 1
- - name: Federal University of Rio de Janeiro
+  - name: Federal University of Rio de Janeiro
    index: 2
- - name: Paulista State University "Júlio de Mesquita Filho"
+  - name: Paulista State University "Júlio de Mesquita Filho"
    index: 3
- - name: Federal Institute of Mato Grosso do Sul
+  - name: Federal Institute of Mato Grosso do Sul
    index: 4
- - name: Federal University of Uberlândia
+  - name: Federal University of Uberlândia
    index: 5
 date: 6 February 2021
 bibliography: paper.bib
