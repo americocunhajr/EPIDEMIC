@@ -11,30 +11,43 @@ authors:
     orcid: 0000-0002-8342-0363
     affiliation: 1
   - name: Eber Dantas
+    orcid: 0000-0003-2693-0719
     affiliation: 2
   - name: Malú Grave
+    orcid: 0000-0002-7697-0658
     affiliation: 2
   - name: Lisandro Lovisolo
+    orcid: 0000-0002-7404-9371
     affiliation: 1
   - name: Rodrigo Burgos
+    orcid: 0000-0003-0326-395X
     affiliation: 1   
   - name: Bruna Silveira Pavlack
+    orcid: 0000-0002-6807-0916
     affiliation: "3,4" 
   - name: Julio Basilio
+    orcid: 0000-0003-1040-735X
     affiliation: 1 
   - name: Michel Tosin
+    orcid: 0000-0002-0112-553X
     affiliation: 1 
   - name: Lucas Chaves
+    orcid: 0000-0003-4567-2006
     affiliation: 5
   - name: João P. Norenberg
+    orcid: 0000-0003-3558-4053
     affiliation: 4 
   - name: Roberto Luo
+    orcid: 0000-0002-3822-4945
     affiliation: 1
   - name: Leonardo de la Roca
+    orcid: 0000-0003-2896-228X
     affiliation: 1 
   - name: Marcos Issa
+    orcid: 0000-0002-2811-4929
     affiliation: 1 
   - name: Diego Matos
+    orcid: 0000-0002-6711-8500
     affiliation: 1 
 affiliations:
  - name: State University of Rio de Janeiro
