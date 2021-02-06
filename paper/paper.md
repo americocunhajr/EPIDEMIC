@@ -160,14 +160,11 @@ method used to obtain the regressor is the classic *Ordinary Least
 Squares* [@Neter:1996]. In preparing the forecasting code, the following
 points were taken into account:
 
--   Consider the last five days of the data sample, as these reflect the
-    most recent trend;
+Consider the last five days of the data sample, as these reflect the most recent trend;
 
--   Insert the last five days on the logarithmic scale, as it
-    facilitates visualization in case of exponential growth;
+Insert the last five days on the logarithmic scale, as it facilitates visualization in case of exponential growth;
 
--   Plot the predicted values within the estimated reliability envelope.
-    Confidence band is 95%.
+Plot the predicted values within the estimated reliability envelope. Confidence band is 95%.
 
 ## Implementation
 
