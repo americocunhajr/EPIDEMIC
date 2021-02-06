@@ -1,53 +1,66 @@
 ---
-title: 'Gala: A Python package for galactic dynamics'
+title: 'EPIDEMIC: Epidemiology Educational Code'
 tags:
-  - Python
-  - astronomy
-  - dynamics
-  - galactic dynamics
-  - milky way
+  - epidemiology
+  - educational code
+  - compartmental models
+  - Octave
+  - trend and forecast graphs
 authors:
-  - name: Adrian M. Price-Whelan^[Custom footnotes for e.g. denoting who the corresponding author is can be included like this.]
-    orcid: 0000-0003-0872-7098
-    affiliation: "1, 2" # (Multiple affiliations must be quoted)
-  - name: Author Without ORCID
+  - name: Americo Cunha Jr^[corresponding author.]
+    orcid: 0000-0002-8342-0363
+    affiliation: 1 
+  - name: Malú Grave 
+    orcid: 0000-0002-7697-0658
     affiliation: 2
-  - name: Author with no affiliation
+  - name: Eber Dantas
+    orcid: 0000-0003-2693-0719
+    affiliation: 2
+  - name: Julio Basilio
+    orcid: 0000-0003-1040-735X
+    affiliation: 1
+  - name: Bruna Pavlack
+    orcid: 0000-0002-6807-0916
+    affiliation: "3,4"
+  - name: Leonardo de la Roca
+    orcid: 0000-0003-2896-228X
+    affiliation: 1
+  - name: João Pedro Norenberg
+    orcid: 0000-0003-3558-4053
     affiliation: 3
-  - name: Author with no affiliation
-    affiliation: 3
-  - name: Author with no affiliation
-    affiliation: 3
-  - name: Author with no affiliation
-    affiliation: 3
-  - name: Author with no affiliation
-    affiliation: 3
-  - name: Author with no affiliation
-    affiliation: 3
-  - name: Author with no affiliation
-    affiliation: 3
-  - name: Author with no affiliation
-    affiliation: 3
-  - name: Author with no affiliation
-    affiliation: 3
-  - name: Author with no affiliation
-    affiliation: 3
-  - name: Author with no affiliation
-    affiliation: 3
-  - name: Author with no affiliation
-    affiliation: 3
+  - name: Michel Tosin 
+    orcid: 0000-0002-0112-553X
+    affiliation: 1
+    - name: Lucas Chaves
+    orcid: 0000-0003-4567-2006
+    affiliation: 5
+    - name: Diego Matos
+    orcid: 0000-0002-6711-8500
+    affiliation: 1
+    - name: Marcos Issa
+    orcid: 0000-0002-2811-4929
+    affiliation: 1
+    - name: Lisandro Lovisolo
+    orcid: 0000-0002-7404-9371
+    affiliation: 1
+    - name: Rodrigo Burgos
+    orcid: 0000-0003-0326-395X
+    affiliation: 1
+    - name: Roberto Luo
+    orcid: 0000-0002-3822-4945
+    affiliation: 1  
 affiliations:
- - name: Lyman Spitzer, Jr. Fellow, Princeton University
+ - name: State University of Rio de Janeiro
    index: 1
- - name: Institution Name
+ - name: Federal University of Rio de Janeiro
    index: 2
- - name: Independent Researcher
+ - name: Paulista State University "Júlio de Mesquita Filho"
    index: 3
- - name: Independent Researcher
-   index: 3
- - name: Independent Researcher
-   index: 3
-date: 13 August 2017
+ - name: Federal Institute of Mato Grosso do Sul
+   index: 4
+ - name: Federal University of Uberlândia
+   index: 5
+date: 6 February 2021
 bibliography: paper.bib
 
 ---
@@ -113,8 +126,6 @@ allows the user to better understand the mathematical structure of the
 model and is accessible to a large audience. The EPIDEMIC code structure
 consists of three modules: modeling, trends and forecasts.
 
-![Illustration of the EPIDEMIC code logo.]
-
 ## Modeling
 
 In the modeling module, compartmental models, described by differential
@@ -147,48 +158,38 @@ method used to obtain the regressor is the classic *Ordinary Least
 Squares* [@Neter:1996]. In preparing the forecasting code, the following
 points were taken into account:
 
-Consider the last five days of the data sample, as these reflect the most recent trend;
+- Consider the last five days of the data sample, as these reflect the most recent trend;
 
-Insert the last five days on the logarithmic scale, as it facilitates visualization in case of exponential growth;
+- Insert the last five days on the logarithmic scale, as it facilitates visualization in case of exponential growth;
 
-Plot the predicted values within the estimated reliability envelope. Confidence band is 95%.
+- Plot the predicted values within the estimated reliability envelope. Confidence band is 95%.
 
 ## Implementation
 
-For the epidemic implementation, the package includes the files that are
-described in Table [\[files\]][1]. In each file inside the modeling
-module, the \"X\" in the name represents the compartmental model (SIR,
-SEIR, SIRG, SEIRD, and SEIAHRD). To check the restrictions on the use of
-EPIDEMIC routines, the \"test\" folder brings together a set of
-\"verification scripts\" to individually cover each possible error in
-these routines. To facilitate its use, EPIDEMIC has a tutorial with
-examples and explanations about the code.
+For the epidemic implementation, in the modeling module, the package
+includes the files *main_X.m* and *rhs_X.m*. The \"X\" in the name
+represents the compartmental model (SIR, SEIR, SIRG, SEIRD, and
+SEIAHRD). The file *main* defines the parameters and calculates the
+reproduction numbers and plots the results of the time series. The file
+*rhs* defines the ODE system used by the main file. In the trends module
+there is the file *epidemic_trends.m*, which is the main file to
+generate graphs on the numbers of cases and deaths by epidemic in the
+countries of interest. And in the forecasts module there is the file
+*epidemic_forecasts.m*, which is the main file to generate the forecast
+graphs of accumulated cases and accumulated deaths from an epidemic.
 
-::: {.tabular}
-l\|c\|l  Module &     File &
-                                 Description\
-& & Main file. Defines the parameters and calculates the\
-& & reproduction numbers and plots the results of the time series.\
-& rhs_X.m & Defines the ODE system used by the main file.\
-& epidemic_trends.m & Main file to generate graphs on the numbers of
-cases and\
-& & deaths by epidemic in the countries of interest.\
-& & Main file to generate the forecast graphs of accumulated\
-& & cases and accumulated deaths from an epidemic.\
-:::
+To check the restrictions on the use of EPIDEMIC routines, the \"test\"
+folder brings together a set of \"verification scripts\" to individually
+cover each possible error in these routines. To facilitate its use,
+EPIDEMIC has a tutorial with examples and explanations about the code.
 
 This educational code proves to be an important didactic tool for
 epidemiological analysis, as it is available in a transparent,
 accessible and reproducible way [@Chatterjee:2020]. Therefore, it is
 also an important tool for the development of research.
 
-
-  [1]: #files {reference-type="ref" reference="files"}
-
 [^1]: [www.EpidemicCode.org]
 
-  [Illustration of the EPIDEMIC code logo.]: EPIDEMIC_Logo_R01.pdf
-  {#modules}
   [www.EpidemicCode.org]: www.EpidemicCode.org
 
 
