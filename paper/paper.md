@@ -40,15 +40,15 @@ authors:
   - name: Marcos Issa
     orcid: 0000-0002-2811-4929
     affiliation: 1
+  - name: Roberto Luo
+    orcid: 0000-0002-3822-4945
+    affiliation: 1 
   - name: Lisandro Lovisolo
     orcid: 0000-0002-7404-9371
     affiliation: 1
   - name: Rodrigo Burgos
     orcid: 0000-0003-0326-395X
-    affiliation: 1
-  - name: Roberto Luo
-    orcid: 0000-0002-3822-4945
-    affiliation: 1  
+    affiliation: 1 
 affiliations:
   - name: State University of Rio de Janeiro
     index: 1
