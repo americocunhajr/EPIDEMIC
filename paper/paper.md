@@ -67,9 +67,5 @@ epidemiology, biology, mathematics, theoretical computer science,
 machine learning, etc.) and led to the development of new computational
 methods to understand and control the spread of disease [@Marathe:2013].
 
----
+# References
 
-bibliography:
-- paper.bib
-
----
