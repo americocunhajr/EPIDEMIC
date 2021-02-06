@@ -152,48 +152,7 @@ graphs that can be generated in the trends module are: accumulated
 deaths, accumulated cases, death progress, case progress, weekly deaths,
 weekly cases, mortality, prevalence, weekly deaths, and incidence.
 
-## Forecasts
 
-In the forecasts module, a statistical regressor is used to obtain
-forecasts about the short term behavior of the epidemic curves. The
-method used to obtain the regressor is the classic *Ordinary Least
-Squares* [@Neter:1996]. In preparing the forecasting code, the following
-points were taken into account:
-
-Consider the last five days of the data sample, as these reflect the most recent trend;
-
-Insert the last five days on the logarithmic scale, as it facilitates visualization in case of exponential growth;
-
-Plot the predicted values within the estimated reliability envelope. Confidence band is 95%.
-
-## Implementation
-
-For the epidemic implementation, the package includes the files that are
-described in Table [\[files\]][1]. In each file inside the modeling
-module, the \"X\" in the name represents the compartmental model (SIR,
-SEIR, SIRG, SEIRD, and SEIAHRD). To check the restrictions on the use of
-EPIDEMIC routines, the \"test\" folder brings together a set of
-\"verification scripts\" to individually cover each possible error in
-these routines. To facilitate its use, EPIDEMIC has a tutorial with
-examples and explanations about the code.
-
-::: {.tabular}
-l\|c\|l  Module &     File &
-                                 Description\
-& & Main file. Defines the parameters and calculates the\
-& & reproduction numbers and plots the results of the time series.\
-& rhs_X.m & Defines the ODE system used by the main file.\
-& epidemic_trends.m & Main file to generate graphs on the numbers of
-cases and\
-& & deaths by epidemic in the countries of interest.\
-& & Main file to generate the forecast graphs of accumulated\
-& & cases and accumulated deaths from an epidemic.\
-:::
-
-This educational code proves to be an important didactic tool for
-epidemiological analysis, as it is available in a transparent,
-accessible and reproducible way [@Chatterjee:2020]. Therefore, it is
-also an important tool for the development of research.
 
   [1]: #files {reference-type="ref" reference="files"}
 
