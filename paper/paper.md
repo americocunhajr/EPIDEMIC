@@ -49,6 +49,7 @@ affiliations:
    index: 3
 date: 13 August 2017
 bibliography: paper.bib
+
 ---
 
 # Computational epidemiology
@@ -67,6 +68,8 @@ machine learning, etc.) and led to the development of new computational
 methods to understand and control the spread of disease [@Marathe:2013].
 
 ---
+
 bibliography:
 - paper.bib
+
 ---
