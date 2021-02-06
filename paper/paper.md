@@ -51,15 +51,15 @@ authors:
     affiliation: 1  
 affiliations:
   - name: State University of Rio de Janeiro
-   index: 1
+    index: 1
   - name: Federal University of Rio de Janeiro
-   index: 2
+    index: 2
   - name: Paulista State University "Júlio de Mesquita Filho"
-   index: 3
+    index: 3
   - name: Federal Institute of Mato Grosso do Sul
-   index: 4
+    index: 4
   - name: Federal University of Uberlândia
-   index: 5
+    index: 5
 date: 6 February 2021
 bibliography: paper.bib
 
