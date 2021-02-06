@@ -206,7 +206,7 @@ also an important tool for the development of research.
 
 [^1]: [www.EpidemicCode.org]
 
-  [Illustration of the EPIDEMIC code logo.]: EPIDEMIC/paper/EPIDEMIC_Logo_R01.pdf
+  [Illustration of the EPIDEMIC code logo.]: EPIDEMIC_Logo_R01.pdf
   {#modules}
   [www.EpidemicCode.org]: www.EpidemicCode.org
 
