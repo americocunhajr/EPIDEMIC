@@ -10,43 +10,28 @@ authors:
   - name: Adrian M. Price-Whelan^[corresponding author.]
     orcid: 0000-0003-0872-7098
     affiliation: "1" 
-  - name: Adrian M. Price-Whelan^[corresponding author.]
+  - name: Adrian M. Price-Whelan
     orcid: 0000-0003-0872-7098
     affiliation: "1" 
-  - name: Adrian M. Price-Whelan^[corresponding author.]
+  - name: Adrian M. Price-Whelan
     orcid: 0000-0003-0872-7098
     affiliation: "1" 
-  - name: Adrian M. Price-Whelan^[corresponding author.]
+  - name: Adrian M. Price-Whelan
     orcid: 0000-0003-0872-7098
     affiliation: "1" 
-  - name: Adrian M. Price-Whelan^[corresponding author.]
+  - name: Adrian M. Price-Whelan
     orcid: 0000-0003-0872-7098
     affiliation: "1" 
-   - name: Adrian M. Price-Whelan^[corresponding author.]
+   - name: Adrian M. Price-Whelan
     orcid: 0000-0003-0872-7098
     affiliation: "1" 
-   - name: Adrian M. Price-Whelan^[corresponding author.]
+   - name: Adrian M. Price-Whelan
     orcid: 0000-0003-0872-7098
     affiliation: "1" 
-   - name: Adrian M. Price-Whelan^[corresponding author.]
+   - name: Adrian M. Price-Whelan
     orcid: 0000-0003-0872-7098
     affiliation: "1" 
-   - name: Adrian M. Price-Whelan^[corresponding author.]
-    orcid: 0000-0003-0872-7098
-    affiliation: "1" 
-   - name: Adrian M. Price-Whelan^[corresponding author.]
-    orcid: 0000-0003-0872-7098
-    affiliation: "1" 
-   - name: Adrian M. Price-Whelan^[corresponding author.]
-    orcid: 0000-0003-0872-7098
-    affiliation: "1" 
-   - name: Adrian M. Price-Whelan^[corresponding author.]
-    orcid: 0000-0003-0872-7098
-    affiliation: "1" 
-   - name: Adrian M. Price-Whelan^[corresponding author.]
-    orcid: 0000-0003-0872-7098
-    affiliation: "1" 
-   - name: Adrian M. Price-Whelan^[corresponding author.]
+   - name: Adrian M. Price-Whelan
     orcid: 0000-0003-0872-7098
     affiliation: "1" 
 affiliations:
