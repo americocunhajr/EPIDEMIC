@@ -2,6 +2,8 @@
 % EPIDEMIC - Epidemiology Educational Code
 % www.EpidemicCode.org
 % -----------------------------------------------------------
+% Modeling: main_SEIAHRD.m
+%
 % This is the main file for the SEIAHRD epidemic model, which
 % divides a population in 7 compartments:
 %
@@ -38,11 +40,23 @@
 % This codes uses rhs_SEIAHRD.m to define the ODE system
 % and outputs the plots, R_nought value and R_control value. 
 % Calculations are made on a day time scale.
+%
+% Inputs:
+%   param: parameters vector            - double array (9x1)
+%   IC: initial conditions vector       - double array (8X1)
+%   tspan: time interval                - double array (?x1)
+%   rhs_SEIAHRD: SEIAHRD equations file - .m function file
+%
+% Outputs:
+%   R_nought: basic reproduction number   - double
+%   figure 1: model state in time         - inplace figure
+%   figure 2: number of new cases in time - inplace figure
 % -----------------------------------------------------------
 % programmers: Eber Dantas
 %              Americo Cunha
 %
-% last update: Jun 16, 2020
+% number of lines: 119
+% last update: Jan 17, 2021
 % -----------------------------------------------------------
 
 clc
@@ -57,7 +71,7 @@ close all
 N0 = 1000;
         
 % transmission rate (days^-1)
-beta = 1/2;
+beta = 1/4;
 
 % hospitalization infectivity-factor (dimensionless)
 %
@@ -66,7 +80,7 @@ beta = 1/2;
 epsilonH = 0.5;
 
 % latent period (days)
-Talpha = 10;
+Talpha = 7;
 
 % latent rate (days^-1)
 alpha = 1/Talpha;
@@ -75,7 +89,7 @@ alpha = 1/Talpha;
 %
 % -- Models fraction of infectious that display symptoms. 
 % -- Values: 0<fE<1.
-fE = 0.4;
+fE = 0.5;
 
 % recovery period (days)
 Tgamma = 10;
@@ -101,16 +115,16 @@ kappaH = 0.5;
 % -- The number of susceptible will be the remaining population.
 % -- For an invasion scenario, set initial infected to 1.
 
-D0 = 0;                 % initial deceased                  (number of individuals)
+D0 = 0;                 % initial deceased                (number of individuals)
 R0 = 0;                 % initial recovered               (number of individuals)
 H0 = 0;                 % initial hospitalized            (number of individuals)
 A0 = 0;                 % initial asymptomatic infectious (number of individuals)
-I0 = 0;                 % initial symptomatic infectious  (number of individuals)
-E0 = 1;                 % initial exposed                 (number of individuals)
+I0 = 1;                 % initial symptomatic infectious  (number of individuals)
+E0 = 0;                 % initial exposed                 (number of individuals)
 S0 = N0-E0-I0-A0-H0-R0; % initial susceptible             (number of individuals)
 
 % initial cumulative infectious (number of individuals)
-C0 = E0;
+C0 = I0;
 % -----------------------------------------------------------
 
 

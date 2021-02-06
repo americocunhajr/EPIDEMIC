@@ -2,19 +2,21 @@
 % EPIDEMIC - Epidemiology Educational Code
 % www.EpidemicCode.org
 % -----------------------------------------------------------------
+% Modeling: rhs_SEIAHRD.m
+%
 % This function defines the system of ODEs for the
 % SEIAHRD epidemic model.
 %
 % The dynamic state coordinates are:
 %
-%  S = susceptibles            (number of individuals)
-%  E = exposed                 (number of individuals)
-%  I = symptomatic infectious  (number of individuals)
-%  A = asymptomatic infectious (number of individuals)
-%  H = hospitalized            (number of individuals)
-%  R = recovered               (number of individuals)
-%  D = deceased                (number of individuals)
-%  C = cumulative infectious   (number of individuals)
+%   S = susceptibles            (number of individuals)
+%   E = exposed                 (number of individuals)
+%   I = symptomatic infectious  (number of individuals)
+%   A = asymptomatic infectious (number of individuals)
+%   H = hospitalized            (number of individuals)
+%   R = recovered               (number of individuals)
+%   D = deceased                (number of individuals)
+%   C = cumulative infectious   (number of individuals)
 %
 % The epidemic model parameters are:
 %
@@ -27,15 +29,43 @@
 %   rho      = hospitalization rate               (days^-1)
 %   delta    = death rate                         (days^-1)
 %   kappaH   = hospitalization mortality-factor   (dimensionless)
+%
+% Inputs:
+%   t: time                    - double
+%   y: state vector            - double array (8x1)
+%   param: parameters vector   - double array (9x1)
+%
+% Output:
+%   dydt: state rate of change - double array (8x1)
 % -----------------------------------------------------------------
 % programmers: Eber Dantas
 %              Americo Cunha
 %
-% last update: Jun 16, 2020
+% number of lines: 36
+% last update: Jan 17, 2021
 % -----------------------------------------------------------------
 
 % -----------------------------------------------------------------
 function dydt = rhs_SEIAHRD(t,y,param)
+
+if length(param) < 9 
+   error('Warning: To few model parameters')
+elseif length(param) > 9
+   error('Warning: To many model parameters')
+end
+
+if mod(param(1),1) ~= 0
+   error('Warning: Use a integer population size')
+end
+
+if sum(param<0)~=0
+   error('Warning: Use positive parameters values')
+end
+
+if sum([param(3) param(5) param(9)]>1) ~=0
+   error('Warning: Use values < 1 for epsilonH,fE,kappaH')
+end
+
 
 % model parameters: param = [N0 epsilonH alpha fE gamma rho delta kappaH zeta]
 N0       = param(1);  % initial population size   (number of individuals)
