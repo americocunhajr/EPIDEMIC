@@ -28,6 +28,14 @@ authors:
     affiliation: 3
   - name: Author with no affiliation
     affiliation: 3
+  - name: Author with no affiliation
+    affiliation: 3
+  - name: Author with no affiliation
+    affiliation: 3
+  - name: Author with no affiliation
+    affiliation: 3
+  - name: Author with no affiliation
+    affiliation: 3
 affiliations:
  - name: Lyman Spitzer, Jr. Fellow, Princeton University
    index: 1
