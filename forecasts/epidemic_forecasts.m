@@ -1,31 +1,46 @@
-% ----------------------------------------------------------------------- %
-% EPIDEMIC - Epidemiology Educational Code                                %
-% www.EpidemicCode.org                                                    %
-% ----------------------------------------------------------------------- %
-%                          epidemic_forecasts.m                           %
-% ----------------------------------------------------------------------- %
-% This is the main file to generate the forecast graphs of accumulated    %
-% cases and accumulated deaths from an epidemic.                          %
-%                                                                         %
-% The purpose of this algorithm is to present the number of cases and     %
-% deaths over time, with a 5-day forecast ahead determined by linear      %
-% regression on the logarithmic scale of the number of cases and deaths.  %
-% The 95% confidence interval is also shown.                              %
-%                                                                         %
-% Note: In order to forecast the next 5 days, the last 5 days are         %
-% considered.                                                             %
-%                                                                         %
-% You will need the 'cases-brazil-states.csv' file found in               %
-% https://github.com/wcota/covid19br/                                     %
-% ----------------------------------------------------------------------- %
-% programmers: Leonardo de la Roca / Julio Basilio                        %
-%                                                                         %
-% last Update [27/07/2020]                                                %
-% ----------------------------------------------------------------------- %
+% -----------------------------------------------------------
+% EPIDEMIC - Epidemiology Educational Code
+% www.EpidemicCode.org
+% -----------------------------------------------------------
+% Forecasts: epidemic_forecasts.m
 
-clc;
-clear ALL;
-close all;
+% This is the main file to generate the forecast graphs of accumulated    
+% cases and accumulated deaths from an epidemic.                          
+%                                                                         
+% The purpose of this algorithm is to present the number of cases and     
+% deaths over time, with a 5-day forecast ahead determined by linear      
+% regression on the logarithmic scale of the number of cases and deaths.  
+% The 95% confidence interval is also shown.                              
+%                                                                         
+% Note: In order to forecast the next 5 days, the last 5 days are         
+% considered.                                                             
+%                                                                         
+% You will need the 'cases-brazil-states.csv' file found in               
+% https://github.com/wcota/covid19br/                                     
+%
+% Inputs:
+%   cases-brazil-states.csv: wcota data file           - .csv file
+%     -> 1st collumn:  date field                                                                       
+%     -> 3rd collumn:  state field                                                                       
+%     -> 6th collumn:  totalDeaths field                                                                       
+%     -> 8th collumn:  totalCases field                                                                       
+%     
+% Outputs:                                                               
+%   forecasts-cases: forecasts of the cases            - .png file           
+%   forecasts-deaths: forecasts of the deaths          - .png file           
+
+% ----------------------------------------------------------------------- 
+% programmers: Leonardo de la Roca                                        
+%              Julio Basilio                                              
+%                                                                         
+% number of lines: 120                                                   
+% last Update: Jan 18, 2021                                               
+% ----------------------------------------------------------------------- 
+
+clc
+clear
+close all
+
 
 % Forecasts graphics
 % -------------------------------------------------------------------------
@@ -73,9 +88,20 @@ up_date = '04/07/2020';
 A = fileread('cases-brazil-states.csv');
 B = strsplit(A,'\n');
 
- for i = 1:length(B(1,:))
+for i = 1:length(B(1,:))
     all_data(i,:) = strsplit(B{1,i},',','CollapseDelimiters',false);
- end
+end
+
+if ~strcmp(all_data(1,1),'date')
+   error('Warning: dates must be in the 1st column of the file')
+elseif ~strcmp(all_data(1,3),'state')
+   error('Warning: states names must be in the 3rd column of the file')
+elseif ~strcmp(all_data(1,6),'totalDeaths')
+   error('Warning: total deaths must be in the 6th column of the file')
+elseif ~strcmp(all_data(1,8),'totalCases')
+   error('Warning: total cases must be in the 8th column of the file')
+end 
+ 
 % -------------------------------------------------------------------------
 
 % Defining country as the sum of data for all its federal states
@@ -128,7 +154,7 @@ deaths = deaths_country;
 
 %% Plotting the forecast of cases/deaths by time 
 %==========================================================================
-for init = 1:1:2
+for init = 1:2
 
     % Cleaning up reused variables inside the loop
     clearvars -except up_date init cases country deaths all_data ...
