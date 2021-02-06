@@ -2,7 +2,7 @@
 % EPIDEMIC - Epidemiology Educational Code
 % www.EpidemicCode.org
 % -----------------------------------------------------------
-% Modeling: main_SEIR.m
+% Modeling: main_SEIR_Dantas.m
 %
 % This is the main file for the SEIR epidemic model, which
 % divides a population in 4 compartments:
@@ -30,6 +30,14 @@
 % and outputs the plots and R_nought value. Calculations
 % are made on a day time scale.
 %
+% The conditions simulated by this file was estrated 
+% from the Brazil's zika outbreak discrebed in 
+% E. Dantas, M. Tosin and A. Cunha Jr,
+% Calibration of a SEIR–SEI epidemic model 
+% to describe the Zika virus outbreak in Brazil, 
+% Applied Mathematics and Computation, 338, p.249-259, 
+% 2020. DOI: https://doi.org/10.1016/j.amc.2018.06.024
+%
 % Inputs:
 %   param: parameters vector      - double array (4x1)
 %   IC: initial conditions vector - double array (5X1)
@@ -41,8 +49,7 @@
 %   figure 1: model state in time         - inplace figure
 %   figure 2: number of new cases in time - inplace figure
 % -----------------------------------------------------------
-% programmers: Eber Dantas
-%              Americo Cunha
+% programmers: Michel Tosin
 %
 % % number of lines: 85
 % last update: Jan 17, 2021
@@ -57,19 +64,19 @@ close all
 % -----------------------------------------------------------  
 
 % population size (number of individuals)
-N = 1000;
+N = 206e6;
         
 % transmission rate (days^-1)
-beta = 0.458;
+beta = 1/7.7;
 
 % latent period (days)
-Talpha = 19;
+Talpha = 5.9;
 
 % latent rate (days^-1)
 alpha = 1/Talpha;
 
 % recovery period (days)
-Tgamma = 12;
+Tgamma = 7.9;
 
 % recovery rate (days^-1)
 gamma  = 1/Tgamma;
@@ -80,9 +87,9 @@ gamma  = 1/Tgamma;
 % -- The number of susceptible will be the remaining population.
 % -- For an invasion scenario, set initial infected to 1.
 
-R0 = 0;           % initial recovered   (number of individuals)
-I0 = 1;           % initial infectious  (number of individuals)
-E0 = 0;           % initial exposed     (number of individuals)
+R0 = 29639;       % initial recovered   (number of individuals)
+I0 = 8201;        % initial infectious  (number of individuals)
+E0 = I0;          % initial exposed     (number of individuals)
 S0 = N-E0-I0-R0;  % initial susceptible (number of individuals)
 
 % initial cumulative infectious (number of individuals)
@@ -134,8 +141,8 @@ param = [N beta alpha gamma];
 IC = [S0 E0 I0 R0 C0];
 
 % time interval of analysis
-   t0 = 1;                  % initial time (days)
-   t1 = 365;                % final time   (days)
+   t0 = 7;                  % initial time (days)
+   t1 = 364;                % final time   (days)
    dt = 0.1;                % time steps   (days)
 tspan = t0:dt:t1;           % interval of analysis
 Ndt   = length(tspan);      % number of time steps
@@ -156,7 +163,7 @@ C = y(:,5);  % cumulative infectious (number of individuals)
 % -----------------------------------------------------------
 
 % NewCases (per day) computation
-tu = 1;                     % time unit (days)
+tu = 7;                     % time unit (days)
 %
 % -- tu/dt must be an integer
 % -- tu = 1 defines a 'per day' computation
