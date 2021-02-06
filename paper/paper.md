@@ -1,39 +1,33 @@
 ---
-title: 'EPIDEMIC: Epidemiology Educational Code'
+title: 'Gala: A Python package for galactic dynamics'
 tags:
-  - epidemiology
-  - compartmental models
-  - educational code
-  - Octave 
-  - forecast and trend graphs
+  - Python
+  - astronomy
+  - dynamics
+  - galactic dynamics
+  - milky way
 authors:
-  - name: Adrian M. Price-Whelan^[corresponding author.]
+  - name: Adrian M. Price-Whelan^[Custom footnotes for e.g. denoting who the corresponding author is can be included like this.]
     orcid: 0000-0003-0872-7098
-    affiliation: "1" 
-  - name: Adrian M. Price-Whelan
-    orcid: 0000-0003-0872-7098
-    affiliation: "1" 
-  - name: Adrian M. Price-Whelan
-    orcid: 0000-0003-0872-7098
-    affiliation: "1" 
-  - name: Adrian M. Price-Whelan
-    orcid: 0000-0003-0872-7098
-    affiliation: "1" 
-  - name: Adrian M. Price-Whelan
-    orcid: 0000-0003-0872-7098
-    affiliation: "1" 
-   - name: Adrian M. Price-Whelan
-    orcid: 0000-0003-0872-7098
-    affiliation: "1" 
-   - name: Adrian M. Price-Whelan
-    orcid: 0000-0003-0872-7098
-    affiliation: "1" 
-   - name: Adrian M. Price-Whelan
-    orcid: 0000-0003-0872-7098
-    affiliation: "1" 
-   - name: Adrian M. Price-Whelan
-    orcid: 0000-0003-0872-7098
-    affiliation: "1" 
+    affiliation: "1, 2" # (Multiple affiliations must be quoted)
+  - name: Author Without ORCID
+    affiliation: 2
+  - name: Author with no affiliation
+    affiliation: 3
+  - name: Author with no affiliation
+    affiliation: 3
+  - name: Author with no affiliation
+    affiliation: 3
+  - name: Author with no affiliation
+    affiliation: 3
+  - name: Author with no affiliation
+    affiliation: 3
+  - name: Author with no affiliation
+    affiliation: 3
+  - name: Author with no affiliation
+    affiliation: 3
+  - name: Author with no affiliation
+    affiliation: 3
 affiliations:
  - name: Lyman Spitzer, Jr. Fellow, Princeton University
    index: 1
@@ -41,9 +35,8 @@ affiliations:
    index: 2
  - name: Independent Researcher
    index: 3
-date: 06 February 2021
+date: 13 August 2017
 bibliography: paper.bib
-
 ---
 
 # Computational epidemiology
