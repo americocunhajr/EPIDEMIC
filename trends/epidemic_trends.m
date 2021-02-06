@@ -1,36 +1,65 @@
-% --------------------------------------------------------------------- %
-% EPIDEMIC - Epidemiology Educational Code                              %
-% www.EpidemicCode.org                                                  %
-% --------------------------------------------------------------------- %
-%                         epidemic_trends.m                             %
-% --------------------------------------------------------------------- %
-% This algorithm generates graphs on the numbers of cases and deaths    %
-% by epidemic in the countries of interest.                             % 
-%                                                                       %
-% The series of graphs contains in absolute values                      %
-% and per million inhabitants                                           %
-% - number of cases in relation to the time since X cases               %
-% - number of deaths over time since X deaths                           %
-% - number of new cases per week in relation to the time since X cases  %
-% - number of new deaths per week in relation to the time since X deaths%
-% - number of new cases per week in relation to total cases             %
-% - number of new deaths per week in relation to total deaths           %
-%                                                                       %
-% You will need the file 'owid-covid-data.csv' found in                 %
-% https://ourworldindata.org/coronavirus-source-data                    %
-% --------------------------------------------------------------------- %                                                                     %
-% programmers: Malú Grave / Julio Basilio                               %
-%                                                                       %
-% last Update [27/07/2020]                                              %
-% --------------------------------------------------------------------- %
+% -----------------------------------------------------------
+% EPIDEMIC - Epidemiology Educational Code
+% www.EpidemicCode.org
+% -----------------------------------------------------------
+% Trends: epidemic_trends.m
+%
+% This algorithm generates graphs on the numbers of cases and deaths    
+% by epidemic in the countries of interest.                              
+%                                                                       
+% The series of graphs contains in absolute values                      
+% and per million inhabitants                                           
+% - number of cases in relation to the time since X cases               
+% - number of deaths over time since X deaths                           
+% - number of new cases per week in relation to the time since X cases  
+% - number of new deaths per week in relation to the time since X deaths
+% - number of new cases per week in relation to total cases             
+% - number of new deaths per week in relation to total deaths           
+%                                                                       
+% You will need the file 'owid-covid-data.csv' found in                 
+% https://ourworldindata.org/coronavirus-source-data 
+%
+% Inputs:
+%   owid-covid-data.csv: OWD data file                 - .csv file
+%     -> 2nd collumn:  location field                                                                       
+%     -> 3rd collumn:  date field                                                                       
+%     -> 4th collumn:  total_cases field                                                                       
+%     -> 5th collumn:  new_cases field                                                                       
+%     -> 6th collumn:  total_deaths field                                                                       
+%     -> 7th collumn:  new_deaths field                                                                       
+%     -> 8th collumn:  total_cases_per_million field                                                                       
+%     -> 9th collumn:  new_cases_per_million field                                                                       
+%     -> 10th collumn: total_deaths_per_million field                                                                       
+%     -> 11st collumn: new_deaths_per_million field                                                                       
+%
+% Outputs:                                                               
+%   deaths-total-abs_: cumulative deaths in time       - .png file           
+%   cases-total-abs_: cumulative deaths in time        - .png file                     
+%   deaths-progress-abs_: deaths progess               - .png file           
+%   cases-progress-abs_: cases progress                - .png file                     
+%   deaths-weekly-abs_: new deaths per week            - .png file           
+%   cases-weekly-abs_: new cases per week              - .png file                     
+%   mortality-pm_: deaths per million                  - .png file           
+%   prevalence-pm_: cases per million                  - .png file                     
+%   deaths-weekly-pm_: weekly news deaths per million  - .png file           
+%   incidence-weekly-pm_: weekly incidence per million - .png file                     
+% --------------------------------------------------------------------- 
+%                                                                       
+% programmers: Malú Grave                                               
+%              Julio Basilio                                           
+%                                                                       
+% number of lines: 148  
+% last Update:  Jan 18, 2021                                            
+% --------------------------------------------------------------------- 
 
-clc;
-clear all;
-close all;
+clc
+clear 
+close all
+
 
 % Trends graphics
 % -----------------------------------------------------------------------
-disp(' ')
+disp('                                                ')
 disp('================================================')
 disp('   EPIDEMIC - Epidemiology Educational Code     ')
 disp('   by E. Dantas, M. Grave, L. Roca, et al.      ')
@@ -40,7 +69,7 @@ disp('   for epidemiological analysis.                ')
 disp('                                                ')
 disp('   www.EpidemicCode.org                         ')
 disp('================================================')
-disp(' ')
+disp('                                                ')
 disp(' -----------------------------------------------')
 disp(' +++++++++  EPIDEMIC TRENDS GRAPHICS  +++++++++ ')
 disp(' -----------------------------------------------')
@@ -66,7 +95,29 @@ B = strsplit(A,'\n');
  for i = 1:length(B(1,:))
     all_data(i,:) = strsplit(B{1,i},',','CollapseDelimiters',false);
  end
- 
+
+if ~strcmp(all_data(1,2),'location')
+   error('Warning: location names must be in the 2nd column of the file')
+elseif ~strcmp(all_data(1,3),'date')
+   error('Warning: dates must be in the 3rd column of the file')
+elseif ~strcmp(all_data(1,4),'total_cases')
+   error('Warning: total cases must be in the 4th column of the file')
+elseif ~strcmp(all_data(1,5),'new_cases')
+   error('Warning: new cases must be in the 5th column of the file')
+elseif ~strcmp(all_data(1,6),'total_deaths')
+   error('Warning: total deaths must be in the 6th column of the file')
+elseif ~strcmp(all_data(1,7),'new_deaths')
+   error('Warning: new deaths must be in the 7th column of the file') 
+elseif ~strcmp(all_data(1,8),'total_cases_per_million')
+   error('Warning: total cases per million must be in the 8th column of the file')
+elseif ~strcmp(all_data(1,9),'new_cases_per_million')
+   error('Warning: new cases per million must be in the 9th column of the file')
+elseif ~strcmp(all_data(1,10),'total_deaths_per_million')
+   error('Warning: total deaths per million must be in the 10th column of the file')
+elseif ~strcmp(all_data(1,11),'new_deaths_per_million')
+   error('Warning: new deaths per million must be in the 11th column of the file') 
+end
+
 data = [str2double(all_data(:, 4)),...
         str2double(all_data(:, 5)),...
         str2double(all_data(:, 6)),...
@@ -79,7 +130,7 @@ data = [str2double(all_data(:, 4)),...
 
 % Running the loop command in the 14 countries studied
 % -----------------------------------------------------------------------
-for init = 1:1:14
+for init = 1:14
 
     % Cleaning up reused variables inside the loop
     clearvars -except plot_type init all_data data name paises tot_deaths tot_cases
@@ -378,7 +429,7 @@ xlabel (['Days since exceeding ',num2str(X_deaths),' deaths'],...
 ylabel ('Total deaths ','FontSize',font_labels);
 legend ('location','northeastoutside');
 y_init = 100;
-max_y  = 500000;
+max_y  = 200000;
 axis([0 day_axis y_init max_y]);
 
 figure (2);
@@ -392,7 +443,7 @@ xlabel (['Days since exceeding ',num2str(X_cases),' cases'],...
 ylabel ('Total cases ','FontSize',font_labels);
 legend ('location','northeastoutside');
 y_init = 1000;
-max_y  = 10000000;
+max_y  = 2000000;
 axis([0 day_axis y_init max_y]);
 
 figure (3);
@@ -462,7 +513,7 @@ ylabel ({'Total deaths ', '(per million inhabitants)'},...
          'FontSize',font_labels);
 legend ('location','northeastoutside');
 y_init = 1;
-max_y  = 3000;
+max_y  = 1000000;
 axis([0 day_axis y_init max_y]);
 
 figure (8)
@@ -478,7 +529,7 @@ ylabel ({'Total cases ','(per million inhabitants)'},...
          'FontSize',font_labels);
 legend ('location','northeastoutside');
 y_init = 10;
-max_y  = 10000;
+max_y  = 10000000;
 axis([0 day_axis y_init max_y]);
 
 figure(9)
@@ -494,7 +545,7 @@ ylabel ({'New deaths per week','(per million inhabitants)'},...
          'FontSize',font_labels);
 legend ('location','northeastoutside');
 y_init = 0.01;
-max_y  = 1000;
+max_y  = 200000;
 axis([0 day_axis/7 y_init max_y]);
 
 figure (10)
@@ -510,7 +561,7 @@ ylabel ({'New cases per week','(per million inhabitants)'},...
          'FontSize',font_labels);
 legend ('location','northeastoutside');
 y_init = 0.1;
-max_y  = 10000;
+max_y  = 1000000;
 axis([0 day_axis/7 y_init max_y]);
 
 % Saving the charts
@@ -527,3 +578,4 @@ print(figure( 9),['deaths-weekly-pm_'   ,datestr(end_time,29),'.png',],'-dpng','
 print(figure(10),['incidence-weekly-pm_',datestr(end_time,29),'.png',],'-dpng','-r300'); 
 
 close all
+% -----------------------------------------------------------------------
