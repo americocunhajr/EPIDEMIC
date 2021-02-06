@@ -2,17 +2,19 @@
 % EPIDEMIC - Epidemiology Educational Code
 % www.EpidemicCode.org
 % -----------------------------------------------------------------
+% Modeling: rhs_SEIRD.m
+%
 % This function defines the system of ODEs for the
 % SEIRD epidemic model.
 %
 % The dynamic state coordinates are:
 %
-%  S = susceptibles          (number of individuals)
-%  E = exposed               (number of individuals)
-%  I = infectious            (number of individuals)
-%  R = recovered             (number of individuals)
-%  D = deceased              (number of individuals)
-%  C = cumulative infectious (number of individuals)
+%   S = susceptibles          (number of individuals)
+%   E = exposed               (number of individuals)
+%   I = infectious            (number of individuals)
+%   R = recovered             (number of individuals)
+%   D = deceased              (number of individuals)
+%   C = cumulative infectious (number of individuals)
 %
 % The epidemic model parameters are:
 %
@@ -21,15 +23,38 @@
 %   alpha = latent rate             (days^-1)
 %   gamma = recovery rate           (days^-1)
 %   delta = death rate              (days^-1)
+%
+% Inputs:
+%   t: time                    - double
+%   y: state vector            - double array (6x1)
+%   param: parameters vector   - double array (5x1)
+%
+% Output:
+%   dydt: state rate of change - double array (6x1)
 % -----------------------------------------------------------------
 % programmers: Eber Dantas
 %              Americo Cunha
 %
-% last update: Jun 16, 2020
+% number of lines: 27
+% last update: Jan 17, 2021
 % -----------------------------------------------------------------
 
 % -----------------------------------------------------------------
 function dydt = rhs_SEIRD(t,y,param)
+
+if length(param) < 5 
+   error('Warning: To few model parameters')
+elseif length(param) > 5
+   error('Warning: To many model parameters')
+end
+
+if mod(param(1),1) ~= 0
+   error('Warning: Use a integer population size')
+end
+
+if sum(param<0)~=0
+   error('Warning: Use positive parameters values')
+end
 
 % model parameters: param = [N0 beta alpha gamma delta]
 N0    = param(1);  % initial population size   (number of individuals)

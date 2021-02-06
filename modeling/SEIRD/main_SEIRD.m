@@ -2,6 +2,8 @@
 % EPIDEMIC - Epidemiology Educational Code
 % www.EpidemicCode.org
 % -----------------------------------------------------------
+% Modeling: main_SEIRD.m
+%
 % This is the main file for the SEIRD epidemic model, which
 % divides a population in 5 compartments:
 %
@@ -29,11 +31,23 @@
 % This codes uses rhs_SEIRD.m to define the ODE system
 % and outputs the plots and R_nought value. Calculations
 % are made on a day time scale.
+%
+% Inputs:
+%   param: parameters vector      - double array (5x1)
+%   IC: initial conditions vector - double array (6X1)
+%   tspan: time interval          - double array (?x1)
+%   rhs_SEIRD: SEIRD equations file - .m function file
+%
+% Outputs:
+%   R_nought: basic reproduction number   - double
+%   figure 1: model state in time         - inplace figure
+%   figure 2: number of new cases in time - inplace figure
 % -----------------------------------------------------------
 % programmers: Eber Dantas
 %              Americo Cunha
 %
-% last update: Jun 19, 2020
+% number 0f lines: 91
+% last update: Jan 17, 2021
 % -----------------------------------------------------------
 
 clc
