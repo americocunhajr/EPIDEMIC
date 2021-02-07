@@ -7,9 +7,9 @@ tags:
   - Octave
   - trend and forecast graphs
 authors:
-  - name: Americo Cunha Jr^[corresponding author.]
-    orcid: 0000-0002-8342-0363
-    affiliation: 1 
+  - name: Bruna Pavlack
+    orcid: 0000-0002-6807-0916
+    affiliation: "3,4"
   - name: Malú Grave 
     orcid: 0000-0002-7697-0658
     affiliation: 2
@@ -43,18 +43,25 @@ authors:
   - name: Roberto Luo
     orcid: 0000-0002-3822-4945
     affiliation: 1 
-  - name: Lisandro Lovisolo
-    orcid: 0000-0002-7404-9371
-    affiliation: 1
+  - name: Amanda Cunha Guyt
+    orcid: 0000-0001-8575-3594
+  - name: Luthiana Soares
+    orcid: 0000-0001-5314-0881
   - name: Rodrigo Burgos
     orcid: 0000-0003-0326-395X
     affiliation: 1 
+  - name: Lisandro Lovisolo
+    orcid: 0000-0002-7404-9371
+    affiliation: 1
+  - name: Americo Cunha Jr^[corresponding author.]
+    orcid: 0000-0002-8342-0363
+    affiliation: 1 
 affiliations:
-  - name: State University of Rio de Janeiro
+  - name: Rio de Janeiro State University
     index: 1
   - name: Federal University of Rio de Janeiro
     index: 2
-  - name: Paulista State University "Júlio de Mesquita Filho"
+  - name: State University of São Paulo
     index: 3
   - name: Federal Institute of Mato Grosso do Sul
     index: 4
