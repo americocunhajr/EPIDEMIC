@@ -50,7 +50,7 @@ authors:
   - name: Lisandro Lovisolo
     orcid: 0000-0002-7404-9371
     affiliation: 4
-  - name: Americo Cunha Jr^[Corresponding author (americo.cunha@uerj.br).]
+  - name: Americo Cunha Jr^[Corresponding author (americo.cunha\@uerj.br).]
     orcid: 0000-0002-8342-0363
     affiliation: 4 
 affiliations:
