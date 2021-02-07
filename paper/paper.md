@@ -19,9 +19,6 @@ authors:
   - name: Julio Basilio
     orcid: 0000-0003-1040-735X
     affiliation: 1
-  - name: Bruna Pavlack
-    orcid: 0000-0002-6807-0916
-    affiliation: "3,4"
   - name: Leonardo de la Roca
     orcid: 0000-0003-2896-228X
     affiliation: 1
@@ -133,6 +130,8 @@ allows the user to better understand the mathematical structure of the
 model and is accessible to a large audience. The EPIDEMIC code structure
 consists of three modules: modeling, trends and forecasts.
 
+![Illustration of the EPIDEMIC code logo and EPIDEMIC modules.] 
+
 ## Modeling
 
 In the modeling module, compartmental models, described by differential
@@ -198,6 +197,9 @@ also an important tool for the development of research.
 [^1]: [www.EpidemicCode.org]
 
   [www.EpidemicCode.org]: www.EpidemicCode.org
+  
+  [Illustration of the EPIDEMIC code logo and EPIDEMIC modules.]: figEPIDEMIC.pdf
+  {#modules}
 
 
 # References
