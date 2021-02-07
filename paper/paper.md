@@ -106,7 +106,7 @@ customized for researchers in the area
 so members of COVID-19RJ felt the need to organize EPIDEMIC in a
 pedagogical way, to collaborate in the training of new researchers.
 Thus, in addition to EPIDEMIC being a research tool, it is an
-easy-to-use tool that provides a detailed tutorial with several
+easy-to-use code that provides a detailed tutorial with several
 examples, facilitating the insertion of new researchers in the field of
 epidemiology.
 
@@ -114,7 +114,7 @@ epidemiology.
 
 The EPIDEMIC code is a suite of basic software for epidemiology that is
 suitable for analyzing indicators of an epidemic evolution as well as to
-construct basic compartment models for qualitative and quantitative
+construct basic compartmental models for qualitative and quantitative
 analysis. It is developed in an easy to use style, with with very lean
 and well-documented codes. The package also includes an instructional
 tutorial that gives the end user information about the type of analysis
