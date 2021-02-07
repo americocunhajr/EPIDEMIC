@@ -9,58 +9,58 @@ tags:
 authors:
   - name: Bruna Pavlack
     orcid: 0000-0002-6807-0916
-    affiliation: "3,4"
+    affiliation: "1,2"
   - name: Malú Grave 
     orcid: 0000-0002-7697-0658
-    affiliation: 2
+    affiliation: 3
   - name: Eber Dantas
     orcid: 0000-0003-2693-0719
-    affiliation: 2
+    affiliation: 3
   - name: Julio Basilio
     orcid: 0000-0003-1040-735X
-    affiliation: 1
+    affiliation: 4
   - name: Leonardo de la Roca
     orcid: 0000-0003-2896-228X
-    affiliation: 1
+    affiliation: 4
   - name: João Pedro Norenberg
     orcid: 0000-0003-3558-4053
-    affiliation: 3
+    affiliation: 2
   - name: Michel Tosin 
     orcid: 0000-0002-0112-553X
-    affiliation: 1
+    affiliation: 4
   - name: Lucas Chaves
     orcid: 0000-0003-4567-2006
     affiliation: 5
   - name: Diego Matos
     orcid: 0000-0002-6711-8500
-    affiliation: 1
+    affiliation: 4
   - name: Marcos Issa
     orcid: 0000-0002-2811-4929
-    affiliation: 1
+    affiliation: 4
   - name: Roberto Luo
     orcid: 0000-0002-3822-4945
-    affiliation: 1 
+    affiliation: 4
   - name: Amanda Cunha Guyt
     orcid: 0000-0001-8575-3594
   - name: Luthiana Soares
     orcid: 0000-0001-5314-0881
   - name: Rodrigo Burgos
     orcid: 0000-0003-0326-395X
-    affiliation: 1 
+    affiliation: 4
   - name: Lisandro Lovisolo
     orcid: 0000-0002-7404-9371
-    affiliation: 1
-  - name: Americo Cunha Jr^[Corresponding author.]
+    affiliation: 4
+  - name: Americo Cunha Jr^[Corresponding author (americo.cunha@uerj.br).]
     orcid: 0000-0002-8342-0363
-    affiliation: 1 
+    affiliation: 4 
 affiliations:
-  - name: Rio de Janeiro State University
-    index: 1
-  - name: Federal University of Rio de Janeiro
-    index: 2
-  - name: State University of São Paulo
-    index: 3
   - name: Federal Institute of Mato Grosso do Sul
+    index: 1
+  - name: State University of São Paulo
+    index: 2
+  - name: Federal University of Rio de Janeiro
+    index: 3
+  - name: Rio de Janeiro State University
     index: 4
   - name: Federal University of Uberlândia
     index: 5
@@ -127,8 +127,8 @@ a website[^1], where one can find a GitHub repository link that directs
 to the suite source code. The EPIDEMIC code is also compatible with
 MATLAB proprietary software. The fact that EPIDEMIC is an open package,
 allows the user to better understand the mathematical structure of the
-model and is accessible to a large audience. The EPIDEMIC code structure
-consists of three modules: modeling, trends and forecasts.
+model and is accessible to a large audience. In the figure [2] shows the EPIDEMIC logo
+and the three EPIDEMIC modules: modeling, trends and forecasts.
 
 ![Illustration of the EPIDEMIC code logo and EPIDEMIC modules.] 
 
@@ -199,7 +199,9 @@ also an important tool for the development of research.
   [www.EpidemicCode.org]: www.EpidemicCode.org
   
   [Illustration of the EPIDEMIC code logo and EPIDEMIC modules.]: figEPIDEMIC.pdf
-  {#modules}
+  {#logo}
+  
+  [2]: #logo {reference-type="ref" reference="logo"}
 
 
 # References
