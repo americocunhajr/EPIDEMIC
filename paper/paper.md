@@ -78,11 +78,11 @@ epidemic. Thus, epidemiology is of great importance to society.
 The study of the spread of a disease leads to the generation of large
 data sets that require the use of computational methods to generate
 epidemiological models and analyze results for decision making
-[@Tameru:2012]. In this context, computational epidemiology arises,
+[@Tameru2012]. In this context, computational epidemiology arises,
 which over time has become increasingly multidisciplinary (techniques of
 epidemiology, biology, mathematics, theoretical computer science,
 machine learning, etc.) and led to the development of new computational
-methods to understand and control the spread of disease [@Marathe:2013].
+methods to understand and control the spread of disease [@Marathe2013].
 
 # Statement of need
 
@@ -102,7 +102,7 @@ computational epidemiology gained prominence, attracting the interest of
 many people from different areas of knowledge. There are excellent codes
 available for conducting epidemiological simulations, but these are
 customized for researchers in the area
-[@Abdulrahman:2020; @Adhikari:2020; @Dantas:2018; @Hladish:2012; @Morrison:2020],
+[@Abdulrahman2020; @Adhikari2020; @Dantas2018; @Hladish2012; @Morrison2020],
 so members of COVID-19RJ felt the need to organize EPIDEMIC in a
 pedagogical way, to collaborate in the training of new researchers.
 Thus, in addition to EPIDEMIC being a research tool, it is an
@@ -122,7 +122,7 @@ and forecasts that can be obtained with the suite, as well as an
 overview of the limitations of each model available in the code. The
 EPIDEMIC code is a didactic and intuitive pedagogical tool for audiences
 interested in mathematical epidemiology. The EPIDEMIC is developed on
-the free software platform GNU Octave [@Eaton:2002] and is available on
+the free software platform GNU Octave [@Eaton2002] and is available on
 a website[^1], where one can find a GitHub repository link that directs
 to the suite source code. The EPIDEMIC code is also compatible with
 MATLAB proprietary software. The fact that EPIDEMIC is an open package,
@@ -161,7 +161,7 @@ weekly cases, mortality, prevalence, weekly deaths, and incidence.
 In the forecasts module, a statistical regressor is used to obtain
 forecasts about the short term behavior of the epidemic curves. The
 method used to obtain the regressor is the classic *Ordinary Least
-Squares* [@Neter:1996]. In preparing the forecasting code, the following
+Squares* [@Neter1996]. In preparing the forecasting code, the following
 points were taken into account:
 
 - Consider the last five days of the data sample, as these reflect the most recent trend;
@@ -191,7 +191,7 @@ EPIDEMIC has a tutorial with examples and explanations about the code.
 
 This educational code proves to be an important didactic tool for
 epidemiological analysis, as it is available in a transparent,
-accessible and reproducible way [@Chatterjee:2020]. Therefore, it is
+accessible and reproducible way [@Chatterjee2020]. Therefore, it is
 also an important tool for the development of research.
 
 [^1]: [www.EpidemicCode.org]
