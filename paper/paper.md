@@ -50,7 +50,7 @@ authors:
   - name: Lisandro Lovisolo
     orcid: 0000-0002-7404-9371
     affiliation: 1
-  - name: Americo Cunha Jr^[corresponding author.]
+  - name: Americo Cunha Jr^[Corresponding author.]
     orcid: 0000-0002-8342-0363
     affiliation: 1 
 affiliations:
