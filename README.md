@@ -33,9 +33,9 @@ This package includes the following files:
 
 A tutorial style user guide for **EPIDEMIC** is available in English and Portuguese:
 
-[EPIDEMIC_Tutorial_EN.pdf](https://github.com/americocunhajr/EPIDEMIC/blob/master/docs/EPIDEMIC_Tutorial_EN.pdf)
+[EPIDEMIC_Tutorial_EN.pdf](https://github.com/americocunhajr/EPIDEMIC/blob/master/Docs/EPIDEMIC_Tutorial_EN.pdf)
 
-[EPIDEMIC_Tutorial_PT.pdf](https://github.com/americocunhajr/EPIDEMIC/blob/master/docs/EPIDEMIC_Tutorial_PT.pdf)
+[EPIDEMIC_Tutorial_PT.pdf](https://github.com/americocunhajr/EPIDEMIC/blob/master/Docs/EPIDEMIC_Tutorial_PT.pdf)
 
 
 
