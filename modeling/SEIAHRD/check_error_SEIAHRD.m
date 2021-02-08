@@ -32,7 +32,7 @@ close all
 disp(' ')
 disp('================================================')
 disp('   EPIDEMIC - Epidemiology Educational Code     ')
-disp('   by A. Cunha, E. Dantas, et al.               ')
+disp('   by Bruna Pavlack et al.                      ')
 disp('                                                ')
 disp('   This is an easy to run educational toolkit   ')
 disp('   for epidemiological analysis.                ')
