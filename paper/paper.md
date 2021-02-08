@@ -144,7 +144,10 @@ compartmental models and thus analyze the epidemiological dynamics. To
 do this, just change the values of the parameters of the epidemic that
 you want to analyze in the code. It is also possible to carry out
 analyzes, for example, of $\mathcal{R}_0$ in relation to $\beta$, or
-else of the number of deaths in relation to $\beta$.
+else of the number of deaths in relation to $\beta$. In Figure [2] is possible
+to see an example time series graph of the SEIAHRD compartmental model.
+
+![Time series graph of the SEIAHRD dynamic model generated in EPIDEMIC.]
 
 ## Trends
 
@@ -202,7 +205,11 @@ also an important tool for the development of research.
   {#logo}
   
   [1]: #logo {reference-type="ref" reference="logo"}
-
+  
+  [Time series graph of the SEIAHRD dynamic model generated in EPIDEMIC.]:
+    covid_SEIAHRD_Brasil2019.png {#figtimeseries}
+    
+  [2]: #figtimeseries {reference-type="ref" reference="figtimeseries"}
 
 # References
 
