@@ -209,7 +209,7 @@ also an important tool for the development of research.
   [www.EpidemicCode.org]: www.EpidemicCode.org
   
   [Illustration of the EPIDEMIC code logo and EPIDEMIC modules.]: figEPIDEMIC.pdf
-  {#logo width="80%"}
+  {#logo width="90%"}
   
   [1]: #logo {reference-type="ref" reference="logo"}
   
