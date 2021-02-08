@@ -209,22 +209,22 @@ also an important tool for the development of research.
   [www.EpidemicCode.org]: www.EpidemicCode.org
   
   [Illustration of the EPIDEMIC code logo and EPIDEMIC modules.]: figEPIDEMIC.pdf
-  {#logo width="60%"}
+  {#logo width="80%"}
   
   [1]: #logo {reference-type="ref" reference="logo"}
   
   [Time series graph of the SEIAHRD dynamic model generated in the modeling module of EPIDEMIC.]:
-    covid_SEIAHRD_Brasil2019.png {#figtimeseries scale="0.5"}
+    covid_SEIAHRD_Brasil2019.png {#figtimeseries width="80%"}
     
   [2]: #figtimeseries {reference-type="ref" reference="figtimeseries"}
   
    [Trend graph of total number of deaths per 1M inhabitants evolution of the COVID-19 pandemic in several countries generated in EPIDEMIC.]:
-    mortality-pm_2020-05-16.png {#mortality-pm_2020-05-16 scale="0.5"}
+    mortality-pm_2020-05-16.png {#mortality-pm_2020-05-16 width="80%"}
 
   [3]: #mortality-pm_2020-05-16 {reference-type="ref" reference="mortality-pm_2020-05-16"}
   
   [Forecast graph of the total cases of COVID-19 in Brazil generated at EPIDEMIC. The gray color shows the 95% confidence band.]:
-    forecasts-cases.png {#forecasts-cases scale="0.5"}
+    forecasts-cases.png {#forecasts-cases width="80%"}
 
   [4]: #forecasts-cases {reference-type="ref" reference="forecasts-cases"}
 
