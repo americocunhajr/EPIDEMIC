@@ -130,7 +130,7 @@ allows the user to better understand the mathematical structure of the
 model and is accessible to a large audience. The figure [1] shows the EPIDEMIC logo
 and the three EPIDEMIC modules: modeling, trends and forecasts.
 
-[Illustration of the EPIDEMIC code logo and EPIDEMIC modules.] 
+![Illustration of the EPIDEMIC code logo and EPIDEMIC modules.] 
 
 ## Modeling
 
@@ -147,7 +147,7 @@ analyzes, for example, of $\mathcal{R}_0$ in relation to $\beta$, or
 else of the number of deaths in relation to $\beta$. In Figure [2] is possible
 to see an example time series graph of the SEIAHRD compartmental model.
 
-[Time series graph of the SEIAHRD dynamic model generated in the modeling module of EPIDEMIC.]
+![Time series graph of the SEIAHRD dynamic model generated in the modeling module of EPIDEMIC.]
 
 ## Trends
 
@@ -161,7 +161,7 @@ weekly cases, mortality, prevalence, weekly deaths, and incidence. The Figure [3
 example of a trend graph generated in EPIDEMIC. This graph shows the total number of deaths per 
 1M inhabitants evolution of the COVID-19 pandemic in several countries.
 
-[Trend graph of total number of deaths per 1M inhabitants evolution of
+![Trend graph of total number of deaths per 1M inhabitants evolution of
 the COVID-19 pandemic in several countries generated in EPIDEMIC.]
 
 ## Forecasts
@@ -178,7 +178,7 @@ points were taken into account:
 
 The Figure [4] shows a forecast graph of the total cases of COVID-19 in Brazil generated at EPIDEMIC. 
 
-[Forecast graph of the total cases of COVID-19 in Brazil generated at EPIDEMIC. The gray color shows the 95% confidence band.]
+![Forecast graph of the total cases of COVID-19 in Brazil generated at EPIDEMIC. The gray color shows the 95% confidence band.]
 
 ## Implementation
 
