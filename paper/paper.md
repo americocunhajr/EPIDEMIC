@@ -122,7 +122,7 @@ and forecasts that can be obtained with the suite, as well as an
 overview of the limitations of each model available in the code. The
 EPIDEMIC code is a didactic and intuitive pedagogical tool for audiences
 interested in mathematical epidemiology. The EPIDEMIC is developed on
-the free software platform GNU Octave [@Eaton2002] and is available on
+the free software platform GNU Octave and is available on
 a website[^1], where one can find a GitHub repository link that directs
 to the suite source code. The EPIDEMIC code is also compatible with
 MATLAB proprietary software. The fact that EPIDEMIC is an open package,
@@ -161,7 +161,7 @@ weekly cases, mortality, prevalence, weekly deaths, and incidence.
 In the forecasts module, a statistical regressor is used to obtain
 forecasts about the short term behavior of the epidemic curves. The
 method used to obtain the regressor is the classic *Ordinary Least
-Squares* [@Neter1996]. In preparing the forecasting code, the following
+Squares*. In preparing the forecasting code, the following
 points were taken into account:
 
 - Consider the last five days of the data sample, as these reflect the most recent trend;
@@ -187,7 +187,7 @@ graphs of accumulated cases and accumulated deaths from an epidemic.
 To check the restrictions on the use of EPIDEMIC routines, the \"test\"
 folder brings together a set of \"verification scripts\" to individually
 cover each possible error in these routines. To facilitate its use,
-EPIDEMIC has a tutorial with examples and explanations about the code.
+EPIDEMIC has a tutorial, in English and Portuguese, with examples and explanations about the code.
 
 This educational code proves to be an important didactic tool for
 epidemiological analysis, as it is available in a transparent,
