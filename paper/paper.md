@@ -207,7 +207,7 @@ also an important tool for the development of research.
   [1]: #logo {reference-type="ref" reference="logo"}
   
   [Time series graph of the SEIAHRD dynamic model generated in EPIDEMIC.]:
-    covid_SEIAHRD_Brasil2019.png {#figtimeseries width="0.6\\linewidth"}
+    covid_SEIAHRD_Brasil2019.png {#figtimeseries width="0.1\\linewidth"}
     
   [2]: #figtimeseries {reference-type="ref" reference="figtimeseries"}
 
