@@ -177,9 +177,8 @@ points were taken into account:
 - Plot the predicted values within the estimated reliability envelope. Confidence band is 95%.
 
 The Figure [4] shows a forecast graph of the total cases of COVID-19 in Brazil generated at EPIDEMIC. 
-In the graph, the gray color shows the 95% confidence band.
 
-![Forecast graph of the total cases of COVID-19 in Brazil generated at EPIDEMIC.]
+![Forecast graph of the total cases of COVID-19 in Brazil generated at EPIDEMIC. The gray color shows the 95% confidence band.]
 
 ## Implementation
 
@@ -224,7 +223,7 @@ also an important tool for the development of research.
 
   [3]: #mortality-pm_2020-05-16 {reference-type="ref" reference="mortality-pm_2020-05-16"}
   
-  [ Forecast graph of the total cases of COVID-19 in Brazil generated at EPIDEMIC.]:
+  [Forecast graph of the total cases of COVID-19 in Brazil generated at EPIDEMIC. The gray color shows the 95% confidence band.]:
     forecasts-cases.png {#forecasts-cases scale="0.5"}
 
   [4]: #forecasts-cases {reference-type="ref" reference="forecasts-cases"}
