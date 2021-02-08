@@ -147,7 +147,7 @@ analyzes, for example, of $\mathcal{R}_0$ in relation to $\beta$, or
 else of the number of deaths in relation to $\beta$. In Figure [2] is possible
 to see an example time series graph of the SEIAHRD compartmental model.
 
-![Time series graph of the SEIAHRD dynamic model generated in EPIDEMIC.]
+![Time series graph of the SEIAHRD dynamic model generated in the modeling module of EPIDEMIC.]
 
 ## Trends
 
@@ -157,7 +157,12 @@ analyzes are performed using two basic visualization strategies: that of
 contagion and mortality and the progress of the epidemic. The types of
 graphs that can be generated in the trends module are: accumulated
 deaths, accumulated cases, death progress, case progress, weekly deaths,
-weekly cases, mortality, prevalence, weekly deaths, and incidence.
+weekly cases, mortality, prevalence, weekly deaths, and incidence. The Figure [3] shows an 
+example of a trend graph generated in EPIDEMIC. This graph shows the total number of deaths per 
+1M inhabitants evolution of the COVID-19 pandemic in several countries.
+
+![Trend graph of total number of deaths per 1M inhabitants evolution of
+the COVID-19 pandemic in several countries generated in EPIDEMIC.]
 
 ## Forecasts
 
@@ -168,10 +173,13 @@ Squares*. In preparing the forecasting code, the following
 points were taken into account:
 
 - Consider the last five days of the data sample, as these reflect the most recent trend;
-
 - Insert the last five days on the logarithmic scale, as it facilitates visualization in case of exponential growth;
-
 - Plot the predicted values within the estimated reliability envelope. Confidence band is 95%.
+
+The Figure [4] shows a forecast graph of the total cases of COVID-19 in Brazil generated at EPIDEMIC. 
+In the graph, the gray color shows the 95% confidence band.
+
+![Forecast graph of the total cases of COVID-19 in Brazil generated at EPIDEMIC.]
 
 ## Implementation
 
@@ -206,10 +214,20 @@ also an important tool for the development of research.
   
   [1]: #logo {reference-type="ref" reference="logo"}
   
-  [Time series graph of the SEIAHRD dynamic model generated in EPIDEMIC.]:
+  [Time series graph of the SEIAHRD dynamic model generated in the modeling module of EPIDEMIC.]:
     covid_SEIAHRD_Brasil2019.png {#figtimeseries scale="0.5"}
     
   [2]: #figtimeseries {reference-type="ref" reference="figtimeseries"}
+  
+   [Trend graph of total number of deaths per 1M inhabitants evolution of the COVID-19 pandemic in several countries generated in EPIDEMIC.]:
+    mortality-pm_2020-05-16.png {#mortality-pm_2020-05-16 scale="0.5"}
 
+  [3]: #mortality-pm_2020-05-16 {reference-type="ref" reference="mortality-pm_2020-05-16"}
+  
+  [ Forecast graph of the total cases of COVID-19 in Brazil generated at EPIDEMIC.]:
+    forecasts-cases.png {#forecasts-cases scale="0.5"}
+
+  [4]: #forecasts-cases {reference-type="ref" reference="forecasts-cases"}
+
+  
 # References
-
