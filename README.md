@@ -98,4 +98,4 @@ We ask users to cite the following manual in any publications reporting work don
 
 ## Contact
 
-Contributions to the software, reports problems or support can be done via email americo.cunha\@uerj.br
+Contributions to the software, reports problems or support can be done via email americo.cunha@uerj.br
