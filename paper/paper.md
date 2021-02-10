@@ -115,7 +115,7 @@ epidemiology.
 The EPIDEMIC code is a suite of basic software for epidemiology that is
 suitable for analyzing indicators of an epidemic evolution as well as to
 construct basic compartmental models for qualitative and quantitative
-analysis. It is developed in an easy to use style, with with very lean
+analysis. It is developed in an easy to use style, with very lean
 and well-documented codes. The package also includes an instructional
 tutorial that gives the end user information about the type of analysis
 and forecasts that can be obtained with the suite, as well as an
@@ -186,11 +186,11 @@ For the epidemic implementation, in the modeling module, the package
 includes the files *main_X.m* and *rhs_X.m*. The \"X\" in the name
 represents the compartmental model (SIR, SEIR, SIRG, SEIRD, and
 SEIAHRD). The file *main* defines the parameters and calculates the
-reproduction numbers and plots the results of the time series. The file
-*rhs* defines the ODE system used by the main file. In the trends module
+reproduction numbers and plots the results of the time series. The File
+*rhs* defines the ODE system used by the main file. In the trends module,
 there is the file *epidemic_trends.m*, which is the main file to
 generate graphs on the numbers of cases and deaths by epidemic in the
-countries of interest. And in the forecasts module there is the file
+countries of interest. And in the forecasts module, there is the file
 *epidemic_forecasts.m*, which is the main file to generate the forecast
 graphs of accumulated cases and accumulated deaths from an epidemic.
 
