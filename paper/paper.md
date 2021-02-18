@@ -75,9 +75,9 @@ The aim of epidemiology is to understand the causes of a disease in
 order to predict its evolution and then make decisions to contain the
 epidemic. Thus, epidemiology is of great importance to society.
 
-The study of the spread of a disease leads to the generation of large
-data sets that require the use of computational methods to generate
-epidemiological models and analyze results for decision making
+The study of a disease spreading leads to the generation of large
+data sets that requires the use of computational methods to generate
+epidemiological models and analyze results for decision-making
 [@Tameru2012]. In this context, computational epidemiology arises,
 which over time has become increasingly multidisciplinary (techniques of
 epidemiology, biology, mathematics, theoretical computer science,
