@@ -71,7 +71,7 @@ A tutorial style user guide for **EPIDEMIC** is available in English and Portugu
 ## Citing EPIDEMIC
 
 We ask users to cite the following manual in any publications reporting work done with **EPIDEMIC**:
-- A. Cunha Jr, et al. EPIDEMIC - Epidemiology Educational Code, 2020 www.EpidemicCode.org
+- B. Pavlack et al. EPIDEMIC - Epidemiology Educational Code, 2021 www.EpidemicCode.org
 
 ```
 @misc{EPIDEMIC2021,
