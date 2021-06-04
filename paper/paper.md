@@ -42,8 +42,10 @@ authors:
     affiliation: 4
   - name: Amanda Cunha Guyt
     orcid: 0000-0001-8575-3594
+    affiliation: 6
   - name: Luthiana Soares
     orcid: 0000-0001-5314-0881
+    affiliation: 7
   - name: Rodrigo Burgos
     orcid: 0000-0003-0326-395X
     affiliation: 4
@@ -64,7 +66,11 @@ affiliations:
     index: 4
   - name: Federal University of Uberlândia
     index: 5
-date: 6 February 2021
+  - name: City College of San Francisco
+    index: 6
+  - name: Federal University of Pampa
+    index: 7
+date: 4 June 2021
 bibliography: paper.bib
 
 ---
