@@ -29,7 +29,6 @@
 %
 %   N0       = initial population size            (number of individuals)
 %   beta     = transmission rate                  (days^-1)
-%   epsilonH = hospitalization infectivity-factor (dimensionless)
 %   alpha    = latent rate                        (days^-1)
 %   fE       = symptomatic fraction               (dimensionless)
 %   gamma    = recovery rate                      (days^-1)
@@ -82,8 +81,6 @@ beta = 0.25;
 % hospitalization infectivity-factor (dimensionless)
 %
 % -- Models contact diminishment. 
-% -- Values:  0<epsilonH<1.
-epsilonH = 0.22;
 
 % latent period (days)
 Talpha = 5;
@@ -144,7 +141,7 @@ R_nought = beta/(gamma+delta);
 DI = gamma + rho + delta;       % mean duration in compartment I
 DA = gamma + delta;             % mean duration in compartment A
 DH = gamma + kappaH*delta;      % mean duration in compartment H
-R_control = fE*beta/DI + (1-fE)*beta/DA + rho*fE*epsilonH*beta/DI/DH;
+R_control = fE*beta/DI + (1-fE)*beta/DA + rho*fE*beta/DI/DH;
 
 disp(' ')
 disp('================================================')
@@ -164,8 +161,6 @@ disp(['  * initial population       = ',num2str(N0)]       )
 disp( '    (individuals)              '                    )
 disp(['  * transmission rate        = ',num2str(beta)]     )
 disp( '    (days^-1)                  '                    )
-disp(['  * hosp. infectivity        = ',num2str(epsilonH)] )
-disp( '    (dimensionless)            '                    )
 disp(['  * latent rate              = ',num2str(alpha)]    )
 disp( '    (days^-1)                  '                    )
 disp(['  * symptomatic farction     = ',num2str(fE)]       )
@@ -190,7 +185,7 @@ disp(' --------------------------------------'             )
 % -----------------------------------------------------------
 
 % parameters vector
-param = [N0 beta epsilonH alpha fE gamma rho delta kappaH];
+param = [N0 beta alpha fE gamma rho delta kappaH];
 
 % initial conditions vector
 IC = [S0 E0 I0 A0 H0 R0 D0 C0];
