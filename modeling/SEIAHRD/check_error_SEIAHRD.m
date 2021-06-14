@@ -267,7 +267,7 @@ end
 % -----------------------------------------------------------
 
 
-% Case 13: param(4) > 1
+% Case 12: param(4) > 1
 % -----------------------------------------------------------  
 param = [1000 0.5 0.5 1.1 0.3 0.2 0.2 0.1]; % parameters vector
 
@@ -275,7 +275,7 @@ try
     rhs_SEIAHRD(t,y,param)
 catch ME
     disp(' ')
-    disp('Case 13: param(4) > 1')
+    disp('Case 12: param(4) > 1')
     disp(['t: ',num2str(t)])
     disp(['y: ',num2str(y)])
     disp(['param: ',num2str(param)])
@@ -287,7 +287,7 @@ catch ME
 end
 % -----------------------------------------------------------
 
-% Case 14: param(8) > 1
+% Case 13: param(8) > 1
 % -----------------------------------------------------------  
 param = [1000 0.5 0.5 0.5 0.3 0.2 0.2 1.1]; % parameters vector
 
@@ -295,7 +295,7 @@ try
     rhs_SEIAHRD(t,y,param)
 catch ME
     disp(' ')
-    disp('Case 14: param(8) > 1')
+    disp('Case 13: param(8) > 1')
     disp(['t: ',num2str(t)])
     disp(['y: ',num2str(y)])
     disp(['param: ',num2str(param)])
@@ -308,14 +308,14 @@ end
 % -----------------------------------------------------------
 
 
-% Case 15: valid input
+% Case 14: valid input
 % -----------------------------------------------------------  
 param = [1000 0.5 0.5 0.1 0.3 0.2 0.2 0.2]; % parameters vector
  
 dy = rhs_SEIAHRD(t,y,param);
 
 disp(' ')
-disp('Case 15: valid input')
+disp('Case 14: valid input')
 disp(['t :',num2str(t)])
 disp(['y: ',num2str(y)])
 disp(['param: ',num2str(param)])
