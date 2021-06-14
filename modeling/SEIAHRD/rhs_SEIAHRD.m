@@ -22,7 +22,6 @@
 %
 %   N0       = initial population size            (number of individuals)
 %   beta     = transmission rate                  (days^-1)
-%   epsilonH = hospitalization infectivity-factor (dimensionless)
 %   alpha    = latent rate                        (days^-1)
 %   fE       = symptomatic fraction               (dimensionless)
 %   gamma    = recovery rate                      (days^-1)
@@ -63,20 +62,19 @@ if sum(param<0)~=0
 end
 
 if sum([param(3) param(5) param(9)]>1) ~=0
-   error('Warning: Use values < 1 for epsilonH,fE,kappaH')
+   error('Warning: Use values < 1 for fE,kappaH')
 end
 
 
-% model parameters: param = [N0 epsilonH alpha fE gamma rho delta kappaH zeta]
+% model parameters: param = [N0 alpha fE gamma rho delta kappaH zeta]
 N0       = param(1);  % initial population size   (number of individuals)
 beta     = param(2);  % transmission rate (days^-1)
-epsilonH = param(3);  % hospitalization infectivity-factor (dimensionless)
-alpha    = param(4);  % latent rate (days^-1)
-fE       = param(5);  % symptomatic fraction (dimensionless)
-gamma    = param(6);  % recovery rate (days^-1)
-rho      = param(7);  % hospitalization rate (days^-1)
-delta    = param(8);  % death rate (days^-1)
-kappaH   = param(9);  % hospitalization mortality-factor (dimensionless)
+alpha    = param(3);  % latent rate (days^-1)
+fE       = param(4);  % symptomatic fraction (dimensionless)
+gamma    = param(5);  % recovery rate (days^-1)
+rho      = param(6);  % hospitalization rate (days^-1)
+delta    = param(7);  % death rate (days^-1)
+kappaH   = param(8);  % hospitalization mortality-factor (dimensionless)
 
 % SEIAHRD dynamic model:
 % 
@@ -96,8 +94,8 @@ kappaH   = param(9);  % hospitalization mortality-factor (dimensionless)
 [S E I A H R D C] = deal(y(1),y(2),y(3),y(4),y(5),y(6),y(7),y(8));
 
    N = N0 - D;
-dSdt = - beta*S.*(I+A+epsilonH*H)./N;   
-dEdt = beta*S.*(I+A+epsilonH*H)./N - alpha*E;                                           
+dSdt = - beta*S.*(I+A)./N;   
+dEdt = beta*S.*(I+A)./N - alpha*E;                                           
 dIdt = fE*alpha*E - (gamma+rho+delta)*I;           
 dAdt = (1-fE)*alpha*E - (gamma+delta)*A;           
 dHdt = rho*I - (gamma+kappaH*delta)*H;             
