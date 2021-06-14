@@ -32,7 +32,7 @@
 % Inputs:
 %   t: time                    - double
 %   y: state vector            - double array (8x1)
-%   param: parameters vector   - double array (9x1)
+%   param: parameters vector   - double array (8x1)
 %
 % Output:
 %   dydt: state rate of change - double array (8x1)
@@ -47,9 +47,9 @@
 % -----------------------------------------------------------------
 function dydt = rhs_SEIAHRD(t,y,param)
 
-if length(param) < 9 
+if length(param) < 8
    error('Warning: To few model parameters')
-elseif length(param) > 9
+elseif length(param) > 8
    error('Warning: To many model parameters')
 end
 
@@ -61,7 +61,7 @@ if sum(param<0)~=0
    error('Warning: Use positive parameters values')
 end
 
-if sum([param(3) param(5) param(9)]>1) ~=0
+if sum([param(5) param(8)]>1) ~=0
    error('Warning: Use values < 1 for fE,kappaH')
 end
 
@@ -94,8 +94,8 @@ kappaH   = param(8);  % hospitalization mortality-factor (dimensionless)
 [S E I A H R D C] = deal(y(1),y(2),y(3),y(4),y(5),y(6),y(7),y(8));
 
    N = N0 - D;
-dSdt = - beta*S.*(I+A)./N;   
-dEdt = beta*S.*(I+A)./N - alpha*E;                                           
+dSdt = - beta*S.*(I+A+H)./N;   
+dEdt = beta*S.*(I+A+H)./N - alpha*E;                                           
 dIdt = fE*alpha*E - (gamma+rho+delta)*I;           
 dAdt = (1-fE)*alpha*E - (gamma+delta)*A;           
 dHdt = rho*I - (gamma+kappaH*delta)*H;             
