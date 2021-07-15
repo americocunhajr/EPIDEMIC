@@ -1,10 +1,10 @@
 ---
 title: 'EPIDEMIC: Epidemiology Educational Code'
 tags:
-  - epidemiology
+  - epidemiology teaching
   - educational code
+  - computational models
   - compartmental models
-  - Octave
   - trend and forecast graphs
 authors:
   - name: Bruna Pavlack
