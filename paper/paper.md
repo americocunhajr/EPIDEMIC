@@ -124,7 +124,7 @@ make this task much easier. The EPIDEMIC tutorials provide pedagogical activitie
 via relatively streamlined and very well organized codes, how to perform the numerical integration of these models based on ODEs. 
 The programming structure followed in the tutorial, with several compartmental models, also aims to show students how easy it 
 is to carry out such numerical integration for another type of compartmental model that the student can find in the literature 
-or develop himself.
+or develop himself/herself.
 
 The benefits of the EPIDEMIC tutorial go beyond the simple exercise of programming numerical integration, 
 the analysis of the response curves of different models allows students to develop intuition about the dynamic 
@@ -136,7 +136,7 @@ understanding is the following: be the infected as the intensity of a fire, the 
 and the recovered as the burnt firewood after a fire. At the beginning there is a lot of firewood available, 
 a large fire ensues, then, as the firewood burns, the intensity of the fire decreases.
 
-The EPIDEMIC codes have already been used in a course on numerical and computational methods to present the 
+The EPIDEMIC codes have already been used in a course on numerical and computational methods in Rio de Janeiro State University to present the 
 part of polynomial regression and exponential curve fitting. In this course, the code was used on three fronts, 
 according to the EPIDEMIC modules: modeling, trends and forecast. In the module modeling, the compartmental models were 
 presented as computer simulators, students run the codes as a black box to familiarize themselves with simulation basics,
@@ -150,7 +150,7 @@ attractive way. In this exercise, the effect of normalizing was also shown, to r
 (eg infected vs time / infected by 1M inhab vs time, when normalizing the curves approach the same level, without local 
 normalization of larger population has much larger numbers, which may not be true when normalizing). And, the module forecast was 
 used to train the students in the regression part (curve fitting), they used the COVID-19 epidemic data as observations, 
-and looked for polynomial and exponential curves that fit the start of the outbreak (exponential phase). Below is a brief description
+and looked for polynomial and exponential curves that fit the start of the outbreak (exponential phase). Bellow it is presented a brief description
 of the code and modules that make up the EPIDEMIC.
 
 # EPIDEMIC code
