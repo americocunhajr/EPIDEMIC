@@ -119,7 +119,7 @@ epidemiology and also assisting in teaching courses on computational modeling an
 In a mathematical biology course, for example, students are exposed to the derivation of equations 
 from various compartmental models based on nonlinear differential equations, so that the vast majority 
 have no analytical solution. In this context, there is a natural need to use numerical methods to obtain 
-the answer from the mathematical model. Packages like Octave and Matlab have very robust ordinary differential equations (ODEs) solvers that 
+the answer from the mathematical model. Packages like GNU Octave and Matlab have very robust ordinary differential equations (ODEs) solvers that 
 make this task much easier. The EPIDEMIC tutorials provide pedagogical activities in this sense, as they illustrate,
 via relatively streamlined and very well organized codes, how to perform the numerical integration of these models based on ODEs. 
 The programming structure followed in the tutorial, with several compartmental models, also aims to show students how easy it 
