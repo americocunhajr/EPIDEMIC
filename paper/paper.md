@@ -150,7 +150,8 @@ attractive way. In this exercise, the effect of normalizing was also shown, to r
 (eg infected vs time / infected by 1M inhab vs time, when normalizing the curves approach the same level, without local 
 normalization of larger population has much larger numbers, which may not be true when normalizing). And, the module forecast was 
 used to train the students in the regression part (curve fitting), they used the COVID-19 epidemic data as observations, 
-and looked for polynomial and exponential curves that fit the start of the outbreak (exponential phase).
+and looked for polynomial and exponential curves that fit the start of the outbreak (exponential phase). Below is a brief description
+of the code and modules that make up the EPIDEMIC.
 
 # EPIDEMIC code
 
