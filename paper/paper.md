@@ -114,7 +114,43 @@ pedagogical way, to collaborate in the training of new researchers.
 Thus, in addition to EPIDEMIC being a research tool, it is an
 easy-to-use code that provides a detailed tutorial with several
 examples, facilitating the insertion of new researchers in the field of
-epidemiology.
+epidemiology and also assisting in teaching courses on computational modeling and epidemiology.
+
+In a mathematical biology course, for example, students are exposed to the derivation of equations 
+from various compartmental models based on nonlinear differential equations, so that the vast majority 
+have no analytical solution. In this context, there is a natural need to use numerical methods to obtain 
+the answer from the mathematical model. Packages like Octave and Matlab have very robust ordinary differential equations (ODEs) solvers that 
+make this task much easier. The EPIDEMIC tutorials provide pedagogical activities in this sense, as they illustrate,
+via relatively streamlined and very well organized codes, how to perform the numerical integration of these models based on ODEs. 
+The programming structure followed in the tutorial, with several compartmental models, also aims to show students how easy it 
+is to carry out such numerical integration for another type of compartmental model that the student can find in the literature 
+or develop himself.
+
+The benefits of the EPIDEMIC tutorial go beyond the simple exercise of programming numerical integration, 
+the analysis of the response curves of different models allows students to develop intuition about the dynamic 
+behavior of dynamic epidemiological systems. For example, when seeing in the same figure the 3 curves of the SIR 
+model (susceptible, infected and recovered), the student can see that the initial growth of an outbreak is
+accompanied at the same time by a significant reduction in the number of susceptibles, being succeeded by an 
+increase in the number of retrieved. An interesting analogy in this case that aids in the students' 
+understanding is the following: be the infected as the intensity of a fire, the susceptible as the available firewood, 
+and the recovered as the burnt firewood after a fire. At the beginning there is a lot of firewood available, 
+a large fire ensues, then, as the firewood burns, the intensity of the fire decreases.
+
+The EPIDEMIC codes have already been used in a course on numerical and computational methods to present the 
+part of polynomial regression and exponential curve fitting. In this course, the code was used on three fronts, 
+according to the EPIDEMIC modules: modeling, trends and forecast. In the module modeling, the compartmental models were 
+presented as computer simulators, students run the codes as a black box to familiarize themselves with simulation basics,
+and get acquainted with the Octave software. The code is also used in interpolation classes. We want to obtain a 
+polynomial function that describes the number of infected people at the peak of the epidemic as a function of the transmission 
+rate beta. Students simulate some cases by varying the beta parameter, obtaining some values for the number
+of infected at peak. Then they interpolate polynomial curves to describe this functional relationship. Students are invited to 
+reflect which polynomial is most representative, that is, which makes the most sense. The module trends was used in the data 
+visualization class, to train students on how to show different information in a clear, objective, effective and graphically 
+attractive way. In this exercise, the effect of normalizing was also shown, to remove the scaling effect of population size 
+(eg infected vs time / infected by 1M inhab vs time, when normalizing the curves approach the same level, without local 
+normalization of larger population has much larger numbers, which may not be true when normalizing). And, the module forecast was 
+used to train the students in the regression part (curve fitting), they used the COVID-19 epidemic data as observations, 
+and looked for polynomial and exponential curves that fit the start of the outbreak (exponential phase).
 
 # EPIDEMIC code
 
@@ -204,6 +240,8 @@ To check the restrictions on the use of EPIDEMIC routines, the \"test\"
 folder brings together a set of \"verification scripts\" to individually
 cover each possible error in these routines. To facilitate its use,
 EPIDEMIC has a tutorial, in English and Portuguese, with examples and explanations about the code.
+The codes and the EPIDEMIC tutorial are constantly being updated, according to the needs that
+come up.
 
 This educational code proves to be an important didactic tool for
 epidemiological analysis, as it is available in a transparent,
