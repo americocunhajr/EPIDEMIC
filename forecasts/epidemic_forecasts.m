@@ -293,8 +293,8 @@ for init = 1:2
     pkg load optim 
 
     [deaths5f,dy]  = polyconf(coeffs5s,days5f,S_5s);
-    upperCB_data5f = data5f + dy;
-    lowerCB_data5f = data5f - dy;
+    upperCB = data5f + dy;
+    lowerCB = data5f - dy;
     %----------------------------------------------------------------------
 
     % Chart configuration
