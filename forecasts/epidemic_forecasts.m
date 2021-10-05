@@ -264,37 +264,37 @@ for init = 1:2
     %----------------------------------------------------------------------
     % Method 1
     %----------------------------------------------------------------------
-    % Fitted line
-    datafit = coeffs5s(1,2) + coeffs5s(1,1)*days5s; 
+    %% Fitted line
+    %datafit = coeffs5s(1,2) + coeffs5s(1,1)*days5s; 
     % Variance estimation
-    N = length(days5s);
-    sigma2  = sum((log10(data5s) - datafit).^2)/(N-1);
-    % Denominator
-    den = N*sum((days5s-mean(days5s)).^2);
-    
-    for i = 1:N; 
-        % Numerator
-        num = sum((days5s-days5f(1,i)).^2);        
-        % Variance square correction
-        ksi2(1,i) = sigma2*((num/den)+1);
-    end
-    % Variance correction
-    ksi = sqrt(ksi2);
-
-    % Confidence band
-    upperCB = data5f + 1.96*ksi;
-    lowerCB = data5f - 1.96*ksi;
+    %N = length(days5s);
+    %sigma2  = sum((log10(data5s) - datafit).^2)/(N-1);
+    %% Denominator
+    %den = N*sum((days5s-mean(days5s)).^2);
+    %
+    %for i = 1:N; 
+    %    % Numerator
+    %    num = sum((days5s-days5f(1,i)).^2);        
+    %    % Variance square correction
+    %    ksi2(1,i) = sigma2*((num/den)+1);
+    %end
+    %% Variance correction
+    %ksi = sqrt(ksi2);
+    %
+    %% Confidence band
+    %upperCB = data5f + 1.96*ksi;
+    %lowerCB = data5f - 1.96*ksi;
     %----------------------------------------------------------------------
 
     % Method 2 (This method uses a direct command)
     %----------------------------------------------------------------------
     % To run on MATLAB disable the commands below
-    %pkg install -forge optim
-    %pkg load optim 
+    pkg install -forge optim
+    pkg load optim 
 
-    %[deaths5f,dy]  = polyconf(coeffs5s,days5f,S_5s);
-    %upperCB_data5f = data5f + dy;
-    %lowerCB_data5f = data5f - dy;
+    [deaths5f,dy]  = polyconf(coeffs5s,days5f,S_5s);
+    upperCB_data5f = data5f + dy;
+    lowerCB_data5f = data5f - dy;
     %----------------------------------------------------------------------
 
     % Chart configuration
