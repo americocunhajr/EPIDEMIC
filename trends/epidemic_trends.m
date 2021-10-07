@@ -214,7 +214,7 @@ for init = 1:14
         end
     end
     
-    % Related deaths per million
+    % Related cases per million
     n = 0;
     for i = 1:1:max(max(size(dates))) 
         if (tot_cases_pm(i,1)  >= X_cases_pm)
@@ -225,7 +225,7 @@ for init = 1:14
         end
     end
     
-    % Related cases per million
+    % Related deaths per million
     n = 0;
     for i = 1:1:max(max(size(dates))) 
         if (tot_deaths_pm(i,1)  >= X_deaths_pm)
@@ -530,7 +530,7 @@ ylabel ({'Total cases ','(per million inhabitants)'},...
 legend ('location','northeastoutside');
 y_init = 10;
 max_y  = 10000000;
-axis([0 day_axis+50 y_init max_y]);
+axis([0 day_axis y_init max_y]);
 
 figure(9)
 set(gca,'FontSize',font_default)
@@ -562,7 +562,7 @@ ylabel ({'New cases per week','(per million inhabitants)'},...
 legend ('location','northeastoutside');
 y_init = 0.1;
 max_y  = 1000000;
-axis([0 day_axis/7+7 y_init max_y]);
+axis([0 day_axis/7 y_init max_y]);
 
 % Saving the charts
 % -----------------------------------------------------------------------
@@ -577,5 +577,5 @@ print(figure( 8),['prevalence-pm_'      ,datestr(end_time,29),'.png',],'-dpng','
 print(figure( 9),['deaths-weekly-pm_'   ,datestr(end_time,29),'.png',],'-dpng','-r300'); 
 print(figure(10),['incidence-weekly-pm_',datestr(end_time,29),'.png',],'-dpng','-r300'); 
 
-close all
+%close all
 % -----------------------------------------------------------------------
