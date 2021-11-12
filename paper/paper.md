@@ -196,7 +196,7 @@ to see an example time series graph of the SEIAHRD compartmental model.
 
 In the trends module, it is possible to monitor, through graphic
 resources, the behavior of epidemics in countries, states or cities. The
-analyzes are performed using two basic visualization strategies: that of
+analyses are performed using two basic visualization strategies: that of
 contagion and mortality and the progress of the epidemic. The types of
 graphs that can be generated in the trends module are: accumulated
 deaths, accumulated cases, death progress, case progress, weekly deaths,
