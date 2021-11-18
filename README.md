@@ -42,7 +42,7 @@ A tutorial style user guide for **EPIDEMIC** is available in English and Portugu
 
 To run the EPIDEMIC code, follow these steps:
 
-1) Access the EPIDEMIC repository, available at [www.github.com/americocunhajr/EPIDEMIC](www.github.com/americocunhajr/EPIDEMIC) and download the folder with the code;
+1) Access the EPIDEMIC repository, available at [www.github.com/americocunhajr/EPIDEMIC](https://github.com/americocunhajr/EPIDEMIC) and download the folder with the code;
       
 2) After downloading, just run the script. The working directory of compatible software is placed in the place where the EPIDEMIC code is and it is executed via the terminal.
 
