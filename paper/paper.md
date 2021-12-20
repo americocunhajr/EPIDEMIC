@@ -170,7 +170,10 @@ a website[^1], where one can find a GitHub repository link that directs
 to the suite source code. The EPIDEMIC code is also compatible with
 MATLAB proprietary software. The fact that EPIDEMIC is an open package,
 allows the user to better understand the mathematical structure of the
-model and is accessible to a large audience. The figure [1] shows the EPIDEMIC logo
+model and is accessible to a large audience. It is interesting that the user has previous 
+knowledge of GNU Octave or MATLAB, but as the organization of the EPIDEMIC code is done in a very 
+didactic way, those students who have a first access to these programming languages 
+will also be able to carry out the simulations. The figure [1] shows the EPIDEMIC logo
 and the three EPIDEMIC modules: modeling, trends and forecasts.
 
 ![Illustration of the EPIDEMIC code logo and EPIDEMIC modules.] 
