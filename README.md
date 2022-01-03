@@ -20,6 +20,8 @@ This package includes the following files:
 - rhs_SEIR.m 
 - main_SEIRD.m
 - rhs_SEIRD.m 
+- main_SIRG.m
+- rhs_SIRG.m
 - main_SEIAHRD.m
 - rhs_SEIAHRD.m 
 
@@ -44,12 +46,14 @@ To run the EPIDEMIC code, follow these steps:
 
 1) Access the EPIDEMIC repository, available at [www.github.com/americocunhajr/EPIDEMIC](https://github.com/americocunhajr/EPIDEMIC) and download the folder with the code;
       
-2) After downloading, just run the script. The working directory of compatible software is placed in the place where the EPIDEMIC code is and it is executed via the terminal.
+2) The working directory of the compatible software (Octave or MATLAB) is placed in the place where the folder with the EPIDEMIC codes is located and it is executed via the terminal;
+
+3) If it is in the module Modeling, the executable file that generates the simulations is the files main. In the files rhs is possible to modify the differential equations, if that is the interest. In the module Trends, the executable file is epidemic_trends.m. And in the module Forecasts the executable file is epidemic_forecasts.m. In the tutorials you can get more information on how to use the codes.
 
 
 ## Octave/Matlab compatibility
 
-**EPIDEMIC** was developed to be 100% compatible with the Octave and Matlab platforms.
+**EPIDEMIC** was developed to be 100% compatible with the Octave and Matlab platforms. EPIDEMIC codes have been tested on at least GNU Octave 5.2.0 and MATLAB R2016b versions.
 
 ## Team:
 
@@ -104,6 +108,6 @@ We ask users to cite the following manual in any publications reporting work don
 
 <img src="logo/uerj_logo_cor.jpg" width="13%"> &nbsp; &nbsp; <img src="logo/ufrj_logo_cor.png" width="10%"> &nbsp; &nbsp; <img src="logo/ufu_logo_cor.png" width="12%"> &nbsp; &nbsp; <img src="logo/ifms_logo_cor.png" width="15%"> &nbsp; &nbsp; <img src="logo/unesp_logo_cor.png" width="20%">
 
-## Contact
+## Contribution to code and contact
 
-Contributions to the software, reports problems or support can be done via email americo.cunha@uerj.br
+Any EPIDEMIC user can contribute the code or seek support via email americo.cunha@uerj.br. You can correct spelling or grammatical errors, suggest improvements and file bugs. If you find a bug, file the issue illustrating the bug with a minimal reproducible example. Experience reports on the use of EPIDEMIC are also welcome. If you want to suggest the insertion of a compartmental model in the Modeling module, it is necessary to send a preview of the code structure following the code pattern of the other compartmental models.
