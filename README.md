@@ -11,7 +11,7 @@ https://github.com/americocunhajr/EPIDEMIC
 
 In the figure below, it is possible to observe the EPIDEMIC organization structure.
 
-<img src="logo/fluxo_epidemic_en.pdf" width="50%">
+<img src="logo/fluxo_epidemic_en.png" width="50%">
 
 This package includes the following files:
 
