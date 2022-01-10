@@ -9,6 +9,9 @@ The current stable version of **EPIDEMIC** is available on GitHub:
 
 https://github.com/americocunhajr/EPIDEMIC
 
+In the figure below, it is possible to observe the EPIDEMIC organization structure.
+
+<img src="logo/fluxo_epidemic_en.pdf" width="50%">
 
 This package includes the following files:
 
