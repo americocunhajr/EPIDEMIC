@@ -62,12 +62,12 @@ To run the EPIDEMIC code, follow these steps:
 
 **Faculty/Researchers:**
 - Americo Cunha
+- Bruna Pavlack
 - Lisandro Lovisolo
 - Malú Grave
 - Rodrigo Burgos
 
 **Students:**
-- Bruna Pavlack
 - Diego Matos
 - Eber Dantas
 - João Pedro Norenberg
