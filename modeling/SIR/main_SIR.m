@@ -179,6 +179,8 @@ hold off
     xlim([t0 t1]);
     ylim([0 N]);
 
+    saveas(figure(1),'fig_modeling_SIR_example1_compart.png')
+
 
 % plot NewCases (per day) of SIR model
 figure(2)
@@ -195,4 +197,6 @@ fig2 = scatter([1:length(NewCases)]+1,NewCases);
 
     % axis limits
     xlim([t0 length(NewCases)]+1);
+
+    saveas(figure(2),'fig_modeling_SIR_example1_newcases.png')
 % -----------------------------------------------------------
