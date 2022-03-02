@@ -1,0 +1,3 @@
+## Contribution to code and contact
+
+Any EPIDEMIC user can contribute the code or seek support via email americo.cunha@uerj.br or open an [issue](https://github.com/americocunhajr/EPIDEMIC/issues). You can correct spelling or grammatical errors, suggest improvements and file bugs. If you find a bug, file the issue illustrating the bug with a minimal reproducible example. Experience reports on the use of EPIDEMIC are also welcome. If you want to suggest the insertion of a compartmental model in the Modeling module, it is necessary to send a preview of the code structure following the code pattern of the other compartmental models.
