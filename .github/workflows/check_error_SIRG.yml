@@ -1,0 +1,16 @@
+name: check_error_SIRG
+on: [push]
+jobs:
+  my-job:
+    name: check_error_SIRG
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Set up MATLAB
+        uses: matlab-actions/setup-matlab@v1
+      - name: Run tests and generate artifacts
+        uses: matlab-actions/run-tests@v1
+        with:
+          name: check_error_SIRG
+          path: modeling/SIRG/check_error_SIRG.m
