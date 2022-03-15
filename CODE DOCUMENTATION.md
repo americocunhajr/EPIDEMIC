@@ -119,4 +119,99 @@ Output:
 dydt: state rate of change - double array (6x1)
 
 
+### rhs_SIRG:
+
+This function defines the system of ODEs for the SIRG epidemic model.
+
+The dynamic state coordinates are:
+  
+  S = susceptibles        (number of individuals)
+  
+  I = infected            (number of individuals)
+ 
+  R = recovered           (number of individuals)
+  
+  G = guarded             (number of individuals)
+
+The epidemic model parameters are:
+
+ N     = population size (number of individuals)
+ 
+ beta  = transmission rate (days^-1)
+ 
+ gamma = recovery rate     (days^-1)
+ 
+ phi   = quantine-in rate  (days^-1)
+ 
+ theta = quantine-out rate (days^-1)
+ 
+ tq0   = quantine start (days)
+ 
+ tq1   = quantine end (days)
+
+Inputs:
+
+ t: time                    - double
+ 
+ y: state vector            - double array (5x1)
+ 
+ param: parameters vector   - double array (7x1)
+ 
+Output:
+
+dydt: state rate of change - double array (5x1)
+
+
+
+### rhs_SEIR(+AHD):
+
+This function defines the system of ODEs for the SEIR(+AHD) epidemic model.
+
+The dynamic state coordinates are:
+  
+  S = susceptibles            (number of individuals)
+  
+  E = exposed                 (number of individuals)
+  
+  I = infected                (number of individuals)
+ 
+  R = recovered               (number of individuals)
+  
+  A = asymptomatic infectious (number of individuals)
+  
+  H = hospitalized            (number of individuals)
+  
+  D = deceased                (number of individuals)
+  
+  C = cumulative infected     (number of individuals)
+
+The epidemic model parameters are:
+
+ N0     = initial population size (number of individuals)
+ 
+ beta   = transmission rate       (days^-1)
+ 
+ alpha  = latent rate             (days^-1)
+ 
+ fE     = symptomatic fraction    (dimensionless)
+ 
+ gamma  = recovery rate           (days^-1)
+ 
+ rho    = hospitalization rate    (days^-1)
+  
+ delta  = death rate              (days^-1)
+ 
+ kappaH = hospitalization mortality-factor   (dimensionless)
+
+Inputs:
+
+ t: time                    - double
+ 
+ y: state vector            - double array (8x1)
+ 
+ param: parameters vector   - double array (8x1)
+ 
+Output:
+
+dydt: state rate of change - double array (8x1)
 
