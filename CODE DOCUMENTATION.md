@@ -2,7 +2,11 @@
 
 The EPIDEMIC is an easy-to-run educational Matlab toolkit for epidemiological analysis, which offers functionalities for modeling an epidemic, monitoring its progress and forecasting the underling numbers of interest. This code is, first of all, an educational tool for researchers and students who are interested in computational epidemiology. The programs and tutorials are designed to offer good introductory material for beginners in the field. But they can also be used to analyze epidemic data, as well as in the construction of some simplistic epidemic models. 
 
-## 🔧 Functions of module Modeling
+## Document organization
+ 
+This document provides a description of all codes of EPIDEMIC. First the functions of the module Modeling are shown and then the codes of the compartmental models. After that, the code of the module Trends is described and finally, the code of the module Forecasts.
+
+## Functions of module Modeling
 
 ### rhs_SIR:
 
@@ -700,4 +704,21 @@ dydt: state rate of change - double array (8x1)
   figure 1: model state in time         - inplace figure
   
   figure 2: number of new cases in time - inplace figure
+  
+  
+  ## Code of the module Trends
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ## Code of the module Forecasts
+  
+  
+  
   
