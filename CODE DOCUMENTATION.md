@@ -708,17 +708,96 @@ dydt: state rate of change - double array (8x1)
   
   ## Code of the module Trends
   
+  ### epidemic_trends
   
+  This algorithm generates graphs on the numbers of cases and deaths by epidemic in the countries of interest.                              
+                                                                      
+  The series of graphs contains in absolute values and per million inhabitants                                           
+
+- number of cases in relation to the time since X cases               
+
+- number of deaths over time since X deaths                           
+
+- number of new cases per week in relation to the time since X cases  
+
+- number of new deaths per week in relation to the time since X deaths
+
+- number of new cases per week in relation to total cases             
+
+- number of new deaths per week in relation to total deaths           
+                                                                    
+ You will need the file 'owid-covid-data.csv' found in https://ourworldindata.org/coronavirus-source-data 
+
+ Inputs:
+ 
+ owid-covid-data.csv: OWD data file - .csv file
+ 
+ -> 2nd collumn:  location field                                                                       
+ 
+ -> 3rd collumn:  date field                                                                       
+ 
+ -> 4th collumn:  total_cases field                                                                       
+ 
+ -> 5th collumn:  new_cases field                                                                       
+ 
+ -> 6th collumn:  total_deaths field                                                                       
+ 
+ -> 7th collumn:  new_deaths field                                                                       
+ 
+ -> 8th collumn:  total_cases_per_million field                                                                       
+ 
+ -> 9th collumn:  new_cases_per_million field                                                                       
   
+ -> 10th collumn: total_deaths_per_million field                                                                       
+ 
+ -> 11st collumn: new_deaths_per_million field                                                                       
+
+  Outputs:                                                               
+ 
+ deaths-total-abs_: cumulative deaths in time       - .png file           
+ 
+ cases-total-abs_: cumulative deaths in time        - .png file                     
+
+ deaths-progress-abs_: deaths progess               - .png file           
+ 
+ cases-progress-abs_: cases progress                - .png file                     
+ 
+ deaths-weekly-abs_: new deaths per week            - .png file           
+ 
+ cases-weekly-abs_: new cases per week              - .png file                     
+ 
+ mortality-pm_: deaths per million                  - .png file           
+ 
+ prevalence-pm_: cases per million                  - .png file                     
+ 
+ deaths-weekly-pm_: weekly news deaths per million  - .png file           
+ 
+ incidence-weekly-pm_: weekly incidence per million - .png file    
   
-  
-  
-  
-  
-  
-  
+ 
   ## Code of the module Forecasts
   
+  ### epidemic_forecasts
   
+  This is the main file to generate the forecast graphs of accumulated cases and accumulated deaths from an epidemic. The purpose of this algorithm is to present the number of cases and deaths over time, with a 5-day forecast ahead determined by linear regression on the logarithmic scale of the number of cases and deaths. The 95% confidence interval is also shown.                              
+                                                                       
+ Note: In order to forecast the next 5 days, the last 5 days are considered. You will need the 'cases-brazil-states.csv' file found in https://github.com/wcota/covid19br/                                     
+ Inputs:
+ 
+ cases-brazil-states.csv: wcota data file - .csv file
+ 
+ -> 1st collumn:  date field       
+ 
+ -> 3rd collumn:  state field 
+ 
+ -> 6th collumn:  totalDeaths field   
+ 
+ -> 8th collumn:  totalCases field                                                                       
+     
+ Outputs:                                                               
+ 
+ forecasts-cases: forecasts of the cases - .png file           
+ 
+ forecasts-deaths: forecasts of the deaths - .png file           
   
   
