@@ -2,7 +2,7 @@
 % EPIDEMIC - Epidemiology Educational Code
 % www.EpidemicCode.org
 % -----------------------------------------------------------
-% Modeling: main_SEIR(+AHD).m
+% Modeling: main_SEIRAHD.m
 %
 % This is the main file for the SEIR(+AHD) epidemic model, which
 % divides a population in 7 compartments:
@@ -36,7 +36,7 @@
 %   delta    = death rate                         (days^-1)
 %   kappaH   = hospitalization mortality-factor   (dimensionless)
 %
-% This codes uses rhs_SEIR(+AHD).m to define the ODE system
+% This codes uses rhs_SEIRAHD.m to define the ODE system
 % and outputs the plots, R_nought value and R_control value. 
 % Calculations are made on a day time scale.
 %
@@ -50,7 +50,7 @@
 %   param: parameters vector      - double array (9x1)
 %   IC: initial conditions vector - double array (8X1)
 %   tspan: time interval          - double array (?x1)
-%   rhs_SEIR(+AHD): SEIR(+AHD) equations file - .m function file
+%   rhs_SEIRAHD: SEIRAHD equations file - .m function file
 %
 % Outputs:
 %   R_nought: basic reproduction number   - double
