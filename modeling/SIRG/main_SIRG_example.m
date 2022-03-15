@@ -2,7 +2,7 @@
 % EPIDEMIC - Epidemiology Educational Code
 % www.EpidemicCode.org
 % -----------------------------------------------------------
-% Modeling: main_SIRG_2.m
+% Modeling: main_SIRG_example.m
 %
 % This is the main file for a economic-epidemic coupled 
 % dynamic model, which divides a population in 4 compartments:
