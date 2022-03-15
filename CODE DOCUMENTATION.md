@@ -781,7 +781,8 @@ dydt: state rate of change - double array (8x1)
   
   This is the main file to generate the forecast graphs of accumulated cases and accumulated deaths from an epidemic. The purpose of this algorithm is to present the number of cases and deaths over time, with a 5-day forecast ahead determined by linear regression on the logarithmic scale of the number of cases and deaths. The 95% confidence interval is also shown.                              
                                                                        
- Note: In order to forecast the next 5 days, the last 5 days are considered. You will need the 'cases-brazil-states.csv' file found in https://github.com/wcota/covid19br/                                     
+ Note: In order to forecast the next 5 days, the last 5 days are considered. You will need the 'cases-brazil-states.csv' file found in https://github.com/wcota/covid19br/
+ 
  Inputs:
  
  cases-brazil-states.csv: wcota data file - .csv file
