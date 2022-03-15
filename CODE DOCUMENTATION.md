@@ -215,3 +215,224 @@ Output:
 
 dydt: state rate of change - double array (8x1)
 
+## Codes of the compartmental models of the module Modeling 
+
+### main_SIR
+
+ This is a main file for the SIR epidemic model, which divides a population in 3 compartments:
+ 
+ S = susceptible
+ 
+ I = infected
+ 
+ R = recovered
+
+ Infection spreads via direct contact between a susceptible and infected individual, with no delay. No deaths are considered, all infected become recovered.
+ 
+ This model has 3 parameters:
+
+ N     = population size   (number of individuals)
+ 
+ beta  = transmission rate (days^-1)
+ 
+ gamma = recovery rate     (days^-1)
+
+ This code uses rhs_SIR.m to define the ODE system and outputs the plots and R_nought value. Calculations are made on a day time scale.
+
+  Inputs:
+  
+  param: parameters vector      - double array (3x1)
+  
+  IC: initial conditions vector - double array (4X1)
+  
+  tspan: time interval          - double array (?x1)
+  
+  rhs_SIR: SIR equations file   - .m function file
+
+  Outputs:
+  
+  R_nought: basic reproduction number   - double
+  
+  figure 1: model state in time         - inplace figure
+  
+  figure 2: number of new cases in time - inplace figure
+  
+  ### main_SIR_Brauer
+
+ This is a main file for the SIR epidemic model, which divides a population in 3 compartments:
+ 
+ S = susceptible
+ 
+ I = infected
+ 
+ R = recovered
+
+ Infection spreads via direct contact between a susceptible and infected individual, with no delay. No deaths are considered, all infected become recovered.
+ 
+ This model has 3 parameters:
+
+ N     = population size   (number of individuals)
+ 
+ beta  = transmission rate (days^-1)
+ 
+ gamma = recovery rate     (days^-1)
+
+ This code uses rhs_SIR.m to define the ODE system and outputs the plots and R_nought value. Calculations are made on a day time scale. The conditions simulated by this file was esctrated from the New York City measles discrebed in F. Brauer, P. van den Driessche and J. Wu (eds.)  Mathematical epidemiology, Springer-Verlag, Berlin, 2008, p.5-11. DOI: https://doi.org/10.1007/978-3-540-78911-6 
+
+  Inputs:
+  
+  param: parameters vector      - double array (3x1)
+  
+  IC: initial conditions vector - double array (4X1)
+  
+  tspan: time interval          - double array (?x1)
+  
+  rhs_SIR: SIR equations file   - .m function file
+
+  Outputs:
+  
+  R_nought: basic reproduction number   - double
+  
+  figure 1: model state in time         - inplace figure
+  
+  figure 2: number of new cases in time - inplace figure
+  
+  ### main_SEIR
+
+ This is a main file for the SEIR epidemic model, which divides a population in 4 compartments:
+ 
+ S = susceptible
+ 
+ E = exposed
+  
+ I = infected
+ 
+ R = recovered
+
+ Infection spreads via direct contact between a susceptible and infectious individual. Delay is modeled as an exposed group: there is an latent period until an infected becomes able to transmit (infectious). No deaths are considered, all infected become recovered.
+ 
+ This model has 4 parameters:
+
+ N     = population size   (number of individuals)
+ 
+ beta  = transmission rate (days^-1)
+ 
+ alpha = latent rate       (days^-1)
+ 
+ gamma = recovery rate     (days^-1)
+
+  This code uses rhs_SEIR.m to define the ODE system and outputs the plots and R_nought value. Calculations are made on a day time scale.
+
+  Inputs:
+  
+  param: parameters vector      - double array (4x1)
+  
+  IC: initial conditions vector - double array (5X1)
+  
+  tspan: time interval          - double array (?x1)
+  
+  rhs_SEIR: SEIR equations file   - .m function file
+
+  Outputs:
+  
+  R_nought: basic reproduction number   - double
+  
+  figure 1: model state in time         - inplace figure
+  
+  figure 2: number of new cases in time - inplace figure
+  
+   ### main_SEIR_Dantas
+
+ This is a main file for the SEIR epidemic model, which divides a population in 4 compartments:
+ 
+ S = susceptible
+ 
+ E = exposed
+  
+ I = infected
+ 
+ R = recovered
+
+ Infection spreads via direct contact between a susceptible and infectious individual. Delay is modeled as an exposed group: there is an latent period until an infected becomes able to transmit (infectious). No deaths are considered, all infected become recovered.
+ 
+ This model has 4 parameters:
+
+ N     = population size   (number of individuals)
+ 
+ beta  = transmission rate (days^-1)
+ 
+ alpha = latent rate       (days^-1)
+ 
+ gamma = recovery rate     (days^-1)
+
+  This code uses rhs_SEIR.m to define the ODE system and outputs the plots and R_nought value. Calculations are made on a day time scale. The conditions simulated by this file was estrated from the Brazil's zika outbreak discrebed in E. Dantas, M. Tosin and A. Cunha Jr, Calibration of a SEIR–SEI epidemic model  to describe the Zika virus outbreak in Brazil, Applied Mathematics and Computation, 338, p.249-259, 2020. DOI: https://doi.org/10.1016/j.amc.2018.06.024
+
+  Inputs:
+  
+  param: parameters vector      - double array (4x1)
+  
+  IC: initial conditions vector - double array (5X1)
+  
+  tspan: time interval          - double array (?x1)
+  
+  rhs_SEIR: SEIR equations file   - .m function file
+
+  Outputs:
+  
+  R_nought: basic reproduction number   - double
+  
+  figure 1: model state in time         - inplace figure
+  
+  figure 2: number of new cases in time - inplace figure
+  
+  
+  ### main_SEIRD
+
+ This is a main file for the SEIR epidemic model, which divides a population in 5 compartments:
+ 
+ S = susceptible
+ 
+ E = exposed
+  
+ I = infected
+ 
+ R = recovered
+ 
+ D = deceased
+
+ Infection spreads via direct contact between a susceptible and infectious individual. Delay is modeled as an exposed group: there is an latent period until an infected becomes able to transmit (infectious). Disease-related deaths are considered when infectious.
+ 
+ This model has 5 parameters:
+
+  N0    = initial population size   (number of individuals)
+  
+  beta  = transmission rate         (days^-1)
+  
+  alpha = latent rate               (days^-1)
+  
+  gamma = recovery rate             (days^-1)
+  
+  delta = death rate                (days^-1)
+  
+ This codes uses rhs_SEIRD.m to define the ODE system and outputs the plots and R_nought value. Calculations are made on a day time scale.
+ 
+ Inputs:
+  
+  param: parameters vector      - double array (5x1)
+  
+  IC: initial conditions vector - double array (6X1)
+  
+  tspan: time interval          - double array (?x1)
+  
+  rhs_SEIRD: SEIRD equations file   - .m function file
+
+  Outputs:
+  
+  R_nought: basic reproduction number   - double
+  
+  figure 1: model state in time         - inplace figure
+  
+  figure 2: number of new cases in time - inplace figure
+  
+  
+  
