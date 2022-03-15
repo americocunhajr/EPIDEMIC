@@ -5,7 +5,7 @@
 % Modeling: main_SIRG_2.m
 %
 % This is the main file for a economic-epidemic coupled 
-% dynamic model, which divides a population in 3 compartments:
+% dynamic model, which divides a population in 4 compartments:
 %
 %   S = susceptible
 %   I = infected
