@@ -70,14 +70,14 @@ close all
 N0 = 1000;
         
 % transmission rate (days^-1)
-beta = 1/4;
+beta = 1/2;
 
 % hospitalization infectivity-factor (dimensionless)
 %
 % -- Models contact diminishment. 
 
 % latent period (days)
-Talpha = 7;
+Talpha = 5;
 
 % latent rate (days^-1)
 alpha = 1/Talpha;
@@ -86,7 +86,7 @@ alpha = 1/Talpha;
 %
 % -- Models fraction of infectious that display symptoms. 
 % -- Values: 0<fE<1.
-fE = 0.5;
+fE = 0.8;
 
 % recovery period (days)
 Tgamma = 10;
@@ -95,16 +95,16 @@ Tgamma = 10;
 gamma = 1/Tgamma;
 
 % hospitalization rate (days^-1)
-rho = 1/7;
+rho = 1/2000;
 
 % death rate (days^-1)
-delta = 1/15;
+delta = 1/1000;
 
 % Hospitalization mortality-factor (dimensionless)
 %
 % -- Models mortality diminishment.  
 % -- Values: 0<kappaH<1.
-kappaH = 0.5;
+kappaH = 0.05;
 
 % initial conditions
 %
