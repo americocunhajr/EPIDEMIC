@@ -147,7 +147,7 @@ of infected at peak. Then they interpolate polynomial curves to describe this fu
 reflect which polynomial is most representative, that is, which makes the most sense. The module trends was used in the data 
 visualization class, to train students on how to show different information in a clear, objective, effective and graphically 
 attractive way. In this exercise, the effect of normalizing was also shown, to remove the scaling effect of population size 
-(eg infected vs time / infected by 1M inhab vs time), when normalizing the curves approach the same level, without local 
+(eg infected vs time / infected by 1M inhab vs time), because when normalizing the curves approach the same level, without local 
 normalization of larger population has much larger numbers, which may not be true when normalizing. And, the module forecast was 
 used to train the students in the regression part (curve fitting), they used the COVID-19 epidemic data as observations, 
 and looked for polynomial and exponential curves that fit the start of the outbreak (exponential phase). Below is a brief description
