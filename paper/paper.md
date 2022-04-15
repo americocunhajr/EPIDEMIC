@@ -98,9 +98,9 @@ Observatório Fluminense* (COVID-19RJ) [@covid19-rj], which aims to
 monitor the pandemic progress in Brazil, make reliable predictions about
 the short term evolution and provide high-quality educational material
 about the mathematical modeling and analysis of COVID-19. To support the
-research carried out in the COVID-19RJ project, the EPIDEMIC was
+research carried out in the COVID-19RJ project, EPIDEMIC was
 developed, because through this code it is possible to generate
-monitoring graphics, trends and disease forecasts. The EPIDEMIC is cited
+monitoring graphics, trends and disease forecasts. EPIDEMIC is cited
 in the reports of the COVID-19RJ project.
 
 In the context of the COVID-19 pandemic, it was observed that
@@ -120,25 +120,25 @@ In a mathematical biology course, for example, students are exposed to the deriv
 from various compartmental models based on nonlinear differential equations, so that the vast majority 
 have no analytical solution. In this context, there is a natural need to use numerical methods to obtain 
 the answer from the mathematical model. Packages like GNU Octave and Matlab have very robust ordinary differential equations (ODEs) solvers that 
-make this task much easier. The EPIDEMIC tutorials provide pedagogical activities in this sense, as they illustrate,
+make this task much easier. EPIDEMIC tutorials provide pedagogical activities in this sense, as they illustrate,
 via relatively streamlined and very well organized codes, how to perform the numerical integration of these models based on ODEs. 
 The programming structure followed in the tutorial, with several compartmental models, also aims to show students how easy it 
 is to carry out such numerical integration for another type of compartmental model that the student can find in the literature 
 or develop himself/herself.
 
-The benefits of the EPIDEMIC tutorial go beyond the simple exercise of programming numerical integration, 
+The benefits of EPIDEMIC tutorial go beyond the simple exercise of programming numerical integration, 
 the analysis of the response curves of different models allows students to develop intuition about the dynamic 
 behavior of dynamic epidemiological systems. For example, when seeing in the same figure the 3 curves of the SIR 
 model (susceptible, infected and recovered), the student can see that the initial growth of an outbreak is
 accompanied at the same time by a significant reduction in the number of susceptibles, being succeeded by an 
-increase in the number of retrieved. An interesting analogy in this case that aids in the students' 
+increase in the number of recovereds. An interesting analogy in this case that aids in the students' 
 understanding is the following: be the infected as the intensity of a fire, the susceptible as the available firewood, 
 and the recovered as the burnt firewood after a fire. At the beginning there is a lot of firewood available, 
 a large fire ensues, then, as the firewood burns, the intensity of the fire decreases.
 
-The EPIDEMIC codes have already been used in a course on numerical and computational methods in Rio de Janeiro State University to present the 
+EPIDEMIC codes have already been used in a course on numerical and computational methods in Rio de Janeiro State University to present the 
 part of polynomial regression and exponential curve fitting. In this course, the code was used on three fronts, 
-according to the EPIDEMIC modules: modeling, trends and forecast. In the module modeling, the compartmental models were 
+according to EPIDEMIC modules: modeling, trends and forecast. In the module modeling, the compartmental models were 
 presented as computer simulators, students run the codes as a black box to familiarize themselves with simulation basics,
 and get acquainted with the Octave software. The code is also used in interpolation classes. We want to obtain a 
 polynomial function that describes the number of infected people at the peak of the epidemic as a function of the transmission 
@@ -147,34 +147,29 @@ of infected at peak. Then they interpolate polynomial curves to describe this fu
 reflect which polynomial is most representative, that is, which makes the most sense. The module trends was used in the data 
 visualization class, to train students on how to show different information in a clear, objective, effective and graphically 
 attractive way. In this exercise, the effect of normalizing was also shown, to remove the scaling effect of population size 
-(eg infected vs time / infected by 1M inhab vs time, when normalizing the curves approach the same level, without local 
-normalization of larger population has much larger numbers, which may not be true when normalizing). And, the module forecast was 
+(eg infected vs time / infected by 1M inhab vs time), when normalizing the curves approach the same level, without local 
+normalization of larger population has much larger numbers, which may not be true when normalizing. And, the module forecast was 
 used to train the students in the regression part (curve fitting), they used the COVID-19 epidemic data as observations, 
-and looked for polynomial and exponential curves that fit the start of the outbreak (exponential phase). Bellow it is presented a brief description
-of the code and modules that make up the EPIDEMIC.
+and looked for polynomial and exponential curves that fit the start of the outbreak (exponential phase). Below is a brief description
+of the code and modules that make up EPIDEMIC.
 
 # EPIDEMIC code
 
-The EPIDEMIC code is a suite of basic software for epidemiology that is
+EPIDEMIC code is a suite of basic software for epidemiology that is
 suitable for analyzing indicators of an epidemic evolution as well as to
 construct basic compartmental models for qualitative and quantitative
 analysis. It is developed in an easy to use style, with very lean
 and well-documented codes. The package also includes an instructional
 tutorial that gives the end user information about the type of analysis
 and forecasts that can be obtained with the suite, as well as an
-overview of the limitations of each model available in the code. The
-EPIDEMIC code is a didactic and intuitive pedagogical tool for audiences
-interested in mathematical epidemiology. The EPIDEMIC is developed on
+overview of the limitations of each model available in the code. EPIDEMIC code is a didactic and intuitive pedagogical tool for audiences
+interested in mathematical epidemiology. EPIDEMIC is developed on
 the free software platform GNU Octave and is available on
 a website[^1], where one can find a GitHub repository link that directs
-to the suite source code. The EPIDEMIC code is also compatible with
+to the suite source code. EPIDEMIC code is also compatible with
 MATLAB proprietary software. The fact that EPIDEMIC is an open package,
 allows the user to better understand the mathematical structure of the
-model and is accessible to a large audience. It is interesting that the user has previous 
-knowledge of GNU Octave or MATLAB, but as the organization of the EPIDEMIC code is done in a very 
-didactic way, those students who have a first access to these programming languages 
-will also be able to carry out the simulations. The figure [1] shows the EPIDEMIC logo
-and the three EPIDEMIC modules: modeling, trends and forecasts.
+model and is accessible to a large audience. The user should have previous knowledge of GNU Octave or MATLAB, but as the organization of the EPIDEMIC code is done in a very didactic way, those students who have a first access to these programming languages will also be able to carry out the simulations. Figure [1] shows the EPIDEMIC logo and the three EPIDEMIC modules: modeling, trends and forecasts.
 
 ![Illustration of the EPIDEMIC code logo and EPIDEMIC modules.] 
 
@@ -190,8 +185,7 @@ compartmental models and thus analyze the epidemiological dynamics. To
 do this, just change the values of the parameters of the epidemic that
 you want to analyze in the code. It is also possible to carry out
 analyzes, for example, of $\mathcal{R}_0$ in relation to $\beta$, or
-else of the number of deaths in relation to $\beta$. In Figure [2] is possible
-to see an example time series graph of the SEIAHRD compartmental model.
+else of the number of deaths in relation to $\beta$. Figure [2] shows an example time series graph of the SEIAHRD compartmental model.
 
 ![Time series graph of the SEIAHRD dynamic model generated in the modeling module of EPIDEMIC.]
 
@@ -203,12 +197,10 @@ analyses are performed using two basic visualization strategies: that of
 contagion and mortality and the progress of the epidemic. The types of
 graphs that can be generated in the trends module are: accumulated
 deaths, accumulated cases, death progress, case progress, weekly deaths,
-weekly cases, mortality, prevalence, weekly deaths, and incidence. The Figure [3] shows an 
-example of a trend graph generated in EPIDEMIC. This graph shows the total number of deaths per 
-1M inhabitants evolution of the COVID-19 pandemic in several countries.
+weekly cases, mortality, prevalence, weekly deaths, and incidence. Figure [3] shows an 
+example of a trend graph generated in EPIDEMIC. This graph shows the evolution of the total number of deaths per 1M inhabitants in several countries.
 
-![Trend graph of total number of deaths per 1M inhabitants evolution of
-the COVID-19 pandemic in several countries generated in EPIDEMIC.]
+![Trend graph of total number of deaths per 1M inhabitants in several countries generated in EPIDEMIC.]
 
 ## Forecasts
 
@@ -222,7 +214,7 @@ points were taken into account:
 - Insert the last five days on the logarithmic scale, as it facilitates visualization in case of exponential growth;
 - Plot the predicted values within the estimated reliability envelope. Confidence band is 95%.
 
-The Figure [4] shows a forecast graph of the total cases of COVID-19 in Brazil generated at EPIDEMIC. 
+Figure [4] shows a forecast graph of the total cases of COVID-19 in Brazil generated by EPIDEMIC. 
 
 ![Forecast graph of the total cases of COVID-19 in Brazil generated at EPIDEMIC. The gray color shows the 95% confidence band.]
 
