@@ -169,7 +169,7 @@ a website[^1], where one can find a GitHub repository link that directs
 to the suite source code. EPIDEMIC code is also compatible with
 MATLAB proprietary software. The fact that EPIDEMIC is an open package,
 allows the user to better understand the mathematical structure of the
-model and is accessible to a large audience. The user should have previous knowledge of GNU Octave or MATLAB, but as the organization of the EPIDEMIC code is done in a very didactic way, those students who have a first access to these programming languages will also be able to carry out the simulations. Figure [1] shows the EPIDEMIC logo and the three EPIDEMIC modules: modeling, trends and forecasts.
+model and is accessible to a large audience. The user should have previous knowledge of GNU Octave or MATLAB, but as the organization of EPIDEMIC code is done in a very didactic way, those students who have a first access to these programming languages will also be able to carry out the simulations. Figure [1] shows EPIDEMIC logo and the three EPIDEMIC modules: modeling, trends and forecasts.
 
 ![Illustration of the EPIDEMIC code logo and EPIDEMIC modules.] 
 
@@ -193,7 +193,7 @@ else of the number of deaths in relation to $\beta$. Figure [2] shows an example
 
 In the trends module, it is possible to monitor, through graphic
 resources, the behavior of epidemics in countries, states or cities. The
-analyses are performed using two basic visualization strategies: that of
+analyzes are performed using two basic visualization strategies: that of
 contagion and mortality and the progress of the epidemic. The types of
 graphs that can be generated in the trends module are: accumulated
 deaths, accumulated cases, death progress, case progress, weekly deaths,
