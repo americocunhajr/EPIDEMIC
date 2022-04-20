@@ -89,7 +89,7 @@ We ask users to cite the following manual in any publications reporting work don
 - B. Pavlack et al. EPIDEMIC - Epidemiology Educational Code, 2022 www.EpidemicCode.org
 
 ```
-@misc{EPIDEMIC2021,
+@misc{EPIDEMIC2022,
    author       = {B. {Pavlack et al.}},
    title        = { {EPIDEMIC} - {E}pidemiology {E}ducational {C}ode},
    year         = {2022},
