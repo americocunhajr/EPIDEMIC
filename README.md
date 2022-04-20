@@ -86,13 +86,13 @@ To run the EPIDEMIC code, follow these steps:
 ## Citing EPIDEMIC
 
 We ask users to cite the following manual in any publications reporting work done with **EPIDEMIC**:
-- B. Pavlack et al. EPIDEMIC - Epidemiology Educational Code, 2021 www.EpidemicCode.org
+- B. Pavlack et al. EPIDEMIC - Epidemiology Educational Code, 2022 www.EpidemicCode.org
 
 ```
 @misc{EPIDEMIC2021,
    author       = {B. {Pavlack et al.}},
    title        = { {EPIDEMIC} - {E}pidemiology {E}ducational {C}ode},
-   year         = {2021},
+   year         = {202w},
    publisher    = {GitHub},
    journal      = {GitHub repository},
    howpublished = {\url{www.EpidemicCode.org}},
