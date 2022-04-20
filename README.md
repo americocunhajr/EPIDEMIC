@@ -92,7 +92,7 @@ We ask users to cite the following manual in any publications reporting work don
 @misc{EPIDEMIC2021,
    author       = {B. {Pavlack et al.}},
    title        = { {EPIDEMIC} - {E}pidemiology {E}ducational {C}ode},
-   year         = {202w},
+   year         = {2022},
    publisher    = {GitHub},
    journal      = {GitHub repository},
    howpublished = {\url{www.EpidemicCode.org}},
