@@ -136,7 +136,7 @@ understanding is the following: be the infected as the intensity of a fire, the 
 and the recovered as the burnt firewood after a fire. At the beginning there is a lot of firewood available, 
 a large fire ensues, then, as the firewood burns, the intensity of the fire decreases.
 
-EPIDEMIC has already been used in a course on numerical and computational methods in Rio de Janeiro State University to present  
+EPIDEMIC has already been used in a course on numerical and computational methods in Rio de Janeiro State University to present
 polynomial regression and exponential curve fitting. In this course, the code was used on three fronts, 
 according to EPIDEMIC modules: modeling, trends and forecast. In the modeling module, the compartmental models were 
 presented as computer simulators, students run the codes as a black box to familiarize themselves with simulation basics,
@@ -226,7 +226,7 @@ represents the compartmental model (SIR, SEIR, SIRG, SEIRD, and
 SEIAHRD). The file `main` defines the parameters and calculates the
 reproduction numbers and plots the results of the time series. The File
 `rhs` defines the ODE system used by the main file. The trends module
-has the file `epidemic_trends.m, which is the main file to
+has the file `epidemic_trends.m`, which is the main file to
 generate graphs on the numbers of cases and deaths by epidemic in the
 countries of interest. And the forecasts module has the file
 `epidemic_forecasts.m`, which is the main file to generate the forecast
