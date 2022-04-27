@@ -258,8 +258,7 @@ also be an important tool for research use.
     
   [2]: #figtimeseries {reference-type="ref" reference="figtimeseries"}
   
-   [Trend graph of total number of deaths per 1M inhabitants evolution of the COVID-19 pandemic in several countries generated in EPIDEMIC.]:
-    mortality-pm_2020-05-16.png {#mortality-pm_2020-05-16 width="85%"}
+   [Trend graph of total number of deaths per 1M inhabitants evolution of the COVID-19 pandemic in several countries generated in EPIDEMIC.]:mortality-pm_2020-05-16.png {#mortality-pm_2020-05-16 width="85%"}
 
   [3]: #mortality-pm_2020-05-16 {reference-type="ref" reference="mortality-pm_2020-05-16"}
   
