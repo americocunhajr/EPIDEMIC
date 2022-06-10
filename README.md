@@ -89,13 +89,15 @@ We ask users to cite the following manual in any publications reporting work don
 - B. Pavlack et al. EPIDEMIC - Epidemiology Educational Code, 2022 www.EpidemicCode.org
 
 ```
-@misc{EPIDEMIC2022,
-   author       = {B. {Pavlack et al.}},
-   title        = { {EPIDEMIC} - {E}pidemiology {E}ducational {C}ode},
-   year         = {2022},
-   publisher    = {GitHub},
-   journal      = {GitHub repository},
-   howpublished = {\url{www.EpidemicCode.org}},
+@article{EPIDEMIC2022,
+  author = {Bruna Pavlack and Malú Grave and Eber Dantas and Julio Basilio and Leonardo {de la Roca} and João Norenberg and Michel Tosin and Lucas Chaves and Diego Matos and Marcos Issa and Roberto Luo and Amanda Guyt and Luthiana Soares and Rodrigo Burgos and Lisandro Lovisolo and Americo Cunha},
+  title = {EPIDEMIC: Epidemiology Educational Code},
+  journal = {Journal of Open Source Education}
+  year = {2022},
+  volume = {5},
+  number = {50},
+  pages = {149},
+  doi = {10.21105/jose.00149},
 }
 ```
 
