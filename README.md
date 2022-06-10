@@ -86,7 +86,7 @@ To run the EPIDEMIC code, follow these steps:
 ## Citing EPIDEMIC
 
 We ask users to cite the following manual in any publications reporting work done with **EPIDEMIC**:
-- B. Pavlack et al. EPIDEMIC - Epidemiology Educational Code, 2022 www.EpidemicCode.org
+- Pavlack et al., (2022). EPIDEMIC: Epidemiology Educational Code. Journal of Open Source Education, 5(50), 149, https://doi.org/10.21105/jose.00149
 
 ```
 @article{EPIDEMIC2022,
@@ -97,6 +97,7 @@ We ask users to cite the following manual in any publications reporting work don
   volume = {5},
   number = {50},
   pages = {149},
+  url = {www.EpidemicCode.org},
   doi = {10.21105/jose.00149},
 }
 ```
