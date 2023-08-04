@@ -47,7 +47,7 @@ A tutorial style user guide for **EPIDEMIC** is available in English and Portugu
 
 To run the EPIDEMIC code, follow these steps:
 
-1) Access the EPIDEMIC repository, available at [www.github.com/americocunhajr/EPIDEMIC](https://github.com/americocunhajr/EPIDEMIC) and download the folder with the code;
+1) Access the EPIDEMIC repository and download the folder with the code: [www.github.com/americocunhajr/EPIDEMIC](https://github.com/americocunhajr/EPIDEMIC);
       
 2) The working directory of the compatible software (Octave or MATLAB) is placed in the place where the folder with the EPIDEMIC codes is located and it is executed via the terminal;
 
