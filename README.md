@@ -110,11 +110,11 @@ We ask users to cite the following manual in any publications reporting work don
 
 ### Funding
 
-<img src="logo/faperj.jpg" width="20%"> &nbsp; &nbsp; <img src="logo/cnpq.png" width="20%"> &nbsp; &nbsp; <img src="logo/capes.png" width="10%">
+<img src="logo/faperj.png" width="20%"> &nbsp; &nbsp; <img src="logo/cnpq.png" width="20%"> &nbsp; &nbsp; <img src="logo/capes.png" width="10%">
 
 ### Institutional support
 
-<img src="logo/uerj_logo_cor.jpg" width="13%"> &nbsp; &nbsp; <img src="logo/ufrj_logo_cor.png" width="10%"> &nbsp; &nbsp; <img src="logo/ufu_logo_cor.png" width="12%"> &nbsp; &nbsp; <img src="logo/ifms_logo_cor.png" width="15%"> &nbsp; &nbsp; <img src="logo/unesp_logo_cor.png" width="25%">
+<img src="logo/logo_uerj.png" width="10%"> &nbsp; &nbsp; <img src="logo/ufrj_logo_cor.png" width="10%"> &nbsp; &nbsp; <img src="logo/ufu_logo_cor.png" width="12%"> &nbsp; &nbsp; <img src="logo/ifms_logo_cor.png" width="15%"> &nbsp; &nbsp; <img src="logo/unesp_logo_cor.png" width="25%">
 
 ### Contribution to code and contact
 
