@@ -2,3 +2,15 @@ logo: /logo/EPIDEMIC.png
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
+
+# Search-engine, scholarly and social-sharing metadata
+title: "EPIDEMIC — Epidemiology Educational Code"
+description: "Free MATLAB and GNU Octave educational software for computational epidemiology: SIR, SEIR, SEIRD, SIRG and SEIRAHD models, epidemic trend plots, short-term forecasts and tutorials."
+url: "https://www.epidemiccode.org"
+lang: en
+image: /logo/EPIDEMIC.png
+
+# Generate site metadata and an XML sitemap on GitHub Pages
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

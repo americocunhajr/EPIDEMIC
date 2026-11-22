@@ -5,6 +5,8 @@
 - **Trends:** which uses several types of trend graphs to analyze the dynamic behavior of an epidemic as well as its underlyng rate of progress;
 - **Forecasts:** which uses data-driven statistical regressors to make short-term predictions about certain quantities of interest underlying the epidemic.
 
+Explore the [EPIDEMIC modules and educational examples](https://www.epidemiccode.org/modules/) for an overview of compartmental models, trend analysis, forecasts, and tutorials.
+
 The current stable version of **EPIDEMIC** is available on GitHub:
 
 <a href="https://github.com/americocunhajr/EPIDEMIC" target="_blank">https://github.com/americocunhajr/EPIDEMIC</a>
@@ -25,14 +27,14 @@ This EPIDEMIC package includes the following files:
 - rhs_SEIRD.m 
 - main_SIRG.m
 - rhs_SIRG.m
-- main_SEIAHRD.m
-- rhs_SEIAHRD.m 
+- main_SEIRAHD.m
+- rhs_SEIRAHD.m 
 
 **TRENDS:**
 - epidemic_trends.m
 
 **FORECASTS:**
-- epidemic_forecast.m
+- epidemic_forecasts.m
 
 ### Tutorial
 
@@ -51,7 +53,7 @@ To run the EPIDEMIC code, follow these steps:
       
 2) The working directory of the compatible software (Octave or MATLAB) is placed in the place where the folder with the EPIDEMIC codes is located and it is executed via the terminal;
 
-3) If it is in the module Modeling, the executable file that generates the simulations is the files main. In the files rhs is possible to modify the differential equations, if that is the interest. In the module Trends, the executable file is epidemic_trends.m. And in the module Forecasts the executable file is epidemic_forecasts.m. In the tutorials you can get more information on how to use the codes.
+3) If it is in the module Modeling, the executable file that generates the simulations is the files main. In the files rhs is possible to modify the differential equations, if that is the interest. In the module Trends, the executable file is epidemic_trends.m. And in the module Forecasts the executable file is `epidemic_forecasts.m`. In the tutorials you can get more information on how to use the codes.
 
 
 ### Octave/Matlab compatibility
@@ -86,18 +88,18 @@ To run the EPIDEMIC code, follow these steps:
 ### Citing EPIDEMIC
 
 We ask users to cite the following manual in any publications reporting work done with **EPIDEMIC**:
-- Pavlack et al., (2022). EPIDEMIC: Epidemiology Educational Code. Journal of Open Source Education, 5(50), 149, https://doi.org/10.21105/jose.00149
+> **Pavlack et al. (2022).** *EPIDEMIC: Epidemiology Educational Code*. *Journal of Open Source Education*, **5**(50), 149. [DOI: 10.21105/jose.00149](https://doi.org/10.21105/jose.00149).
 
-```
+```bibtex
 @article{EPIDEMIC2022,
   author = {Bruna Pavlack and Malú Grave and Eber Dantas and Julio Basilio and Leonardo {de la Roca} and João Norenberg and Michel Tosin and Lucas Chaves and Diego Matos and Marcos Issa and Roberto Luo and Amanda Guyt and Luthiana Soares and Rodrigo Burgos and Lisandro Lovisolo and Americo Cunha},
   title = {EPIDEMIC: Epidemiology Educational Code},
-  journal = {Journal of Open Source Education}
+  journal = {Journal of Open Source Education},
   year = {2022},
   volume = {5},
   number = {50},
   pages = {149},
-  url = {www.EpidemicCode.org},
+  url = {https://www.epidemiccode.org},
   doi = {10.21105/jose.00149},
 }
 ```
